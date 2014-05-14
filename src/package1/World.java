@@ -89,7 +89,20 @@ public class World {
 		   this.food.placeFood();
 		   snakeAlive = this.synchronizer.getSnakeStillAlive();		//check each time is the snake is alive
 	   }*/
+	  
     }
 
+<<<<<<< HEAD
     //world.setNewSnake(world.getSnake().reset())
 }
+=======
+	public Snake getSnake() {
+		return this.snake;
+	}
+	
+	public void setNewSnake(Snake s) {
+		this.snake = s;
+	}
+
+}
+>>>>>>> c79b98ece4bf7845a6c2c1871346a2230f7b74ce
