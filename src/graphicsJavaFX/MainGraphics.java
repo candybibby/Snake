@@ -3,11 +3,15 @@ package graphicsJavaFX;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -15,57 +19,88 @@ import package1.*;
 
 public class MainGraphics extends Application {
 
-    Controller bottomFrame;
+    public Controller controller;
 
-    int blockingQueueSize = 100;
-    int frameRate = 20;
 
+    public int frameRate = 50;
+    public Synchronizer synchronizer;
+    Game game;
+
+    SimpleBooleanProperty initializeNewGame = new SimpleBooleanProperty(false);
 
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        bottomFrame = new Controller();
+        setup();
         primaryStage.setTitle("MainPane");
-        primaryStage.setScene(new Scene(bottomFrame));
+        primaryStage.setScene(new Scene(controller));
         primaryStage.show();
-        graphicsTimer();
         mainProgram();
-    }
-
-
-
-    public void drawScreen(){
-
-
+        graphicsTimer();
 
     }
 
-    public void graphicsTimer(){
-        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000/frameRate), new EventHandler<ActionEvent>() {
+
+    public void drawScreen() {
+
+        controller.drawNewScreen(synchronizer.getGameWorld(), synchronizer.getGameAreaHeight(), synchronizer.getGameAreaWidth());
+
+    }
+
+    public void drawGameOver() {
+        controller.printGameOver();
+    }
+
+    public void graphicsTimer() {
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000 / frameRate), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                drawScreen();
+
+                if (!synchronizer.isGameOver()) {
+                    drawScreen();
+                } else {
+                    drawGameOver();
+                }
+
             }
         }));
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
     }
 
-    public void mainProgram(){
+    public void mainProgram() {
         // do stuff here, feed the queue
 
-        Game game = new Game();
+        newGame();
+
+    }
+
+    public void newGame() {
+
 
         game.runNewGame(1);
 
     }
 
 
-
-
-
-
     public static void main(String[] args) {
         launch(args);
     }
+
+    public void setup() {
+        controller = new Controller();
+        synchronizer = new Synchronizer();
+        game = new Game(synchronizer);
+        initializeNewGame.bind(controller.initializeNewGame);
+        initializeNewGame.addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean aBoolean2) {
+                game.world.gameEngine.engineTimer.cancel();
+                game.world.gameEngine.engineTimer.purge();
+                newGame();
+            }
+        });
+
+    }
+
 }

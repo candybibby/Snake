@@ -6,9 +6,15 @@ package package1;
  */
 public class Game {
 
-    private World world;
+    public World world;
     public Synchronizer synchronizer;
 
+
+
+    public Game(Synchronizer synchronizer) {
+        this.synchronizer = synchronizer;
+
+    }
 
     /**
      * Method runNewGame
@@ -17,8 +23,8 @@ public class Game {
      * @param lvl
      */
     public void runNewGame(int lvl) {
-        synchronizer = new Synchronizer();               // make an instance of synchronizer
-        world = new World(synchronizer);                 // make an instance of world and pass it the synchronizer
+        synchronizer.resetGame();
+        world = new World(this.synchronizer);                 // make an instance of world and pass it the synchronizer
         world.createNewGame(lvl);
     }
 

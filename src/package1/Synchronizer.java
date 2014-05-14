@@ -313,5 +313,18 @@ public class Synchronizer {
     public void setFoodPresent(boolean foodPresent) {
         this.foodPresent = foodPresent;
     }
+
+    public void resetGame(){
+        this.gameWorld = new char[LENGTH][LENGTH];
+        this.gameAreaHeight = LENGTH;
+        this.gameAreaWidth = LENGTH;
+        this.gameOver = false;
+        this.stopGameLoop = false;
+        this.gameLoopRunning = false;
+        this.snakeAlive = true;
+        this.scores = new int[2];
+        this.scores[0] = 0;
+        this.foodPresent = false;
+    }
 }
 

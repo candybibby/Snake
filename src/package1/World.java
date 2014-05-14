@@ -30,7 +30,7 @@ public class World {
      */
     private Obstacle obstacle;
 
-    private GameEngine gameEngine;
+    public GameEngine gameEngine;
 
     private Display display;
 

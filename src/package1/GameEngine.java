@@ -26,7 +26,7 @@ public class GameEngine {
     private Food food;
 
     // in-class variables
-    Timer engineTimer;
+    public Timer engineTimer;
 
     /**
      * Constructor with 5 parameters
@@ -120,7 +120,7 @@ public class GameEngine {
      */
     public void render() {
 
-        display.printGame();
+        //display.printGame();
 
 
     }
