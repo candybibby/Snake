@@ -15,7 +15,7 @@ import java.io.IOException;
 public class Controller extends AnchorPane {
 
 
-    @FXML
+    @FXML                       // this tag gets the javafxid from the fxml file
     AnchorPane bottomPane;
 
     @FXML
@@ -24,27 +24,27 @@ public class Controller extends AnchorPane {
     @FXML
     TextArea textArea;
 
-    SimpleBooleanProperty initializeNewGame = new SimpleBooleanProperty(false);
+    SimpleBooleanProperty initializeNewGame = new SimpleBooleanProperty(false); // this is used to pass information between the controller and the mainGraphics class
 
 
     public Controller() {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainPane.fxml"));
-        fxmlLoader.setRoot(this);
-        fxmlLoader.setController(this);
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainPane.fxml")); // load the MainPane.fxml which contains the information on the graphical layout of the window
+        fxmlLoader.setRoot(this);               // sets the fxml file as the root
+        fxmlLoader.setController(this);         // and this as it's controller
 
         try {
-            fxmlLoader.load();
+            fxmlLoader.load();                  // tries to load the file
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
 
-    public void initialize() {
-        textArea.setEditable(false);
-        textArea.setFont(Font.font(java.awt.Font.MONOSPACED));
-        setupNewGameButton();
+    public void initialize() {                 // this runs when the controller is initialized. It's called automatically
+        textArea.setEditable(false);            // don't let the user edit the textfield
+        textArea.setFont(Font.font(java.awt.Font.MONOSPACED)); // use a monospace font to preserve uniform dimensions
+        setupNewGameButton();                               // setup the new game button
 
 
     }
@@ -52,32 +52,32 @@ public class Controller extends AnchorPane {
     public void setupNewGameButton() {
         //initializeNewGame.set(false);
 
-        newGameButton.setOnAction(new EventHandler<ActionEvent>() {
+        newGameButton.setOnAction(new EventHandler<ActionEvent>() { // when button is pressed
             @Override
             public void handle(ActionEvent actionEvent) {
-                initializeNewGame.set(!initializeNewGame.getValue());
+                initializeNewGame.set(!initializeNewGame.getValue());       // flip the value of initializeNewGame so the mainGraphics.java knows to start a new game
             }
         });
     }
 
 
-    public void drawNewScreen(char[][] array, int height, int width) {
-        clearScreen();
-        String drawThis = "";
+    public void drawNewScreen(char[][] array, int height, int width) {      // draw a new screen based on the variables given
+        clearScreen();          // clear the screen
+        String drawThis = "";       // make a tempString to store the array in
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
 
 
                 if (array[j][i] == '\0') {
-                    drawThis += "  ";
+                    drawThis += "  ";           // for every empty character make two spaces
                 } else {
-                    drawThis += array[j][i] + " ";
+                    drawThis += array[j][i] + " ";      // if the is a character, put it in the string with an empty space
                 }
             }
-            drawThis += "\n";
+            drawThis += "\n";           // after each line we need a new line
         }
 
-        textArea.setText(drawThis);
+        textArea.setText(drawThis);     // set this as the text in the textfield
     }
 
     public void clearScreen() {
