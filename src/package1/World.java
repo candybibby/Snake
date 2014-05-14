@@ -91,4 +91,5 @@ public class World {
 	   }*/
     }
 
+    //world.setNewSnake(world.getSnake().reset())
 }
