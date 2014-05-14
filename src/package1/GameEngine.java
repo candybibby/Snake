@@ -88,7 +88,7 @@ public class GameEngine {
     public void update() {
 
         food.placeFood();
-        Control.updateDirection();
+        //Control.updateDirection();
         snake.move();
         if (synchronizer.isGameOver()){
             synchronizer.setStopGameLoop(true);

@@ -28,7 +28,7 @@ public class Synchronizer {
     /**
      * The last key the player pressed
      */
-    private static Command[] lastButtonPressed;
+    private static Command[] lastButtonPressed = { new Direction(Direction.RIGHT)};
 
     /**
      * If the game is over

@@ -1,5 +1,7 @@
 package graphicsJavaFX;
 
+import javafx.scene.input.KeyCode;
+import package1.*;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -7,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
 
@@ -15,8 +18,9 @@ import java.io.IOException;
 public class Controller extends AnchorPane {
 
 
-    @FXML                       // this tag gets the javafxid from the fxml file
-    AnchorPane bottomPane;
+    @FXML
+    // this tag gets the javafxid from the fxml file
+            AnchorPane bottomPane;
 
     @FXML
     Button newGameButton;
@@ -26,6 +30,9 @@ public class Controller extends AnchorPane {
 
     SimpleBooleanProperty initializeNewGame = new SimpleBooleanProperty(false); // this is used to pass information between the controller and the mainGraphics class
 
+    Direction[] directions = {
+            new Direction(Direction.RIGHT)
+    };
 
     public Controller() {
 
@@ -41,10 +48,11 @@ public class Controller extends AnchorPane {
 
     }
 
-    public void initialize() {                 // this runs when the controller is initialized. It's called automatically
+    public void initialize() {                 // this runs when the controller is initializedirections[p]. It's called automatically
         textArea.setEditable(false);            // don't let the user edit the textfield
         textArea.setFont(Font.font(java.awt.Font.MONOSPACED)); // use a monospace font to preserve uniform dimensions
         setupNewGameButton();                               // setup the new game button
+        setupKeyListener();
 
 
     }
@@ -86,6 +94,37 @@ public class Controller extends AnchorPane {
 
     public void printGameOver() {
         textArea.setText("GAME OVER!!!");
+    }
+
+    public void setupKeyListener() {
+
+        bottomPane.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent keyEvent) {
+                int p = 0; //Current number of players
+                KeyCode keyCode = keyEvent.getCode();
+                switch (keyCode) {
+                    case UP:
+                        if (directions[p].getValue() != Direction.DOWN)  //If you are going down you can't turn up, or you will die.
+                            directions[p].setDirection(Direction.UP);
+                        break;
+                    case DOWN:
+                        if (directions[p].getValue() != Direction.UP)
+                            directions[p].setDirection(Direction.DOWN);
+                        break;
+                    case LEFT:
+                        if (directions[p].getValue() != Direction.RIGHT)
+                            directions[p].setDirection(Direction.LEFT);
+                        break;
+                    case RIGHT:
+                        if (directions[p].getValue() != Direction.LEFT)
+                            directions[p].setDirection(Direction.RIGHT);
+                        break;
+                }
+
+                Synchronizer.setLastButtonPressed(directions);
+            }
+        });
     }
 
 }
