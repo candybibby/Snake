@@ -134,6 +134,15 @@ public class Synchronizer {
         this.gameWorld = gW;
     }
 
+    /**
+     * Method writeThisCell
+     * write the char in a cell with given coordinates
+     *
+     * @param x, y, c
+     */
+    public void writeThisCell(int x, int y, char c) {
+        this.gameWorld[x][y] = c;
+    }
 
     /**
      * Method getLastButtonPressed

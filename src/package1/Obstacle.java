@@ -51,7 +51,7 @@ public class Obstacle {
 		this.synchronizer = synchronizer;
 		
 		//Check if the level is valid 
-		if (  (lvl<0)  ||  (lvl>3) )
+		if (  (lvl<EASY)  ||  (lvl>EXPERT) )
 			lvl = EASY;
 		this.level = lvl;
 		
@@ -73,9 +73,6 @@ public class Obstacle {
 				this.levelExpert();
 				break;
 			
-			default :
-				this.initializeArea();
-				break;
 		}
 	}
 	
@@ -93,10 +90,11 @@ public class Obstacle {
 		for (int i = 0; i<length1; i++){
 			int length2 = this.synchronizer.getGameAreaWidth();		// length of the second dimension
 			for (int j = 0; j<length2 ; j++){
-				this.synchronizer.getGameWorld()[i][0] = Symbol.WALL;
-				this.synchronizer.getGameWorld()[0][j] = Symbol.WALL;
-				this.synchronizer.getGameWorld()[length1-1][j] = Symbol.WALL;
-				this.synchronizer.getGameWorld()[i][length2-1] = Symbol.WALL;
+				this.synchronizer.writeThisCell(i,0, Symbol.WALL);
+				this.synchronizer.writeThisCell(0,j, Symbol.WALL);
+				this.synchronizer.writeThisCell(length1-1,j, Symbol.WALL);
+				this.synchronizer.writeThisCell(i,length2-1, Symbol.WALL);
+
 			}
 		}
 	}
@@ -111,20 +109,16 @@ public class Obstacle {
 	public void levelMedium(){
 		// we are going to build one obstacle
 		// just an horizontal wall 
+		int wallLenght = synchronizer.getGameAreaWidth()/6;
 		// this wall will start at the coordinates (x, y) :
-		int x = (int)Math.random()*this.synchronizer.getGameAreaWidth();
+		int x = (int)Math.random()*(this.synchronizer.getGameAreaWidth() - wallLenght);
 		int y = (int)Math.random()*this.synchronizer.getGameAreaHeight();
-		
-		int i = 0;	// we have to check if (x+i) is in the array
 		
 		// while the obstacle is different to (1/6) of the larger
 		// and while x is not out of bounds
-		while (i<(this.synchronizer.getGameAreaWidth()/6) && x<this.synchronizer.getGameAreaWidth()){
-			// we build an horizontal wall 
-			this.synchronizer.getGameWorld()[x][y] = Symbol.WALL;
-			x += i;
-			i++;
-		}
+		
+		for (int i = 0; i<wallLenght; i++) 
+			synchronizer.writeThisCell(x+i, y, Symbol.WALL);
 		
 	}
 	
