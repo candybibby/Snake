@@ -125,4 +125,11 @@ public class Snake{
 			}
 		return 0;		
 	}
+	
+	public void reset () {
+		for (int i = 0; i<abscissa.size()-1; i++) 
+			sync.getGameWorld()[abscissa.get(i)][ordinate.get(i)] = Symbol.EMPTY;
+		this = new Snake (sync);
+		}
+	}
 }
