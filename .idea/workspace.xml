@@ -84,9 +84,9 @@
       <file leaf-file-name="Obstacle.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/Obstacle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="40" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0" vertical-offset="2078" max-vertical-offset="6500">
+            <state line="48" column="7" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="2038" max-vertical-offset="6380">
               <folding>
-                <marker date="1400078553136" expanded="true" signature="284:347" placeholder="/**...*/" />
+                <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -104,7 +104,7 @@
       <file leaf-file-name="Synchronizer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.6802326" vertical-offset="486" max-vertical-offset="5960">
+            <state line="45" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.6802326" vertical-offset="666" max-vertical-offset="6140">
               <folding />
             </state>
           </provider>
@@ -661,7 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="40" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="1100" max-vertical-offset="6580">
           <folding>
-            <marker date="1400078553136" expanded="true" signature="284:347" placeholder="/**...*/" />
+            <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -738,7 +738,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="40" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="1100" max-vertical-offset="6580">
           <folding>
-            <marker date="1400078553136" expanded="true" signature="284:347" placeholder="/**...*/" />
+            <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -815,7 +815,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="40" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="1100" max-vertical-offset="6580">
           <folding>
-            <marker date="1400078553136" expanded="true" signature="284:347" placeholder="/**...*/" />
+            <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -923,9 +923,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Obstacle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="40" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0" vertical-offset="2078" max-vertical-offset="6500">
+        <state line="48" column="7" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="2038" max-vertical-offset="6380">
           <folding>
-            <marker date="1400078553136" expanded="true" signature="284:347" placeholder="/**...*/" />
+            <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -977,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.6802326" vertical-offset="486" max-vertical-offset="5960">
+        <state line="45" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.6802326" vertical-offset="666" max-vertical-offset="6140">
           <folding />
         </state>
       </provider>
