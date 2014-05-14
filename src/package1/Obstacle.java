@@ -119,7 +119,7 @@ public class Obstacle {
 		
 		// while the obstacle is different to (1/6) of the larger
 		// and while x is not out of bounds
-		while (i<(this.synchronizer.getGameWorld().length/6) && x<this.synchronizer.getGameWorld().length){
+		while (i<(this.synchronizer.getGameAreaWidth()/6) && x<this.synchronizer.getGameAreaWidth()){
 			// we build an horizontal wall 
 			this.synchronizer.getGameWorld()[x][y] = Symbol.WALL;
 			x += i;
@@ -164,7 +164,7 @@ public class Obstacle {
 
 		// while the obstacle is different to (1/6) of the larger
 		// an while x is not out of bounds
-		while (i<(this.synchronizer.getGameWorld().length/6) && x1<this.synchronizer.getGameWorld().length){
+		while (i<(this.synchronizer.getGameAreaWidth()/6) && x1<this.synchronizer.getGameAreaWidth()){
 			// we build an horizontal wall 
 			this.synchronizer.getGameWorld()[x1][y1] = Symbol.WALL;
 			x1 += i;
@@ -176,7 +176,7 @@ public class Obstacle {
 		
 		// while the obstacle is different to (1/6) of the larger
 		// an while x is not out of bounds
-		while (i<(this.synchronizer.getGameWorld().length/6) && x2<this.synchronizer.getGameWorld().length){
+		while (i<(this.synchronizer.getGameAreaWidth()/6) && x2<this.synchronizer.getGameAreaWidth()){
 			// we build an horizontal wall 
 			this.synchronizer.getGameWorld()[x2][y2] = Symbol.WALL;
 			x2 += i;
