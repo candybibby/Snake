@@ -55,7 +55,7 @@ public class Controller extends AnchorPane {
         newGameButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                initializeNewGame.set(true);
+                initializeNewGame.set(!initializeNewGame.getValue());
             }
         });
     }

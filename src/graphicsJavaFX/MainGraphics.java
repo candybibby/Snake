@@ -76,8 +76,8 @@ public class MainGraphics extends Application {
     }
 
     public void newGame() {
-
-
+        synchronizer = new Synchronizer();
+        game = new Game(synchronizer);
         game.runNewGame(1);
 
     }
@@ -89,9 +89,9 @@ public class MainGraphics extends Application {
 
     public void setup() {
         controller = new Controller();
-        synchronizer = new Synchronizer();
-        game = new Game(synchronizer);
-        initializeNewGame.bind(controller.initializeNewGame);
+
+
+        initializeNewGame.bindBidirectional(controller.initializeNewGame);
         initializeNewGame.addListener(new ChangeListener<Boolean>() {
             @Override
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean aBoolean2) {
