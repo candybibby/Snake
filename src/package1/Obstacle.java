@@ -16,8 +16,6 @@ public class Obstacle {
 	/** Level for the obstacle*/
 	private int level;
 	
-	/**	Element which represents a wall, a brick of the obstacle */
-	public final static char WALL = 'X';
 	
 	/** Constant : easy level */
 	 public final static int EASY = 0; 
@@ -98,10 +96,10 @@ public class Obstacle {
 		for (int i = 0; i<length1; i++){
 			int length2 = this.synchronizer.getGameAreaWidth();		// length of the second dimension
 			for (int j = 0; j<length2 ; j++){
-				this.synchronizer.getGameWorld()[i][0] = WALL;
-				this.synchronizer.getGameWorld()[0][j] = WALL;
-				this.synchronizer.getGameWorld()[length1-1][j] = WALL;
-				this.synchronizer.getGameWorld()[i][length2-1] = WALL;
+				this.synchronizer.getGameWorld()[i][0] = Symbol.WALL;
+				this.synchronizer.getGameWorld()[0][j] = Symbol.WALL;
+				this.synchronizer.getGameWorld()[length1-1][j] = Symbol.WALL;
+				this.synchronizer.getGameWorld()[i][length2-1] = Symbol.WALL;
 			}
 		}
 	}
@@ -126,7 +124,7 @@ public class Obstacle {
 		// and while x is not out of bounds
 		while (i<(this.synchronizer.getGameWorld().length/6) && x<this.synchronizer.getGameWorld().length){
 			// we build an horizontal wall 
-			this.synchronizer.getGameWorld()[x][y] = WALL;
+			this.synchronizer.getGameWorld()[x][y] = Symbol.WALL;
 			x += i;
 			i++;
 		}
@@ -171,7 +169,7 @@ public class Obstacle {
 		// an while x is not out of bounds
 		while (i<(this.synchronizer.getGameWorld().length/6) && x1<this.synchronizer.getGameWorld().length){
 			// we build an horizontal wall 
-			this.synchronizer.getGameWorld()[x1][y1] = WALL;
+			this.synchronizer.getGameWorld()[x1][y1] = Symbol.WALL;
 			x1 += i;
 			i++;
 		}
@@ -183,7 +181,7 @@ public class Obstacle {
 		// an while x is not out of bounds
 		while (i<(this.synchronizer.getGameWorld().length/6) && x2<this.synchronizer.getGameWorld().length){
 			// we build an horizontal wall 
-			this.synchronizer.getGameWorld()[x2][y2] = WALL;
+			this.synchronizer.getGameWorld()[x2][y2] = Symbol.WALL;
 			x2 += i;
 			i++;
 		}
@@ -193,7 +191,7 @@ public class Obstacle {
 		
 		while (i<(this.synchronizer.getGameWorld()[x3].length/6) && y3<this.synchronizer.getGameWorld()[x3].length){
 			// we build a vertical wall 
-			this.synchronizer.getGameWorld()[x3][y3] = WALL;
+			this.synchronizer.getGameWorld()[x3][y3] = Symbol.WALL;
 			x3 += i;
 			i++;
 		}
@@ -252,7 +250,7 @@ public class Obstacle {
 			// an while x is not out of bounds
 			while (i<(this.synchronizer.getGameWorld().length/6) && x1<this.synchronizer.getGameWorld().length){
 				// we build an HORIZONTAL wall 
-				this.synchronizer.getGameWorld()[x1][y1] = WALL;
+				this.synchronizer.getGameWorld()[x1][y1] = Symbol.WALL;
 				x1 += i;
 				i++;
 			}
@@ -264,7 +262,7 @@ public class Obstacle {
 			// an while x is not out of bounds
 			while (i<(this.synchronizer.getGameWorld().length/6) && x2<this.synchronizer.getGameWorld().length){
 				// we build an HORIZONTAL wall 
-				this.synchronizer.getGameWorld()[x2][y2] = WALL;
+				this.synchronizer.getGameWorld()[x2][y2] = Symbol.WALL;
 				x2 += i;
 				i++;
 			}
@@ -276,7 +274,7 @@ public class Obstacle {
 			// an while x is not out of bounds
 			while (i<(this.synchronizer.getGameWorld().length/6) && x3<this.synchronizer.getGameWorld().length){
 				// we build an HORIZONTAL wall 
-				this.synchronizer.getGameWorld()[x3][y3] = WALL;
+				this.synchronizer.getGameWorld()[x3][y3] = Symbol.WALL;
 				x3 += i;
 				i++;
 			}
@@ -286,7 +284,7 @@ public class Obstacle {
 				
 			while (i<(this.synchronizer.getGameWorld()[x4].length/6) && y4<this.synchronizer.getGameWorld()[x4].length){
 				// we build a VERTICAL wall 
-				this.synchronizer.getGameWorld()[x4][y4] = WALL;
+				this.synchronizer.getGameWorld()[x4][y4] = Symbol.WALL;
 				y4 += i;
 				i++;
 			}
@@ -295,7 +293,7 @@ public class Obstacle {
 					
 			while (i<(this.synchronizer.getGameWorld()[x5].length/6) && y5<this.synchronizer.getGameWorld()[x5].length){
 				// we build a VERTICAL wall 
-				this.synchronizer.getGameWorld()[x5][y5] = WALL;
+				this.synchronizer.getGameWorld()[x5][y5] = Symbol.WALL;
 				y5 += i;
 				i++;
 			}
