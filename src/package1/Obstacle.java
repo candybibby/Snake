@@ -38,10 +38,7 @@ public class Obstacle {
 	 * As an easy level
 	 */
 	public Obstacle(Synchronizer synchronizer){
-		this.synchronizer = synchronizer;
-		this.level = EASY;
-		//Add the "wall" around the area of the game only
-		this.initializeArea();	
+		this(EASY, synchronizer);
 	}
 	
 	
