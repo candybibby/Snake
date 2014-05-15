@@ -8,6 +8,8 @@ import javafx.scene.paint.*;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
 import package1.*;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.event.ActionEvent;
@@ -116,10 +118,10 @@ public class Controller extends AnchorPane {
                 } else {
 
 
-                    Circle circle = new Circle(gridSquareHeight / 2, Color.DARKRED);
-
-                    GridPane.setConstraints(circle, j, i);
-                    gameGrid.getChildren().add(circle);
+                    Shape shape = chooseColor(array, j, i);
+                    
+                    GridPane.setConstraints(shape, j, i);
+                    gameGrid.getChildren().add(shape);
 
                 }
             }
@@ -178,6 +180,21 @@ public class Controller extends AnchorPane {
 
     public void setupGameArea(){
         gameAreaContainer.setStyle("-fx-background-color: Black");
+    }
+    
+    private Shape chooseColor(char[][] matrix, int x, int y){
+        Shape shape = null;
+        switch(matrix[x][y]){
+            case 'S':   shape = new Circle(gridSquareHeight / 2, Color.DARKBLUE);
+                        break;
+            case 'o':   shape = new Circle(gridSquareHeight / 2, Color.DARKSEAGREEN);
+                        break;
+            case 'X':   shape = new Rectangle(gridSquareHeight,gridSquareHeight, Color.GREY);
+                        break;
+            case 'm':   shape = new Circle(gridSquareHeight / 2, Color.DARKRED);
+                        break;
+        }
+        return shape;
     }
 
 }
