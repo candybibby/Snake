@@ -8,50 +8,43 @@ package package1;
 public class World {
 
     //ATTRIBUTES
-
-
+    
     /**
-     * Synchronizer
+     * Instance variables for the class
      */
+
+
+    //Sychronizer
     private Synchronizer synchronizer;
 
-    /**
-     * Snake
-     */
+    //Snake
     private Snake snake;
 
-    /**
-     * Food
-     */
+    //Food
     private Food food;
 
-    /**
-     * Obstacle
-     */
+    //Obstacles
     private Obstacle obstacle;
-
+    
+    //Game Engine
     public GameEngine gameEngine;
 
+    //Display
     private Display display;
 
+    //Control
     private Control control;
 
 
     //CONSTRUCTORS
 
     /**
-     * Empty constructor
-     * Initialize all the attributes by default
-     * and create a new World
-     */
-
-
-    /**
      * Constructor
      * Initialize all the attributes by default
      * and create a new World
      */
-    public World(Synchronizer synch) {
+    public World(Synchronizer synch) 
+    {
         this.synchronizer = synch;
         this.snake = new Snake(this.synchronizer);
         this.food = new Food(this.synchronizer);
@@ -60,34 +53,27 @@ public class World {
         this.control = new Control(this.synchronizer);
         this.food = new Food(this.synchronizer);
         this.gameEngine = new GameEngine(this.snake, this.display, this.control, this.food, 5, this.synchronizer);
-
-
-
     }
-
 
     //METHODS
 
-
     /**
      * Method createNewGame
-     * Create a new world in which we places
-     * the obstacles, the Snake and the food each time in the area
+     * Create a new world in which places
+     * the Obstacles, the Snake and the Food each time in the game area
      *
-     * @param lvl the level chosen for the game
+     * @param lvl is the level chosen for the game
      */
-    public void createNewGame(int lvl) {
-        this.obstacle = new Obstacle(lvl, this.synchronizer);    //create new obstacle placed in the area
-        this.gameEngine.startYourEngines();
+    public void createNewGame(int lvl) 
+    {
+        this.obstacle = new Obstacle(lvl, this.synchronizer);    //creates new objects to be placed in the area
+        this.gameEngine.startYourEngines();                      //starts a new timer when the new game is created
 
 
-        //while the snake is alive the game continues
-        //and places the food randomly
-        //and the snake can move
-       /*while(snakeAlive){
-		   this.snake.Movet();
-		   this.food.placeFood();
-		   snakeAlive = this.synchronizer.getSnakeStillAlive();		//check each time is the snake is alive
+       /*while(snakeAlive){                                             //While the snake is alive, the game continues
+		   this.snake.Movet();                                  //Allows the snake to move
+		   this.food.placeFood();                               //Places the food while the snake is moving
+		   snakeAlive = this.synchronizer.getSnakeStillAlive(); //checks each time is the snake is alive
 	   }*/
 	  
     }
@@ -95,12 +81,14 @@ public class World {
 
     //world.setNewSnake(world.getSnake().reset())
 
-
-	public Snake getSnake() {
+        //Getter for the snake
+	public Snake getSnake()  
+	{
 		return this.snake;
 	}
-	
-	public void setNewSnake(Snake s) {
+	//Setter for the new snake that is created
+	public void setNewSnake(Snake s) 
+	{
 		this.snake = s;
 	}
 
