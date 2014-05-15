@@ -1,6 +1,13 @@
 package graphicsJavaFX;
 
 import javafx.scene.input.KeyCode;
+import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.RowConstraints;
+import javafx.scene.paint.*;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+import javafx.scene.shape.Circle;
 import package1.*;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.event.ActionEvent;
@@ -13,6 +20,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class Controller extends AnchorPane {
@@ -26,13 +34,23 @@ public class Controller extends AnchorPane {
     Button newGameButton;
 
     @FXML
-    TextArea textArea;
+    AnchorPane gameAreaContainer;
 
     SimpleBooleanProperty initializeNewGame = new SimpleBooleanProperty(false); // this is used to pass information between the controller and the mainGraphics class
 
     Direction[] directions = {
             new Direction(Direction.RIGHT)
     };
+
+    private int height;
+    private int width;
+
+
+    private double gridSquareHeight;
+    private double gridSquareWidth;
+
+    GridPane gameGrid;
+
 
     public Controller() {
 
@@ -49,9 +67,6 @@ public class Controller extends AnchorPane {
     }
 
     public void initialize() {                 // this runs when the controller is initializedirections[p]. It's called automatically
-        textArea.setEditable(false);            // don't let the user edit the textfield
-        textArea.setFont(Font.font(java.awt.Font.MONOSPACED)); // use a monospace font to preserve uniform dimensions
-        textArea.setStyle("-fx-focus-color: transparent;");
 
 
         setupNewGameButton();                               // setup the new game button
@@ -72,33 +87,54 @@ public class Controller extends AnchorPane {
     }
 
 
-    public void drawNewScreen(char[][] array, int height, int width) {      // draw a new screen based on the variables given
+    public void buildGrid() {
+        gameGrid = new GridPane();
+        gameGrid.setGridLinesVisible(true);
+        for (int i = 0; i < width; i++) {
+            gameGrid.getColumnConstraints().add(new ColumnConstraints(gridSquareWidth));
+        }
+
+        for (int i = 0; i < height; i++) {
+            gameGrid.getRowConstraints().add(new RowConstraints((gridSquareHeight)));
+        }
+
+
+        gameAreaContainer.getChildren().add(gameGrid);
+    }
+
+
+    public void drawNewScreen(char[][] array) {      // draw a new screen based on the variables given
         clearScreen();          // clear the screen
-        String drawThis = "";       // make a tempString to store the array in
+
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
 
 
                 if (array[j][i] == '\0') {
-                    drawThis += "  ";           // for every empty character make two spaces
+
                 } else {
-                    drawThis += array[j][i] + " ";      // if the is a character, put it in the string with an empty space
+
+
+                    Circle circle = new Circle(gridSquareHeight / 2, Color.DARKRED);
+
+                    GridPane.setConstraints(circle, j, i);
+                    gameGrid.getChildren().add(circle);
+
                 }
             }
-            drawThis += "\n";           // after each line we need a new line
+
         }
 
-        textArea.setText(drawThis);     // set this as the text in the textfield
+
         bottomPane.requestFocus();
     }
 
     public void clearScreen() {
-        textArea.clear();
+
+        gameGrid.getChildren().clear();
+
     }
 
-    public void printGameOver() {
-        textArea.setText("GAME OVER!!!");
-    }
 
     public void setupKeyListener() {
 
@@ -129,6 +165,14 @@ public class Controller extends AnchorPane {
                 Synchronizer.setLastButtonPressed(directions);
             }
         });
+    }
+
+    public void giveHeightAndWidth(int height, int width) {
+
+        this.height = height;
+        this.width = width;
+        this.gridSquareWidth = gameAreaContainer.getWidth() / width;
+        this.gridSquareHeight = gameAreaContainer.getHeight() / height;
     }
 
 }

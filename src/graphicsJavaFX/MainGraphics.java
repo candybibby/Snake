@@ -41,13 +41,14 @@ public class MainGraphics extends Application {
 
     public void drawScreen() {
 
-        controller.drawNewScreen(synchronizer.getGameWorld(),
-                synchronizer.getGameAreaHeight(), synchronizer.getGameAreaWidth()); // draws the gameworld array into the textfield in the window
+        controller.drawNewScreen(synchronizer.getGameWorld());
+        //controller.drawNewScreen(synchronizer.getGameWorld(),
+                //synchronizer.getGameAreaHeight(), synchronizer.getGameAreaWidth()); // draws the gameworld array into the textfield in the window
 
     }
 
     public void drawGameOver() {
-        controller.printGameOver(); // if
+        //controller.printGameOver(); // if
     }
 
     public void graphicsTimer() { // setup a timer for the graphics, runs every 1000/framerate milliseconds
@@ -77,6 +78,8 @@ public class MainGraphics extends Application {
     public void newGame() { // initializes everything necessary for the game
 
         synchronizer = new Synchronizer();
+        controller.giveHeightAndWidth(synchronizer.getGameAreaHeight(), synchronizer.getGameAreaWidth());
+        controller.buildGrid();
         game = new Game(synchronizer);
         game.runNewGame(1);             // run the game with the given difficulty
 
@@ -97,10 +100,15 @@ public class MainGraphics extends Application {
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean aBoolean2) {
                 game.world.gameEngine.engineTimer.cancel();     // these two lines stop the gameEngine
                 game.world.gameEngine.engineTimer.purge();      // otherwise we would have too many threads running in the background
-                newGame();                                      // then make new game
+                      resetAll();                              // then make new game
             }
         });
 
+    }
+
+    public void resetAll(){
+        synchronizer.resetGame();
+        game.runNewGame(0);
     }
 
 }

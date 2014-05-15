@@ -71,89 +71,36 @@
       <file leaf-file-name="MainGraphics.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="165" selection-start="1023" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="520" max-vertical-offset="2240">
-              <folding />
+            <state line="102" column="33" selection-start="4048" selection-end="4048" vertical-scroll-proportion="0.0" vertical-offset="943" max-vertical-offset="1400">
+              <folding>
+                <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Obstacle.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/package1/Obstacle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="7" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="2038" max-vertical-offset="6380">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Snake.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2310" selection-end="2310" vertical-scroll-proportion="0.0" vertical-offset="1417" max-vertical-offset="2980">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Synchronizer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Synchronizer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="6140">
+            <state line="336" column="58" selection-start="6826" selection-end="6826" vertical-scroll-proportion="0.7135135" vertical-offset="5696" max-vertical-offset="6160">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/package1/World.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.0" vertical-offset="1722" max-vertical-offset="2280">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/package1/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="10" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="1160">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="8" selection-start="3301" selection-end="3301" vertical-scroll-proportion="0.6022409" vertical-offset="1285" max-vertical-offset="2420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Control.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/package1/Control.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="5" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.0" vertical-offset="764" max-vertical-offset="1520">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Display.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/package1/Display.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1200">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameEngine.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="10" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="2700">
-              <folding />
+            <state line="140" column="35" selection-start="3842" selection-end="3842" vertical-scroll-proportion="0.0" vertical-offset="2447" max-vertical-offset="3620">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3842#5078#0" expanded="true" />
+                <element signature="e#5067#5068#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,11 +125,11 @@
         <option value="$PROJECT_DIR$/src/package1/Game.java" />
         <option value="$PROJECT_DIR$/src/package1/Snake.java" />
         <option value="$PROJECT_DIR$/src/package1/World.java" />
-        <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" />
         <option value="$PROJECT_DIR$/src/package1/Control.java" />
         <option value="$PROJECT_DIR$/src/package1/GameEngine.java" />
-        <option value="$PROJECT_DIR$/src/package1/Synchronizer.java" />
         <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" />
+        <option value="$PROJECT_DIR$/src/package1/Synchronizer.java" />
       </list>
     </option>
   </component>
@@ -488,7 +435,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -565,7 +512,13 @@
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="0" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="1700">
-          <folding />
+          <folding>
+            <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -579,7 +532,11 @@
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="22" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="920">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3842#5078#0" expanded="true" />
+            <element signature="e#5067#5068#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -875,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="165" selection-start="1023" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1840">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Control.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="5" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.0" vertical-offset="764" max-vertical-offset="1520">
@@ -903,16 +853,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="6140">
-          <folding />
+        <state line="140" column="35" selection-start="3842" selection-end="3842" vertical-scroll-proportion="0.0" vertical-offset="2447" max-vertical-offset="3620">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3842#5078#0" expanded="true" />
+            <element signature="e#5067#5068#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="8" selection-start="3301" selection-end="3301" vertical-scroll-proportion="0.6022409" vertical-offset="1285" max-vertical-offset="2420">
+        <state line="102" column="33" selection-start="4048" selection-end="4048" vertical-scroll-proportion="0.0" vertical-offset="943" max-vertical-offset="1400">
+          <folding>
+            <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="336" column="58" selection-start="6826" selection-end="6826" vertical-scroll-proportion="0.7135135" vertical-offset="5696" max-vertical-offset="6160">
           <folding />
         </state>
       </provider>

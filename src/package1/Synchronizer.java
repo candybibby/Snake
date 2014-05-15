@@ -334,6 +334,7 @@ public class Synchronizer {
         this.scores = new int[2];
         this.scores[0] = 0;
         this.foodPresent = false;
+        this.lastButtonPressed[0].setValue(Direction.RIGHT);
     }
 }
 
