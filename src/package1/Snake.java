@@ -1,4 +1,6 @@
-package package1; /**
+package package1;
+import java.io.*;
+/**
  * Created by UK
  * Class Snake
  * In charge of snake itself, it's movement and growth
@@ -121,6 +123,7 @@ public class Snake {
             updateMatrix();
             sync.setFoodPresent(false);
             sync.increaseScore(1);
+            this.sync.updateHighScore();
         } else {
             ordinate.add(0, nextY);
             abscissa.add(0, nextX);
@@ -130,6 +133,10 @@ public class Snake {
             ordinate.remove(ordinate.size() - 1);
             updateMatrix(lastX, lastY);
             sync.theGameIsOver();
+            try {
+				this.sync.saveHighScore("highScore.txt");
+			}
+			catch(IOException e){}
         }
         return 0;
     }
