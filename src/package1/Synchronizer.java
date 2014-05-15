@@ -1,4 +1,5 @@
 package package1;
+import java.io.*;
 
 /**
  * Created by Tariq
@@ -54,6 +55,8 @@ public class Synchronizer {
      * array for scores*
      */
     private int[] scores;
+    
+    public static int highScore = 0;
 
     /**
      * maximum number of players *
@@ -335,6 +338,35 @@ public class Synchronizer {
         this.scores[0] = 0;
         this.foodPresent = false;
         this.lastButtonPressed[0].setValue(Direction.RIGHT);
+    }
+    
+    //
+    public void updateHighScore() {
+    	for (int i = 0; i < this.scores.length; i++){
+    		if (this.scores[i] > highScore)
+    			highScore = this.scores[i];
+    	}
+    }
+    
+    
+    public void saveHighScore(String fileName ) throws IOException{
+		PrintWriter pw = new PrintWriter(new FileWriter (fileName, true));
+		this.updateHighScore();
+		pw.printf("%d", highScore);
+		pw.close();
+	}
+    
+    public void initializeHighScore(String fileName) throws IOException {
+    	try {
+    		
+    		FileReader fr = new FileReader (fileName);
+    		int res = fr.read();
+    		highScore = Character.getNumericValue((res));
+    		fr.close();
+    	}
+    	catch (IOException e){
+    		highScore = 0;
+    	}
     }
 }
 
