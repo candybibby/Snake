@@ -64,6 +64,7 @@ public class Synchronizer {
      */
     public static int MAX_PLAYER_NUMBER = 2;
     public static int FOOD_NUMBER = 12;
+    public static boolean TRON = false;
 
     public final static int LENGTH = 20;
 
