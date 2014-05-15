@@ -121,9 +121,11 @@ public class Snake {
             abscissa.add(0, nextX);
             snake.add(1, Symbol.BODY);
             updateMatrix();
-            sync.setFoodPresent(false);
+            Food [] food = sync.getFood();
+            for (int i=0; i<food.length; i++)
+                if ((food[i].getX() == nextX) && (food[i].getY() == nextY)) 
+                    food[i].setFoodPresent(false);
             sync.increaseScore(1);
-            this.sync.updateHighScore();
         } else {
             ordinate.add(0, nextY);
             abscissa.add(0, nextX);
