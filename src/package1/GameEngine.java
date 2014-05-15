@@ -23,7 +23,7 @@ public class GameEngine {
     private Control control;
     private int frameRate;
     private Synchronizer synchronizer;
-    private Food food;
+    private Food [] food;
 
     // in-class variables
     public Timer engineTimer;
@@ -38,15 +38,13 @@ public class GameEngine {
      * @param frameRate
      * @param synchronizer
      */
-    public GameEngine(Snake snake, Display display, Control control, Food food, int frameRate, Synchronizer synchronizer) {
+    public GameEngine(Snake snake, Display display, Control control, int frameRate, Synchronizer synchronizer, Food [] food) {
         this.snake = snake;
-        this.control = control;   //this class use static method so an instance of it is unusefull
+        this.control = control;   //this class use static method so an instance of it is unuseful
         this.display = display;
         this.frameRate = frameRate;
         this.synchronizer = synchronizer;
         this.food = food;
-
-
     }
 
     /**
@@ -75,11 +73,7 @@ public class GameEngine {
                 }
             }, 0, 1000 / frameRate);    // arguments are delay and interval, so for example 1000 ms / framerate of 5
             // makes this loop run every 200 ms
-
-
         }
-
-
     }
 
     /**
@@ -87,19 +81,13 @@ public class GameEngine {
      */
     public void update() {
 
-        food.placeFood();
+        for (int i = 0; i< Synchronizer.FOOD_NUMBER; i++)
+            food[i].placeFood();
         //Control.updateDirection();
         snake.move();
         if (synchronizer.isGameOver()){
             synchronizer.setStopGameLoop(true);
         }
-
-
-
-
-
-
-
 
 		/*for (Snake snake : snakes) {       // this loop goes over every snake in the snakes array
 
