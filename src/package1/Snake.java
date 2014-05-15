@@ -115,7 +115,10 @@ public class Snake {
             int lastY = ordinate.get(ordinate.size() - 1);
             abscissa.remove(abscissa.size() - 1);
             ordinate.remove(ordinate.size() - 1);
-            updateMatrix(lastX, lastY);
+            if (!sync.TRON)
+            	updateMatrix(lastX, lastY);
+            else
+            	updateMatrix();
         } else if (sync.isFood(nextX, nextY)) {
             ordinate.add(0, nextY);
             abscissa.add(0, nextX);
@@ -133,7 +136,10 @@ public class Snake {
             int lastY = ordinate.get(ordinate.size() - 1);
             abscissa.remove(abscissa.size() - 1);
             ordinate.remove(ordinate.size() - 1);
-            updateMatrix(lastX, lastY);
+            if (!sync.TRON)
+            	updateMatrix(lastX, lastY);
+            else
+            	updateMatrix();
             sync.theGameIsOver();
             try {
 				this.sync.saveHighScore("highScore.txt");
