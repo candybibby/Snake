@@ -1,4 +1,5 @@
 package package1;
+import java.io.*;
 
 /**
  * World class
@@ -51,7 +52,6 @@ public class World {
         this.obstacle = new Obstacle(this.synchronizer);
         this.display = new Display(this.synchronizer);
         this.control = new Control(this.synchronizer);
-        this.food = new Food(this.synchronizer);
         this.gameEngine = new GameEngine(this.snake, this.display, this.control, this.food, 5, this.synchronizer);
     }
 
@@ -64,12 +64,13 @@ public class World {
      *
      * @param lvl is the level chosen for the game
      */
-    public void createNewGame(int lvl) 
-    {
-        this.obstacle = new Obstacle(lvl, this.synchronizer);    //creates new objects to be placed in the area
-        this.gameEngine.startYourEngines();                      //starts a new timer when the new game is created
-
-
+    public void createNewGame(int lvl){
+    	try{
+    		this.synchronizer.initializeHighScore("highScore.txt");
+    		this.obstacle = new Obstacle(lvl, this.synchronizer);    //create new obstacle placed in the area
+    		this.gameEngine.startYourEngines();
+    	}
+    	catch(IOException e){}
        /*while(snakeAlive){                                             //While the snake is alive, the game continues
 		   this.snake.Movet();                                  //Allows the snake to move
 		   this.food.placeFood();                               //Places the food while the snake is moving
