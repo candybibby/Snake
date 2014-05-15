@@ -22,7 +22,7 @@ public class World {
     private Snake snake;
 
     //Food
-    private Food food;
+    private Food [] food;
 
     //Obstacles
     private Obstacle obstacle;
@@ -47,12 +47,16 @@ public class World {
     public World(Synchronizer synch) 
     {
         this.synchronizer = synch;
+              this.synchronizer = synch;
         this.snake = new Snake(this.synchronizer);
-        this.food = new Food(this.synchronizer);
+        this.food = new Food [Synchronizer.FOOD_NUMBER];
+        for (int i=0; i< Synchronizer.FOOD_NUMBER; i++) 
+            food[i] = new Food(this.synchronizer);
+        this.synchronizer.setFood(this.food);
         this.obstacle = new Obstacle(this.synchronizer);
         this.display = new Display(this.synchronizer);
         this.control = new Control(this.synchronizer);
-        this.gameEngine = new GameEngine(this.snake, this.display, this.control, this.food, 5, this.synchronizer);
+        this.gameEngine = new GameEngine(this.snake, this.display, this.control, 5, this.synchronizer, this.food);
     }
 
     //METHODS
