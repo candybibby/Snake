@@ -6,45 +6,64 @@ package package1;
  *
  * @author Italian People
  */
-public class Display {
-
+public class Display 
+   {
+                               //ATTRIBUTES
+    /**
+     * Instance Variables
+     */
+     
+    //Synchronizer             
     private Synchronizer sync;
+    /**
+     * Local variables for the game area
+     */
     private int height, width;
 
     /**
      * Constructor with 1 parameter.
-     * Inizialize parameter and set screen's size.
+     * Inizializes parameter and sets the screen size.
      *
      * @param sync
      */
-    public Display(Synchronizer sync) {
-        this.sync = sync;
-        height = sync.getGameAreaHeight();
-        width = sync.getGameAreaWidth();
+    public Display(Synchronizer sync) 
+    {
+        this.sync = sync;                                   //creates sync object instance
+        height = sync.getGameAreaHeight();                  //gets game area height
+        width = sync.getGameAreaWidth();                    //gets game width
     }
 
     /**
      * Refresh matrix and print game's screen.
      */
-    public void printGame() {
-        char[][] gameWorld = sync.getGameWorld();
-        System.out.println("\nScore: " + sync.getScores()[0] + "\n");
+    public void printGame()
+    {
+        char[][] gameWorld = sync.getGameWorld();                            
+        System.out.println("\nScore: " + sync.getScores()[0] + "\n");     //prints the players score
 
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
+        for (int i = 0; i < height; i++)                                  //refreshes matrix
+        {
+            for (int j = 0; j < width; j++) 
+            {
 
 
-                if (gameWorld[j][i] == '\0') {
+                if (gameWorld[j][i] == '\0')                              //prints game
+                {
                     System.out.print("  ");
-                } else {
+                } 
+                else                                                       
+                {
                     System.out.print(gameWorld[j][i] + " ");
                 }
             }
             System.out.println();
         }
     }
-
-    private static void printLineOf(char c, int len) {
+    /**
+     * prints characters 
+     */
+    private static void printLineOf(char c, int len)                     
+    {
         for (int i = 0; i < len; i++)
             System.out.print(c);
         System.out.println();
