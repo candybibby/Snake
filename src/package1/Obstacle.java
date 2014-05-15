@@ -309,5 +309,9 @@ public class Obstacle {
 			this.level = lvl;
 	}
 	
+	
+	public Synchronizer getSynchronizer(){
+		return this.synchronizer;
+	}
 
 }
