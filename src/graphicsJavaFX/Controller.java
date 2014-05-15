@@ -51,6 +51,9 @@ public class Controller extends AnchorPane {
     public void initialize() {                 // this runs when the controller is initializedirections[p]. It's called automatically
         textArea.setEditable(false);            // don't let the user edit the textfield
         textArea.setFont(Font.font(java.awt.Font.MONOSPACED)); // use a monospace font to preserve uniform dimensions
+        textArea.setStyle("-fx-focus-color: transparent;");
+
+
         setupNewGameButton();                               // setup the new game button
         setupKeyListener();
 
@@ -86,6 +89,7 @@ public class Controller extends AnchorPane {
         }
 
         textArea.setText(drawThis);     // set this as the text in the textfield
+        bottomPane.requestFocus();
     }
 
     public void clearScreen() {

@@ -71,12 +71,8 @@
       <file leaf-file-name="MainGraphics.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="165" selection-start="1023" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="1201" max-vertical-offset="1840">
-              <folding>
-                <element signature="e#2041#2467#0" expanded="true" />
-                <element signature="e#2456#2457#0" expanded="true" />
-                <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
-              </folding>
+            <state line="26" column="165" selection-start="1023" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="520" max-vertical-offset="2240">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,9 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/package1/Obstacle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="48" column="7" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="2038" max-vertical-offset="6380">
-              <folding>
-                <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Synchronizer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Synchronizer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.6802326" vertical-offset="666" max-vertical-offset="6140">
+            <state line="56" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="6140">
               <folding />
             </state>
           </provider>
@@ -114,12 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/package1/World.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="96" column="0" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.0" vertical-offset="1722" max-vertical-offset="2280">
-              <folding>
-                <element signature="e#2040#2041#0" expanded="true" />
-                <element signature="e#2064#2065#0" expanded="true" />
-                <element signature="e#2102#2103#0" expanded="true" />
-                <element signature="e#2123#2124#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,23 +116,17 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="10" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="1160">
+            <state line="8" column="10" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="1160">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Controller.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="27" selection-start="1933" selection-end="1933" vertical-scroll-proportion="-1.7454545" vertical-offset="984" max-vertical-offset="2720">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2057#2386#0" expanded="true" />
-                <element signature="e#2375#2376#0" expanded="true" />
-                <element signature="e#3459#4695#0" expanded="true" />
-                <element signature="e#4684#4685#0" expanded="true" />
-              </folding>
+            <state line="91" column="8" selection-start="3301" selection-end="3301" vertical-scroll-proportion="0.6022409" vertical-offset="1285" max-vertical-offset="2420">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -169,7 +152,7 @@
       <file leaf-file-name="GameEngine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="10" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.0" vertical-offset="1534" max-vertical-offset="2620">
+            <state line="90" column="10" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="2700">
               <folding />
             </state>
           </provider>
@@ -197,9 +180,9 @@
         <option value="$PROJECT_DIR$/src/package1/World.java" />
         <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" />
         <option value="$PROJECT_DIR$/src/package1/Control.java" />
-        <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
         <option value="$PROJECT_DIR$/src/package1/GameEngine.java" />
         <option value="$PROJECT_DIR$/src/package1/Synchronizer.java" />
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
       </list>
     </option>
   </component>
@@ -235,7 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -292,6 +274,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -372,6 +355,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -397,19 +393,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -513,7 +496,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -529,8 +511,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4159292" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -549,13 +532,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24944812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25516224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25516224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -582,11 +565,7 @@
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="0" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="1700">
-          <folding>
-            <element signature="e#2041#2467#0" expanded="true" />
-            <element signature="e#2456#2457#0" expanded="true" />
-            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -600,13 +579,7 @@
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="22" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="920">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2057#2386#0" expanded="true" />
-            <element signature="e#2375#2376#0" expanded="true" />
-            <element signature="e#3459#4695#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -620,12 +593,7 @@
     <entry file="file://$PROJECT_DIR$/src/package1/World.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="59" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="1920">
-          <folding>
-            <element signature="e#2040#2041#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#2123#2124#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -660,9 +628,7 @@
     <entry file="file://$PROJECT_DIR$/src/package1/Obstacle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="40" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="1100" max-vertical-offset="6580">
-          <folding>
-            <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -697,12 +663,7 @@
     <entry file="file://$PROJECT_DIR$/src/package1/World.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="59" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="1920">
-          <folding>
-            <element signature="e#2040#2041#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#2123#2124#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -737,9 +698,7 @@
     <entry file="file://$PROJECT_DIR$/src/package1/Obstacle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="40" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="1100" max-vertical-offset="6580">
-          <folding>
-            <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -774,12 +733,7 @@
     <entry file="file://$PROJECT_DIR$/src/package1/World.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="59" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="1920">
-          <folding>
-            <element signature="e#2040#2041#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#2123#2124#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -814,9 +768,7 @@
     <entry file="file://$PROJECT_DIR$/src/package1/Obstacle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="40" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="1100" max-vertical-offset="6580">
-          <folding>
-            <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -912,32 +864,21 @@
     <entry file="file://$PROJECT_DIR$/src/package1/World.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="0" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="2280">
-          <folding>
-            <element signature="e#2040#2041#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#2123#2124#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Obstacle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="7" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="2038" max-vertical-offset="6380">
-          <folding>
-            <marker date="1400080628158" expanded="true" signature="284:347" placeholder="/**...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="165" selection-start="1023" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1840">
-          <folding>
-            <element signature="e#2041#2467#0" expanded="true" />
-            <element signature="e#2456#2457#0" expanded="true" />
-            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -945,19 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="5" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.0" vertical-offset="764" max-vertical-offset="1520">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="27" selection-start="1933" selection-end="1933" vertical-scroll-proportion="-1.7454545" vertical-offset="984" max-vertical-offset="2720">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2057#2386#0" expanded="true" />
-            <element signature="e#2375#2376#0" expanded="true" />
-            <element signature="e#3459#4695#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,7 +905,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.6802326" vertical-offset="666" max-vertical-offset="6140">
+        <state line="56" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="6140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="8" selection-start="3301" selection-end="3301" vertical-scroll-proportion="0.6022409" vertical-offset="1285" max-vertical-offset="2420">
           <folding />
         </state>
       </provider>
