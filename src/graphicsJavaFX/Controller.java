@@ -71,6 +71,7 @@ public class Controller extends AnchorPane {
 
         setupNewGameButton();                               // setup the new game button
         setupKeyListener();
+        setupGameArea();
 
 
     }
@@ -89,7 +90,7 @@ public class Controller extends AnchorPane {
 
     public void buildGrid() {
         gameGrid = new GridPane();
-        gameGrid.setGridLinesVisible(true);
+        //gameGrid.setGridLinesVisible(true);
         for (int i = 0; i < width; i++) {
             gameGrid.getColumnConstraints().add(new ColumnConstraints(gridSquareWidth));
         }
@@ -173,6 +174,10 @@ public class Controller extends AnchorPane {
         this.width = width;
         this.gridSquareWidth = gameAreaContainer.getWidth() / width;
         this.gridSquareHeight = gameAreaContainer.getHeight() / height;
+    }
+
+    public void setupGameArea(){
+        gameAreaContainer.setStyle("-fx-background-color: Black");
     }
 
 }
