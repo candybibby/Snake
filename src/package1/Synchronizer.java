@@ -62,7 +62,7 @@ public class Synchronizer {
     /**
      * maximum number of players *
      */
-    public static int MAX_PLAYER_NUMBER = 2;
+    public final static int MAX_PLAYER_NUMBER = 2;
     public static int FOOD_NUMBER = 12;
     public static boolean TRON = false;
 
@@ -82,7 +82,7 @@ public class Synchronizer {
         this.stopGameLoop = false;
         this.gameLoopRunning = false;
         this.snakeAlive = true;
-        this.scores = new int[2];
+        this.scores = new int[MAX_PLAYER_NUMBER];
         this.scores[0] = 0;
         this.foodPresent = new boolean[FOOD_NUMBER];
     }
@@ -105,19 +105,7 @@ public class Synchronizer {
     // METHODS
 
 
-    /**
-     * Method initialize
-     * which initializes the game with an empty area
-     *
-     * @param width
-     * @param height
-     */
-    public void initialize(int width, int height) {
-        this.gameWorld = new char[width][height];
-        this.gameAreaHeight = height;
-        this.gameAreaWidth = width;
-    }
-
+    
 
     /**
      * Method getGameWorld
@@ -370,9 +358,23 @@ public class Synchronizer {
     		highScore = 0;
     	}
     }
+    
+    
     public void setFood (Food [] food)  {
         this.food = food;
     }
-    public Food [] getFood () {return this.food;}
+    
+    
+    public Food [] getFood () {
+    	return this.food;
+    }
+    
+    
+     public void setHighScore(int highS){
+    	if (highS < 0)
+    		highS = 0;
+    	highScore = highS;
+    }
+    
 }
 
