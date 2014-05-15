@@ -315,7 +315,8 @@ public class Synchronizer {
 
     public void setFoodPresent(boolean foodPresent,int index) {
         this.foodPresent[index] = foodPresent;
-
+    }
+    
     public void resetGame(){
         this.gameWorld = new char[LENGTH][LENGTH];
         this.gameAreaHeight = LENGTH;
