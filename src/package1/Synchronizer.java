@@ -49,7 +49,8 @@ public class Synchronizer {
 
     private boolean gameLoopRunning;
 
-    private boolean foodPresent;
+    private Food [] food;
+    private boolean [] foodPresent;
 
     /**
      * array for scores*
@@ -61,7 +62,8 @@ public class Synchronizer {
     /**
      * maximum number of players *
      */
-    private int MAX_PLAYER_NUMBER = 2;
+    public static int MAX_PLAYER_NUMBER = 2;
+    public static int FOOD_NUMBER = 12;
 
     public final static int LENGTH = 20;
 
@@ -81,7 +83,7 @@ public class Synchronizer {
         this.snakeAlive = true;
         this.scores = new int[2];
         this.scores[0] = 0;
-        this.foodPresent = false;
+        this.foodPresent = new boolean[FOOD_NUMBER];
     }
 
     /**
@@ -318,13 +320,12 @@ public class Synchronizer {
         this.gameLoopRunning = gameLoopRunning;
     }
 
-    public boolean isFoodPresent() {
-        return foodPresent;
+     public boolean isFoodPresent(int index) {
+        return foodPresent[index];
     }
 
-    public void setFoodPresent(boolean foodPresent) {
-        this.foodPresent = foodPresent;
-    }
+    public void setFoodPresent(boolean foodPresent,int index) {
+        this.foodPresent[index] = foodPresent;
 
     public void resetGame(){
         this.gameWorld = new char[LENGTH][LENGTH];
@@ -336,7 +337,7 @@ public class Synchronizer {
         this.snakeAlive = true;
         this.scores = new int[2];
         this.scores[0] = 0;
-        this.foodPresent = false;
+        this.foodPresent = new boolean[FOOD_NUMBER];
         this.lastButtonPressed[0].setValue(Direction.RIGHT);
     }
     
@@ -368,5 +369,9 @@ public class Synchronizer {
     		highScore = 0;
     	}
     }
+    public void setFood (Food [] food)  {
+        this.food = food;
+    }
+    public Food [] getFood () {return this.food;}
 }
 
