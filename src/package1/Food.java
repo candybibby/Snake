@@ -43,46 +43,24 @@ public class Food {
 
     // CONSTRUCTORS
 
-
-    /**
-     * Empty constructor
-     * Place the food in the middle of the area by default
-     */
-    public Food() {
-        this.synchronizer = new Synchronizer();
-        //this.abscissa = (int) (Math.random() * synchronizer.getGameAreaWidth());
-        //this.ordinate = (int) (Math.random() * synchronizer.getGameAreaHeight());
-        this.foodElement = FOOD_ELEMENT_DEFAULT;
-    }
-
-
     /**
      * Constructor
-     * Place the food in the middle of the area by default
+     * Place the default food in a random empty cell
      */
-    public Food(Synchronizer synch) {
-        this.synchronizer = synch;
-        //this.abscissa = (int) (Math.random() * synchronizer.getGameAreaWidth());
-        //this.ordinate = (int) (Math.random() * synchronizer.getGameAreaHeight());
-        this.foodElement = FOOD_ELEMENT_DEFAULT;
+    public Food(Synchronizer sync) {
+        this(sync, Symbol.MOUSE);
     }
 
     /**
      * Constructor with 2 param
      * Initialize the place with the food given
      *
+     * @param sync
      * @param abs , abscissa given
      * @param ord , ordinate given
      */
-    public Food(int abs, int ord) {
-        this.synchronizer = new Synchronizer();
-        if (abs < 0)
-            abs = 0;
-        this.abscissa = abs;
-        if (ord < 0)
-            ord = 0;
-        this.ordinate = ord;
-        this.foodElement = FOOD_ELEMENT_DEFAULT;
+    public Food(Synchronizer sync, int abs, int ord) {
+        this(sync, abs, ord, Symbol.MOUSE);
     }
 
 
@@ -92,36 +70,37 @@ public class Food {
      *
      * @param elem , food given
      */
-    public Food(char elem) {
-        this.synchronizer = new Synchronizer();
-        this.abscissa = (int) Math.random() * synchronizer.getGameAreaWidth();
-        this.ordinate = (int) Math.random() * synchronizer.getGameAreaHeight();
-        if ((elem == '\0') || (elem == ' '))
-            elem = FOOD_ELEMENT_DEFAULT;
-        this.foodElement = elem;
+    public Food(Synchronizer sync, char elem) {
+        this(sync, 0, 0, elem);
+        int x,y;
+        do {
+            x = (int) (Math.random() * sync.getGameAreaWidth());
+            y = (int) (Math.random() * sync.getGameAreaHeight());
+        } while (!sync.isEmpty(x, y));
+        this.setX(x);
+        this.setY(y);
+        synchronizer.writeThisCell(abscissa, ordinate, foodElement);
     }
 
 
     /**
-     * Constructor with 3 param
+     * Constructor with 4 param
      * Initialize the food on a given place
      * And the food element with the one given
      *
+     * @param sync
      * @param abs
      * @param ord
      * @param elem
      */
-    public Food(int abs, int ord, char elem) {
-        this.synchronizer = new Synchronizer();
-        if (abs < 0)
-            abs = (int) Math.random() * synchronizer.getGameAreaWidth();
+    public Food(Synchronizer sync, int abs, int ord, char elem) {
+        this.synchronizer = sync;
         this.abscissa = abs;
-        if (ord < 0)
-            ord = (int) Math.random() * synchronizer.getGameAreaHeight();
         this.ordinate = ord;
-        if ((elem == '\0') || (elem == ' '))
-            elem = FOOD_ELEMENT_DEFAULT;
         this.foodElement = elem;
+        this.foodPresent = true;
+        synchronizer.writeThisCell(abscissa, ordinate, foodElement);
+
     }
 
 
@@ -135,15 +114,17 @@ public class Food {
      * if the place is free -> add it
      * else -> check for another
      */
+
     public void placeFood() {
+
         char[][] tempWorld = synchronizer.getGameWorld();
 
-        while (!synchronizer.isFoodPresent()) {
+        while (!this.isFoodPresent()) {
             if (this.synchronizer.isEmpty(this.abscissa, this.ordinate)) {                        // if the square is empty
                 tempWorld[this.abscissa][this.ordinate] = this.foodElement;
                 synchronizer.setGameWorld(tempWorld);        // we can place the food in this square
                 // the food is placed
-                synchronizer.setFoodPresent(true);
+                this.setFoodPresent(true);
             } else {                                                                                // else
                 int x = (int) (Math.random() * synchronizer.getGameAreaWidth());                            // we have to set the coordinates
                 int y = (int) (Math.random() * synchronizer.getGameAreaHeight());                        // of the food
@@ -175,7 +156,7 @@ public class Food {
     /**
      * Getter of the foodElement
      *
-     * @return
+     * @return foodElement
      */
     public char getFoodElement() {
         return this.foodElement;

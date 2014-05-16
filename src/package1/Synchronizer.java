@@ -1,4 +1,5 @@
 package package1;
+import java.io.*;
 
 /**
  * Created by Tariq
@@ -28,7 +29,7 @@ public class Synchronizer {
     /**
      * The last key the player pressed
      */
-    private static Command[] lastButtonPressed;
+    private static Command[] lastButtonPressed = { new Direction(Direction.RIGHT)};
 
     /**
      * If the game is over
@@ -48,17 +49,22 @@ public class Synchronizer {
 
     private boolean gameLoopRunning;
 
-    private boolean foodPresent;
+    private Food [] food;
+    private boolean [] foodPresent;
 
     /**
      * array for scores*
      */
     private int[] scores;
+    
+    public static int highScore = 0;
 
     /**
      * maximum number of players *
      */
-    private int MAX_PLAYER_NUMBER = 2;
+    public final static int MAX_PLAYER_NUMBER = 2;
+    public static int FOOD_NUMBER = 3;
+    public static boolean TRON = false;
 
     public final static int LENGTH = 20;
 
@@ -76,9 +82,9 @@ public class Synchronizer {
         this.stopGameLoop = false;
         this.gameLoopRunning = false;
         this.snakeAlive = true;
-        this.scores = new int[2];
+        this.scores = new int[MAX_PLAYER_NUMBER];
         this.scores[0] = 0;
-        this.foodPresent = false;
+        this.foodPresent = new boolean[FOOD_NUMBER];
     }
 
     /**
@@ -99,19 +105,7 @@ public class Synchronizer {
     // METHODS
 
 
-    /**
-     * Method initialize
-     * which initializes the game with an empty area
-     *
-     * @param width
-     * @param height
-     */
-    public void initialize(int width, int height) {
-        this.gameWorld = new char[width][height];
-        this.gameAreaHeight = height;
-        this.gameAreaWidth = width;
-    }
-
+    
 
     /**
      * Method getGameWorld
@@ -134,6 +128,15 @@ public class Synchronizer {
         this.gameWorld = gW;
     }
 
+    /**
+     * Method writeThisCell
+     * write the char in a cell with given coordinates
+     *
+     * @param x, y, c
+     */
+    public void writeThisCell(int x, int y, char c) {
+        this.gameWorld[x][y] = c;
+    }
 
     /**
      * Method getLastButtonPressed
@@ -306,12 +309,73 @@ public class Synchronizer {
         this.gameLoopRunning = gameLoopRunning;
     }
 
-    public boolean isFoodPresent() {
-        return foodPresent;
+     public boolean isFoodPresent(int index) {
+        return foodPresent[index];
     }
 
-    public void setFoodPresent(boolean foodPresent) {
-        this.foodPresent = foodPresent;
+    public void setFoodPresent(boolean foodPresent,int index) {
+        this.foodPresent[index] = foodPresent;
     }
+    
+    public void resetGame(){
+        this.gameWorld = new char[LENGTH][LENGTH];
+        this.gameAreaHeight = LENGTH;
+        this.gameAreaWidth = LENGTH;
+        this.gameOver = false;
+        this.stopGameLoop = false;
+        this.gameLoopRunning = false;
+        this.snakeAlive = true;
+        this.scores = new int[2];
+        this.scores[0] = 0;
+        this.foodPresent = new boolean[FOOD_NUMBER];
+        this.lastButtonPressed[0].setValue(Direction.RIGHT);
+    }
+    
+    //
+    public void updateHighScore() {
+    	for (int i = 0; i < this.scores.length; i++){
+    		if (this.scores[i] > highScore)
+    			highScore = this.scores[i];
+    	}
+    }
+    
+    
+    public void saveHighScore(String fileName ) throws IOException{
+		PrintWriter pw = new PrintWriter(new FileWriter (fileName, true));
+		this.updateHighScore();
+		pw.printf("%d", highScore);
+		pw.close();
+	}
+    
+    public void initializeHighScore(String fileName) throws IOException {
+    	try {
+    		
+    		FileReader fr = new FileReader (fileName);
+    		int res = fr.read();
+    		highScore = Character.getNumericValue((res));
+    		fr.close();
+    	}
+    	catch (IOException e){
+    		highScore = 0;
+    	}
+    }
+    
+    
+    public void setFood (Food [] food)  {
+        this.food = food;
+    }
+    
+    
+    public Food [] getFood () {
+    	return this.food;
+    }
+    
+    
+     public void setHighScore(int highS){
+    	if (highS < 0)
+    		highS = 0;
+    	highScore = highS;
+    }
+    
 }
 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="bottomPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children>
+<StackPane>
+<children><VBox layoutX="136.0" layoutY="69.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<children><HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+<children>
+<HBox alignment="CENTER_LEFT">
+<children><Button fx:id="newGameButton" minHeight="-Infinity" mnemonicParsing="false" prefHeight="24.0" text="New Game">
+<HBox.margin>
+<Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+</HBox.margin></Button><Label text="Score">
+<padding>
+<Insets left="5.0" right="5.0" />
+</padding></Label>
+<Label fx:id="scoreLabel" layoutX="101.0" layoutY="22.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="52.0" text="0">
+<padding>
+<Insets left="5.0" right="5.0" />
+</padding>
+</Label>
+<Label layoutX="40.0" text="High Score">
+<padding>
+<Insets left="5.0" right="5.0" />
+</padding>
+</Label>
+<Label fx:id="highScoreLabel" text="0">
+<padding>
+<Insets left="5.0" right="5.0" />
+</padding>
+</Label>
+</children>
+</HBox>
+</children></HBox><AnchorPane fx:id="gameAreaContainer" prefHeight="359.0" prefWidth="400.0" />
+</children></VBox><AnchorPane fx:id="menuPane" prefHeight="200.0" prefWidth="200.0">
+<children><Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" stroke="BLACK" strokeType="INSIDE" width="400.0" /><Button fx:id="startGameButton" layoutX="174.1875" layoutY="148.5" mnemonicParsing="false" text="Start Game" /><MenuButton layoutX="43.87109375" layoutY="148.5" mnemonicParsing="false" text="Level">
+  <items>
+    <MenuItem fx:id="levelSelectEasy" mnemonicParsing="false" text="Easy" />
+    <MenuItem fx:id="levelSelectMedium" mnemonicParsing="false" text="Medium" />
+<MenuItem fx:id="levelSelectHard" mnemonicParsing="false" text="Hard" />
+<MenuItem fx:id="levelSelectExpert" mnemonicParsing="false" text="Expert" />
+  </items>
+</MenuButton>
+</children></AnchorPane>
+</children>
+</StackPane><TextArea fx:id="textGameOver" editable="false" layoutX="141.0" layoutY="177.0" prefHeight="33.0" prefWidth="118.0" text="Game Over">
+<font>
+<Font size="18.0" />
+</font>
+</TextArea>
+</children></fx:root>
