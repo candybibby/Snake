@@ -11,7 +11,7 @@ import java.util.TimerTask;
  * 2. display
  * 3. world
  * 4. control
- * 5. synchronizer
+ * 5. Synchronizer
  */
 public class GameEngine {
 
@@ -19,10 +19,8 @@ public class GameEngine {
     // variables from the outside
 
     private Snake snake;
-    private Display display;
-    private Control control;
     private int frameRate;
-    private Synchronizer synchronizer;
+
     private Food [] food;
 
     // in-class variables
@@ -33,17 +31,13 @@ public class GameEngine {
      * Initialize the variables of the class
      *
      * @param snake
-     * @param display
-     * @param control
+
+
      * @param frameRate
-     * @param synchronizer
-     */
-    public GameEngine(Snake snake, Display display, Control control, int frameRate, Synchronizer synchronizer, Food [] food) {
+         */
+    public GameEngine(Snake snake, int frameRate, Food [] food) {
         this.snake = snake;
-        this.control = control;   //this class use static method so an instance of it is unuseful
-        this.display = display;
         this.frameRate = frameRate;
-        this.synchronizer = synchronizer;
         this.food = food;
     }
 
@@ -51,19 +45,19 @@ public class GameEngine {
      * Method startYourEngines
      */
     public void startYourEngines() {                                    // start the timer to run the game
-        if (!synchronizer.isGameLoopRunning()) {
-            synchronizer.setGameLoopRunning(true);
+        if (!Synchronizer.isGameLoopRunning()) {
+            Synchronizer.setGameLoopRunning(true);
 
             engineTimer = new Timer();
             engineTimer.schedule(new TimerTask() {                          // a timer to run our game loop
                 @Override
                 public void run() {
-                    if (!synchronizer.isStopGameLoop()) {
+                    if (!Synchronizer.isStopGameLoop()) {
 
                         update();                                               // run these two
-                        render();                                               // for ever and ever
+
                     } else {
-                        synchronizer.setGameLoopRunning(false);
+                        Synchronizer.setGameLoopRunning(false);
                         System.out.println("Game Over!");
                         engineTimer.cancel();
                         engineTimer.purge();
@@ -85,8 +79,8 @@ public class GameEngine {
             food[i].placeFood();
         //Control.updateDirection();
         snake.move();
-        if (synchronizer.isGameOver()){
-            synchronizer.setStopGameLoop(true);
+        if (Synchronizer.isGameOver()){
+            Synchronizer.setStopGameLoop(true);
         }
 
 		/*for (Snake snake : snakes) {       // this loop goes over every snake in the snakes array
@@ -101,17 +95,8 @@ public class GameEngine {
 
     }
 
-    /**
-     * Method render
-     * should draw a new game screen based on the input
-     * and calculations done in the update function
-     */
-    public void render() {
-
-        //display.printGame();
 
 
-    }
 
 
 }

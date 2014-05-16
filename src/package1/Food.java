@@ -13,7 +13,7 @@ public class Food {
     /**
      * Synchronizer
      */
-    private Synchronizer synchronizer;
+
 
     /**
      * x of the point where will be placed the food
@@ -47,20 +47,20 @@ public class Food {
      * Constructor
      * Place the default food in a random empty cell
      */
-    public Food(Synchronizer sync) {
-        this(sync, Symbol.MOUSE);
+    public Food() {
+        this(Symbol.MOUSE);
     }
 
     /**
      * Constructor with 2 param
      * Initialize the place with the food given
      *
-     * @param sync
+     * @param
      * @param abs , abscissa given
      * @param ord , ordinate given
      */
-    public Food(Synchronizer sync, int abs, int ord) {
-        this(sync, abs, ord, Symbol.MOUSE);
+    public Food(int abs, int ord) {
+        this( abs, ord, Symbol.MOUSE);
     }
 
 
@@ -70,16 +70,16 @@ public class Food {
      *
      * @param elem , food given
      */
-    public Food(Synchronizer sync, char elem) {
-        this(sync, 0, 0, elem);
+    public Food(char elem) {
+        this( 0, 0, elem);
         int x,y;
         do {
-            x = (int) (Math.random() * sync.getGameAreaWidth());
-            y = (int) (Math.random() * sync.getGameAreaHeight());
-        } while (!sync.isEmpty(x, y));
+            x = (int) (Math.random() * Synchronizer.getGameAreaWidth());
+            y = (int) (Math.random() * Synchronizer.getGameAreaHeight());
+        } while (!Synchronizer.isEmpty(x, y));
         this.setX(x);
         this.setY(y);
-        synchronizer.writeThisCell(abscissa, ordinate, foodElement);
+        Synchronizer.writeThisCell(abscissa, ordinate, foodElement);
     }
 
 
@@ -88,18 +88,18 @@ public class Food {
      * Initialize the food on a given place
      * And the food element with the one given
      *
-     * @param sync
+     * @param
      * @param abs
      * @param ord
      * @param elem
      */
-    public Food(Synchronizer sync, int abs, int ord, char elem) {
-        this.synchronizer = sync;
+    public Food(int abs, int ord, char elem) {
+        
         this.abscissa = abs;
         this.ordinate = ord;
         this.foodElement = elem;
         this.foodPresent = true;
-        synchronizer.writeThisCell(abscissa, ordinate, foodElement);
+        Synchronizer.writeThisCell(abscissa, ordinate, foodElement);
 
     }
 
@@ -117,17 +117,17 @@ public class Food {
 
     public void placeFood() {
 
-        char[][] tempWorld = synchronizer.getGameWorld();
+        char[][] tempWorld = Synchronizer.getGameWorld();
 
         while (!this.isFoodPresent()) {
-            if (this.synchronizer.isEmpty(this.abscissa, this.ordinate)) {                        // if the square is empty
+            if (Synchronizer.isEmpty(this.abscissa, this.ordinate)) {                        // if the square is empty
                 tempWorld[this.abscissa][this.ordinate] = this.foodElement;
-                synchronizer.setGameWorld(tempWorld);        // we can place the food in this square
+                Synchronizer.setGameWorld(tempWorld);        // we can place the food in this square
                 // the food is placed
                 this.setFoodPresent(true);
             } else {                                                                                // else
-                int x = (int) (Math.random() * synchronizer.getGameAreaWidth());                            // we have to set the coordinates
-                int y = (int) (Math.random() * synchronizer.getGameAreaHeight());                        // of the food
+                int x = (int) (Math.random() * Synchronizer.getGameAreaWidth());                            // we have to set the coordinates
+                int y = (int) (Math.random() * Synchronizer.getGameAreaHeight());                        // of the food
                 this.setX(x);                                                                        // to place it in an empty square
                 this.setY(y);
             }
@@ -162,9 +162,9 @@ public class Food {
         return this.foodElement;
     }
 
-    public Synchronizer getSynchronizer() {
-        return this.synchronizer;
-    }
+    /*public Synchronizer getSynchronizer() {
+        return this.Synchronizer;
+    }*/
 
 
     /**

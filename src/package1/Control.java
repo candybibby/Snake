@@ -9,7 +9,7 @@ import java.awt.event.*;
 
 public class Control implements KeyListener {
 
-    private Synchronizer sync;
+
     //Default direction. When the game starts, Snake goes right (like Nokia 3310 :))
     static Direction[] arrow = {new Direction(Direction.RIGHT)};
 
@@ -21,8 +21,8 @@ public class Control implements KeyListener {
      * @param sync
      */
 
-    public Control(Synchronizer sync) {
-        this.sync = sync;
+    public Control() {
+
         //arrow = new Direction [sync.getPlayerNumber()]();
         for (int i = 0; i < arrow.length; i++)
             arrow[i] = new Direction(Direction.RIGHT);
@@ -69,8 +69,8 @@ public class Control implements KeyListener {
     /**
 	 * @return the sync
 	 */
-	public Synchronizer getSynchronizer() {
+	/*public Synchronizer getSynchronizer() {
 		return this.sync;
-	}
+	}*/
 
 }

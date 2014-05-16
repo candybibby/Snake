@@ -10,18 +10,18 @@ public class Snake {
 
     private final char head = Symbol.HEAD;
     private final char body = Symbol.BODY;
-    private Synchronizer synchronizer;
+
 
     /**
      * CONSTRUCTOR
      * It creates an instance of Snake, with an head and 2 pieces for the body.
      * It will be placed in the middle of the World, right-oriented.
      *
-     * @param sync
+     * @param 
      */
 
-    public Snake(Synchronizer sync) {
-        this.synchronizer = sync;
+    public Snake() {
+        
         snake = new ArrayList<Character>();
         abscissa = new ArrayList<Integer>();
         ordinate = new ArrayList<Integer>();
@@ -30,8 +30,8 @@ public class Snake {
         snake.add(body);
         snake.add(body);
 
-        int midX = (int) (this.synchronizer.getGameAreaWidth()) / 2;
-        int midY = (int) (this.synchronizer.getGameAreaHeight()) / 2;
+        int midX = (int) (Synchronizer.getGameAreaWidth()) / 2;
+        int midY = (int) (Synchronizer.getGameAreaHeight()) / 2;
         abscissa.add(midX);
         ordinate.add(midY);
         abscissa.add(midX - 1);
@@ -47,7 +47,7 @@ public class Snake {
      */
     private void updateMatrix() {
         for (int i = 0; i < snake.size(); i++)
-            synchronizer.getGameWorld()[abscissa.get(i)][ordinate.get(i)] = snake.get(i);
+            Synchronizer.getGameWorld()[abscissa.get(i)][ordinate.get(i)] = snake.get(i);
     }
 
     /**
@@ -59,7 +59,7 @@ public class Snake {
      */
 
     private void updateMatrix(int removeX, int removeY) {
-        synchronizer.getGameWorld()[removeX][removeY] = Symbol.EMPTY;
+        Synchronizer.getGameWorld()[removeX][removeY] = Symbol.EMPTY;
         updateMatrix();
     }
 
@@ -102,27 +102,27 @@ public class Snake {
          *  if Snake crashes into itself or into walls, it dies. Poor snake!
          */
 
-        if (synchronizer.isEmpty(nextX, nextY)) {
+        if (Synchronizer.isEmpty(nextX, nextY)) {
             ordinate.add(0, nextY);
             abscissa.add(0, nextX);
             int lastX = abscissa.get(abscissa.size() - 1);
             int lastY = ordinate.get(ordinate.size() - 1);
             abscissa.remove(abscissa.size() - 1);
             ordinate.remove(ordinate.size() - 1);
-            if (!synchronizer.TRON)
+            if (!Synchronizer.TRON)
             	updateMatrix(lastX, lastY);
             else
             	updateMatrix();
-        } else if (synchronizer.isFood(nextX, nextY)) {
+        } else if (Synchronizer.isFood(nextX, nextY)) {
             ordinate.add(0, nextY);
             abscissa.add(0, nextX);
             snake.add(1, Symbol.BODY);
             updateMatrix();
-            Food [] food = synchronizer.getFood();
+            Food [] food = Synchronizer.getFood();
             for (int i=0; i<food.length; i++)
                 if ((food[i].getX() == nextX) && (food[i].getY() == nextY)) 
                     food[i].setFoodPresent(false);
-            synchronizer.increaseScore(1);
+            Synchronizer.increaseScore(1);
         } else {
             ordinate.add(0, nextY);
             abscissa.add(0, nextX);
@@ -130,13 +130,13 @@ public class Snake {
             int lastY = ordinate.get(ordinate.size() - 1);
             abscissa.remove(abscissa.size() - 1);
             ordinate.remove(ordinate.size() - 1);
-            if (!synchronizer.TRON)
+            if (!Synchronizer.TRON)
             	updateMatrix(lastX, lastY);
             else
             	updateMatrix();
-            synchronizer.theGameIsOver();
+            Synchronizer.theGameIsOver();
             try {
-				this.synchronizer.saveHighScore("highScore.txt");
+				Synchronizer.saveHighScore("highScore.txt");
 			}
 			catch(IOException e){}
         }
@@ -145,8 +145,8 @@ public class Snake {
 
     public Snake reset() {
         for (int i = 0; i < abscissa.size() - 1; i++)
-            synchronizer.getGameWorld()[abscissa.get(i)][ordinate.get(i)] = Symbol.EMPTY;
-        return new Snake(synchronizer);
+            Synchronizer.getGameWorld()[abscissa.get(i)][ordinate.get(i)] = Symbol.EMPTY;
+        return new Snake();
     }
     
     /**
@@ -173,9 +173,9 @@ public class Snake {
 	/**
 	 * @return the sync
 	 */
-	public Synchronizer getSynchronizer() {
-		return this.synchronizer;
-	}
+	/*public Synchronizer getSynchronizer() {
+		return Synchronizer;
+	}*/
 
 }
 

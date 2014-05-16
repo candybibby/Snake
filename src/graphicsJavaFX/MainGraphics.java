@@ -21,7 +21,7 @@ public class MainGraphics extends Application {
 
     public Controller controller;       // controller is used to modify output to the main window
     public int frameRate = 50;          // how often the graphics are updated
-    public Synchronizer synchronizer;   // instance of Synchronizer, used to sync everything
+
     public Game game;                   // instance of game, initiated here because this is
 
     SimpleBooleanProperty initializeNewGame = new SimpleBooleanProperty(false); // this is used to pass information between the controller and the mainGraphics class
@@ -40,9 +40,9 @@ public class MainGraphics extends Application {
 
     public void drawScreen() {
 
-        controller.drawNewScreen(synchronizer.getGameWorld());
-        //controller.drawNewScreen(synchronizer.getGameWorld(),
-        //synchronizer.getGameAreaHeight(), synchronizer.getGameAreaWidth()); // draws the gameworld array into the textfield in the window
+        controller.drawNewScreen(Synchronizer.getGameWorld());
+        //controller.drawNewScreen(Synchronizer.getGameWorld(),
+        //Synchronizer.getGameAreaHeight(), Synchronizer.getGameAreaWidth()); // draws the gameworld array into the textfield in the window
 
     }
 
@@ -55,9 +55,9 @@ public class MainGraphics extends Application {
             @Override
             public void handle(ActionEvent actionEvent) {
 
-                if (!synchronizer.isGameOver()) { // if game not over
+                if (!Synchronizer.isGameOver()) { // if game not over
                     drawScreen();                   // draw the game screen
-                    controller.updateScore(synchronizer.getScores()[0]);
+                    controller.updateScore(Synchronizer.getScores()[0]);
                 } else {                // else
                     drawGameOver();             // draw the game over text
                 }
@@ -78,9 +78,9 @@ public class MainGraphics extends Application {
     public void newGame() { // initializes everything necessary for the game
 
 
-        controller.giveHeightAndWidth(synchronizer.getGameAreaHeight(), synchronizer.getGameAreaWidth());
+        controller.giveHeightAndWidth(Synchronizer.getGameAreaHeight(), Synchronizer.getGameAreaWidth());
         controller.buildGrid();
-        game = new Game(synchronizer);
+        game = new Game();
 
         game.runNewGame(controller.getGameDifficulty());             // run the game with the given difficulty
         controller.setHighScore(Synchronizer.highScore);
@@ -93,7 +93,7 @@ public class MainGraphics extends Application {
 
     public void setup() {       // setup everything for the graphics part
 
-        synchronizer = new Synchronizer();
+        Synchronizer.setup();
         controller = new Controller();      // make a new instance of controller
         initializeNewGame.bind(controller.initializeNewGame);       // bind the two simplebooleanproperties so we know when the new game button was pushed
         initializeNewGame.addListener(new ChangeListener<Boolean>() {
@@ -110,6 +110,7 @@ public class MainGraphics extends Application {
             @Override
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean aBoolean2) {
                 controller.sendMenuBack();
+                controller.setMenuOpacity(0);
                 mainProgram();
                 graphicsTimer();
             }
@@ -119,7 +120,8 @@ public class MainGraphics extends Application {
     }
 
     public void resetAll() {
-        synchronizer.resetGame();
+        Synchronizer.resetGame();
+        controller.hideGameOver();
         game.runNewGame(controller.getGameDifficulty());
     }
 

@@ -14,17 +14,17 @@ public class Synchronizer {
     /**
      * Width of the area
      */
-    public int gameAreaWidth;
+    public static int gameAreaWidth;
 
     /**
      * Height of the area
      */
-    public int gameAreaHeight;
+    public static int gameAreaHeight;
 
     /**
      * Array 2D which represents the area of the game
      */
-    private char[][] gameWorld;
+    private static char[][] gameWorld;
 
     /**
      * The last key the player pressed
@@ -34,28 +34,28 @@ public class Synchronizer {
     /**
      * If the game is over
      */
-    private boolean gameOver = false;
+    private static boolean gameOver = false;
 
 
     /**
      * If the snake is alive
      */
-    private boolean snakeAlive;
+    private static boolean snakeAlive;
 
     /**
      * If the player want or not restart the game
      */
-    private boolean stopGameLoop;
+    private static boolean stopGameLoop;
 
-    private boolean gameLoopRunning;
+    private static boolean gameLoopRunning;
 
-    private Food [] food;
-    private boolean [] foodPresent;
+    private static Food [] food;
+    private static boolean [] foodPresent;
 
     /**
      * array for scores*
      */
-    private int[] scores;
+    private static int[] scores;
     
     public static int highScore = 0;
 
@@ -74,36 +74,48 @@ public class Synchronizer {
     /**
      * Empty constructor
      */
-    public Synchronizer() {
-        this.gameWorld = new char[LENGTH][LENGTH];
-        this.gameAreaHeight = LENGTH;
-        this.gameAreaWidth = LENGTH;
-        this.gameOver = false;
-        this.stopGameLoop = false;
-        this.gameLoopRunning = false;
-        this.snakeAlive = true;
-        this.scores = new int[MAX_PLAYER_NUMBER];
-        this.scores[0] = 0;
-        this.foodPresent = new boolean[FOOD_NUMBER];
-    }
+   /* public Synchronizer() {
+        gameWorld = new char[LENGTH][LENGTH];
+        gameAreaHeight = LENGTH;
+        gameAreaWidth = LENGTH;
+        gameOver = false;
+        stopGameLoop = false;
+        gameLoopRunning = false;
+        snakeAlive = true;
+        scores = new int[MAX_PLAYER_NUMBER];
+        scores[0] = 0;
+        foodPresent = new boolean[FOOD_NUMBER];
+    }*/
 
     /**
-     * @param length
+     * 
      */
-    public Synchronizer(int length) {
+    /*public Synchronizer(int length) {
         if (length < 10)
             length = LENGTH;
-        this.gameWorld = new char[length][length];
-        this.gameAreaHeight = length;
-        this.gameAreaWidth = length;
-        this.gameOver = false;
-        this.stopGameLoop = false;
-        this.snakeAlive = true;
-    }
+        gameWorld = new char[length][length];
+        gameAreaHeight = length;
+        gameAreaWidth = length;
+        gameOver = false;
+        stopGameLoop = false;
+        snakeAlive = true;
+    }*/
 
 
     // METHODS
 
+    public static void setup(){
+        gameWorld = new char[LENGTH][LENGTH];
+        gameAreaHeight = LENGTH;
+        gameAreaWidth = LENGTH;
+        gameOver = false;
+        stopGameLoop = false;
+        gameLoopRunning = false;
+        snakeAlive = true;
+        scores = new int[MAX_PLAYER_NUMBER];
+        scores[0] = 0;
+        foodPresent = new boolean[FOOD_NUMBER];
+    }
 
     
 
@@ -113,8 +125,8 @@ public class Synchronizer {
      * @return gameWorld
      * the array of the area
      */
-    public char[][] getGameWorld() {
-        return this.gameWorld;
+    public static char[][] getGameWorld() {
+        return gameWorld;
     }
 
 
@@ -124,8 +136,8 @@ public class Synchronizer {
      *
      * @param gW
      */
-    public void setGameWorld(char[][] gW) {
-        this.gameWorld = gW;
+    public  static void setGameWorld(char[][] gW) {
+        gameWorld = gW;
     }
 
     /**
@@ -134,8 +146,8 @@ public class Synchronizer {
      *
      * @param x, y, c
      */
-    public void writeThisCell(int x, int y, char c) {
-        this.gameWorld[x][y] = c;
+    public  static void writeThisCell(int x, int y, char c) {
+        gameWorld[x][y] = c;
     }
 
     /**
@@ -166,8 +178,8 @@ public class Synchronizer {
      * @return gameAreaWidth
      * the width of the area
      */
-    public int getGameAreaWidth() {
-        return this.gameAreaWidth;
+    public  static int getGameAreaWidth() {
+        return gameAreaWidth;
     }
 
 
@@ -177,8 +189,8 @@ public class Synchronizer {
      *
      * @param gameAreaWidth
      */
-    public void setGameAreaWidth(int gameAreaWidth) {
-        this.gameAreaWidth = gameAreaWidth;
+    public  static void setGameAreaWidth(int gameAreaWidth) {
+        gameAreaWidth = gameAreaWidth;
     }
 
 
@@ -188,8 +200,8 @@ public class Synchronizer {
      * @return gameAreaHeight
      * the height of the area
      */
-    public int getGameAreaHeight() {
-        return this.gameAreaHeight;
+    public  static int getGameAreaHeight() {
+        return gameAreaHeight;
     }
 
 
@@ -197,10 +209,10 @@ public class Synchronizer {
      * Method setGameAreaHeight
      * which changes the height of the area
      *
-     * @param gameAreaHeight
+     * @param AreaHeight
      */
-    public void setGameAreaHeight(int gameAreaHeight) {
-        this.gameAreaHeight = gameAreaHeight;
+    public  static void setGameAreaHeight(int AreaHeight) {
+        gameAreaHeight = AreaHeight;
     }
 
 
@@ -210,29 +222,29 @@ public class Synchronizer {
      * @return gameOver
      * true only if the game is over
      */
-    public boolean isGameOver() {
-        return this.gameOver;
+    public  static boolean isGameOver() {
+        return gameOver;
     }
 
 
     /**
      *
      */
-    public void theGameIsOver() {
-        this.gameOver = true;
-        this.snakeAlive = false;
+    public  static void theGameIsOver() {
+        gameOver = true;
+        snakeAlive = false;
     }
 
 
     /**
      * @return
      */
-    public boolean getSnakeStillAlive() {
-        return this.snakeAlive;
+    public  static boolean getSnakeStillAlive() {
+        return snakeAlive;
     }
 
-    public void setSnakeStillAlive(boolean alive) {
-        this.snakeAlive = alive;
+    public  static void setSnakeStillAlive(boolean alive) {
+        snakeAlive = alive;
     }
 
 
@@ -242,8 +254,8 @@ public class Synchronizer {
      * @return stopGameLoop
      * true only if the player doesn't want to restart
      */
-    public boolean isStopGameLoop() {
-        return this.stopGameLoop;
+    public  static boolean isStopGameLoop() {
+        return stopGameLoop;
     }
 
 
@@ -252,10 +264,10 @@ public class Synchronizer {
      * changes the situation of the game loop
      * if the game must restart or not
      *
-     * @param stopGameLoop
+     * @param
      */
-    public void setStopGameLoop(boolean stopGameLoop) {
-        this.stopGameLoop = stopGameLoop;
+    public  static void setStopGameLoop(boolean stop) {
+        stopGameLoop = stop;
     }
 
 
@@ -267,13 +279,13 @@ public class Synchronizer {
      * @param y
      * @return true if the square [x][y] of gameWorld is empty
      */
-    public boolean isEmpty(int x, int y) {
-        return (this.gameWorld[x][y] == '\0');
+    public  static boolean isEmpty(int x, int y) {
+        return (gameWorld[x][y] == '\0');
     }
 
 
-    public boolean isFood(int x, int y) {
-        return (this.gameWorld[x][y] == Symbol.MOUSE);
+    public  static boolean isFood(int x, int y) {
+        return (gameWorld[x][y] == Symbol.MOUSE);
     }
 
 
@@ -283,7 +295,7 @@ public class Synchronizer {
      * @return scores
      * returns the array containing the scores
      */
-    public int[] getScores() {
+    public  static int[] getScores() {
         return scores;
     }
 
@@ -293,61 +305,61 @@ public class Synchronizer {
      * changes the scores array
      * use this to upgrade the score situation
      */
-    public void setScores(int[] scores) {
-        this.scores = scores;
+    public  static void setScores(int[] scores) {
+        scores = scores;
     }
 
-    public void increaseScore(int snakeNumber){
-        this.scores[snakeNumber-1]++;
+    public  static void increaseScore(int snakeNumber){
+        scores[snakeNumber-1]++;
     }
 
-    public boolean isGameLoopRunning() {
+    public  static boolean isGameLoopRunning() {
         return gameLoopRunning;
     }
 
-    public void setGameLoopRunning(boolean gameLoopRunning) {
-        this.gameLoopRunning = gameLoopRunning;
+    public  static void setGameLoopRunning(boolean gameLoopRunning) {
+        gameLoopRunning = gameLoopRunning;
     }
 
-     public boolean isFoodPresent(int index) {
+     public  static boolean isFoodPresent(int index) {
         return foodPresent[index];
     }
 
-    public void setFoodPresent(boolean foodPresent,int index) {
-        this.foodPresent[index] = foodPresent;
+    public  static void setFoodPresent(boolean present,int index) {
+        foodPresent[index] = present;
     }
     
-    public void resetGame(){
-        this.gameWorld = new char[LENGTH][LENGTH];
-        this.gameAreaHeight = LENGTH;
-        this.gameAreaWidth = LENGTH;
-        this.gameOver = false;
-        this.stopGameLoop = false;
-        this.gameLoopRunning = false;
-        this.snakeAlive = true;
-        this.scores = new int[2];
-        this.scores[0] = 0;
-        this.foodPresent = new boolean[FOOD_NUMBER];
-        this.lastButtonPressed[0].setValue(Direction.RIGHT);
+    public  static void resetGame(){
+        gameWorld = new char[LENGTH][LENGTH];
+        gameAreaHeight = LENGTH;
+        gameAreaWidth = LENGTH;
+        gameOver = false;
+        stopGameLoop = false;
+        gameLoopRunning = false;
+        snakeAlive = true;
+        scores = new int[2];
+        scores[0] = 0;
+        foodPresent = new boolean[FOOD_NUMBER];
+        lastButtonPressed[0].setValue(Direction.RIGHT);
     }
     
     //
-    public void updateHighScore() {
-    	for (int i = 0; i < this.scores.length; i++){
-    		if (this.scores[i] > highScore)
-    			highScore = this.scores[i];
+    public  static void updateHighScore() {
+    	for (int i = 0; i < scores.length; i++){
+    		if (scores[i] > highScore)
+    			highScore = scores[i];
     	}
     }
     
     
-    public void saveHighScore(String fileName ) throws IOException{
+    public  static void saveHighScore(String fileName ) throws IOException{
 		PrintWriter pw = new PrintWriter(new FileWriter (fileName, true));
-		this.updateHighScore();
+		updateHighScore();
 		pw.printf("%d", highScore);
 		pw.close();
 	}
     
-    public void initializeHighScore(String fileName) throws IOException {
+    public  static void initializeHighScore(String fileName) throws IOException {
     	try {
     		
     		FileReader fr = new FileReader (fileName);
@@ -361,17 +373,20 @@ public class Synchronizer {
     }
     
     
-    public void setFood (Food [] food)  {
-        this.food = food;
+    /*public  static void setFood (Food [] food)  {
+        food = food;
+    }*/
+    
+    
+    public static Food [] getFood () {
+    	return food;
     }
-    
-    
-    public Food [] getFood () {
-    	return this.food;
+
+    public static  void setFood (Food[] foodArray) {
+        food = foodArray;
     }
-    
-    
-     public void setHighScore(int highS){
+
+     public static void setHighScore(int highS){
     	if (highS < 0)
     		highS = 0;
     	highScore = highS;

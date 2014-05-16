@@ -14,7 +14,7 @@ public class Display
      */
      
     //Synchronizer             
-    private Synchronizer sync;
+
     /**
      * Local variables for the game area
      */
@@ -25,13 +25,13 @@ public class Display
      * Constructor with 1 parameter.
      * Inizializes parameter and sets the screen size.
      *
-     * @param sync
+     * @param
      */
-    public Display(Synchronizer sync) 
+    public Display()
     {
-        this.sync = sync;                                   //creates sync object instance
-        height = sync.getGameAreaHeight();                  //gets game area height
-        width = sync.getGameAreaWidth();                    //gets game width
+                                  //creates sync object instance
+        height = Synchronizer.getGameAreaHeight();                  //gets game area height
+        width = Synchronizer.getGameAreaWidth();                    //gets game width
     }
 
     /**
@@ -39,8 +39,8 @@ public class Display
      */
     public void printGame()
     {
-        char[][] gameWorld = sync.getGameWorld();                            
-        System.out.println("\nScore: " + sync.getScores()[0] + "\n");     //prints the players score
+        char[][] gameWorld = Synchronizer.getGameWorld();
+        System.out.println("\nScore: " + Synchronizer.getScores()[0] + "\n");     //prints the players score
 
         for (int i = 0; i < height; i++)                                  //refreshes matrix
         {
@@ -73,9 +73,9 @@ public class Display
 	/**
 	 * @return the sync
 	 */
-	public Synchronizer getSync() {
+	/*public Synchronizer getSync() {
 		return this.sync;
-	}
+	}*/
 
 	/**
 	 * @return the height

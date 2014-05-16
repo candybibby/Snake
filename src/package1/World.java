@@ -15,9 +15,6 @@ public class World {
      */
 
 
-    //Sychronizer
-    private Synchronizer synchronizer;
-
     //Snake
     private Snake snake;
 
@@ -30,11 +27,7 @@ public class World {
     //Game Engine
     public GameEngine gameEngine;
 
-    //Display
-    private Display display;
 
-    //Control
-    private Control control;
 
 
     //CONSTRUCTORS
@@ -44,19 +37,16 @@ public class World {
      * Initialize all the attributes by default
      * and create a new World
      */
-    public World(Synchronizer synch) 
+    public World()
     {
-        this.synchronizer = synch;
-              this.synchronizer = synch;
-        this.snake = new Snake(this.synchronizer);
+
+        this.snake = new Snake();
         this.food = new Food [Synchronizer.FOOD_NUMBER];
         for (int i=0; i< Synchronizer.FOOD_NUMBER; i++) 
-            food[i] = new Food(this.synchronizer);
-        this.synchronizer.setFood(this.food);
-        this.obstacle = new Obstacle(this.synchronizer);
-        this.display = new Display(this.synchronizer);
-        this.control = new Control(this.synchronizer);
-        this.gameEngine = new GameEngine(this.snake, this.display, this.control, 5, this.synchronizer, this.food);
+            food[i] = new Food();
+        Synchronizer.setFood(this.food);
+        this.obstacle = new Obstacle();
+        this.gameEngine = new GameEngine(this.snake, 5, this.food);
     }
 
     //METHODS
@@ -70,8 +60,8 @@ public class World {
      */
     public void createNewGame(int lvl){
     	try{
-    		this.synchronizer.initializeHighScore("highScore.txt");
-    		this.obstacle = new Obstacle(lvl, this.synchronizer);    //create new obstacle placed in the area
+    		Synchronizer.initializeHighScore("highScore.txt");
+    		this.obstacle = new Obstacle(lvl);    //create new obstacle placed in the area
     		this.gameEngine.startYourEngines();
     	}
     	catch(IOException e){}
@@ -101,9 +91,9 @@ public class World {
 	/**
 	 * @return the synchronizer
 	 */
-	public Synchronizer getSynchronizer() {
+	/*public Synchronizer getSynchronizer() {
 		return this.synchronizer;
-	}
+	}*/
 
 
 	/**
@@ -130,20 +120,7 @@ public class World {
 	}
 
 
-	/**
-	 * @return the display
-	 */
-	public Display getDisplay() {
-		return this.display;
-	}
 
-
-	/**
-	 * @return the control
-	 */
-	public Control getControl() {
-		return this.control;
-	}
 
 }
 

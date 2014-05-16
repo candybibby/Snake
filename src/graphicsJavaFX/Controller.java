@@ -149,9 +149,10 @@ public class Controller extends AnchorPane {
 
 
                     Shape shape = chooseColor(array, j, i);
-
-                    GridPane.setConstraints(shape, j, i);
+                    GridPane.setConstraints(shape,j,i);
                     gameGrid.getChildren().add(shape);
+
+
 
                 }
             }
@@ -270,7 +271,7 @@ public class Controller extends AnchorPane {
                 shape = new Circle(gridSquareHeight / 2, Color.DARKSEAGREEN);
                 break;
             case 'X':
-                shape = new Rectangle(gridSquareHeight, gridSquareHeight, Color.GREY);
+                shape = new Rectangle(gridSquareWidth - 1, gridSquareHeight - 1, Color.GREY);
                 break;
             case 'm':
                 shape = new Circle(gridSquareHeight / 2, Color.DARKRED);
@@ -287,10 +288,19 @@ public class Controller extends AnchorPane {
         highScoreLabel.setText(String.valueOf(score));
     }
 
-    public void displayGameOver(){
+    public void displayGameOver() {
         textGameOver.toFront();
         gameAreaContainer.setOpacity(.3);
-        newGameButton.setDisable(true);
+
+    }
+
+    public void setMenuOpacity(double opacity) {
+        menuPane.setOpacity(opacity);
+    }
+
+    public void hideGameOver() {
+        textGameOver.toBack();
+        gameAreaContainer.setOpacity(1);
     }
 
 }

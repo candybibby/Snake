@@ -12,14 +12,13 @@ public class Game
      
     //world  
     public World world;
-    //synchronizer
-    public Synchronizer synchronizer;
 
 
 
-    public Game(Synchronizer synchronizer) 
+
+    public Game()
     {
-        this.synchronizer = synchronizer;
+
 
     }
 
@@ -31,8 +30,8 @@ public class Game
      */
     public void runNewGame(int lvl)
     {
-        synchronizer.resetGame();                             //starts a fresh game
-        world = new World(this.synchronizer);                 // make an instance of world and pass it the synchronizer
+        Synchronizer.resetGame();                             //starts a fresh game
+        world = new World();                 // make an instance of world and pass it the synchronizer
         world.createNewGame(lvl);                             //calls the createNewGame method and sets level param
     }
 
