@@ -9,7 +9,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException{
-        Game game = new Game();                
+        Game game = new Game(new Synchronizer());                
         System.out.println("");
         System.out.println("Level ?");
         System.out.println("0 - Easy / 1 - Medium / 2 - Hard / 3 - Expert");

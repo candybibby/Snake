@@ -37,24 +37,9 @@ public class Game
     }
 
 
-    /**
-     * Method runUntilOver
-     * runs until game is over
-     *
-     * @param lvl
-     */
-    /*public void runUntilOver(int lvl) {
-        boolean stopGameNow = false;
-
-
-        // so every time the user resets the game, it is restarted
-        while (!stopGameNow) {              // but when the user dies, then that's it
-            runNewGame(lvl);
-            System.out.println("afsdfasdf");
-        }
-        stopGameNow = synchronizer.isGameOver();
-        System.out.println("Game over!");
-    }*/
+	public World getWorld() {
+		return this.world;
+	}
 
 
 }

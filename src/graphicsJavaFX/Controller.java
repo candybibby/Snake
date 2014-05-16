@@ -82,7 +82,7 @@ public class Controller extends AnchorPane {
         //initializeNewGame.set(false);
 
         newGameButton.setOnAction(new EventHandler<ActionEvent>() { // when button is pressed
-            @Override
+            
             public void handle(ActionEvent actionEvent) {
                 initializeNewGame.set(!initializeNewGame.getValue());       // flip the value of initializeNewGame so the mainGraphics.java knows to start a new game
             }
@@ -142,7 +142,7 @@ public class Controller extends AnchorPane {
     public void setupKeyListener() {
 
         bottomPane.setOnKeyPressed(new EventHandler<KeyEvent>() {
-            @Override
+            
             public void handle(KeyEvent keyEvent) {
                 int p = 0; //Current number of players
                 KeyCode keyCode = keyEvent.getCode();

@@ -29,7 +29,7 @@ public class Control implements KeyListener {
 
     }
 
-    @Override
+
     /**
      * It parses the input and return an array of Command.
      * @param e
@@ -66,5 +66,11 @@ public class Control implements KeyListener {
     public void keyTyped(KeyEvent e) {
     }
 
+    /**
+	 * @return the sync
+	 */
+	public Synchronizer getSynchronizer() {
+		return this.sync;
+	}
 
 }

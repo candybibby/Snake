@@ -96,6 +96,54 @@ public class World {
 	{
 		this.snake = s;
 	}
+	
+
+	/**
+	 * @return the synchronizer
+	 */
+	public Synchronizer getSynchronizer() {
+		return this.synchronizer;
+	}
+
+
+	/**
+	 * @return the food
+	 */
+	public Food[] getFood() {
+		return this.food;
+	}
+
+
+	/**
+	 * @return the obstacle
+	 */
+	public Obstacle getObstacle() {
+		return this.obstacle;
+	}
+
+
+	/**
+	 * @return the gameEngine
+	 */
+	public GameEngine getGameEngine() {
+		return this.gameEngine;
+	}
+
+
+	/**
+	 * @return the display
+	 */
+	public Display getDisplay() {
+		return this.display;
+	}
+
+
+	/**
+	 * @return the control
+	 */
+	public Control getControl() {
+		return this.control;
+	}
 
 }
 

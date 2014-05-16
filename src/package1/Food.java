@@ -79,7 +79,6 @@ public class Food {
         } while (!sync.isEmpty(x, y));
         this.setX(x);
         this.setY(y);
-        System.out.println("food in (" + x + "," + y);
         synchronizer.writeThisCell(abscissa, ordinate, foodElement);
     }
 

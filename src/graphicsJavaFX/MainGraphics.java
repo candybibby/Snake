@@ -53,7 +53,7 @@ public class MainGraphics extends Application {
 
     public void graphicsTimer() { // setup a timer for the graphics, runs every 1000/framerate milliseconds
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000 / frameRate), new EventHandler<ActionEvent>() {
-            @Override
+            
             public void handle(ActionEvent actionEvent) {
 
                 if (!synchronizer.isGameOver()) { // if game not over
@@ -96,7 +96,7 @@ public class MainGraphics extends Application {
         controller = new Controller();      // make a new instance of controller
         initializeNewGame.bind(controller.initializeNewGame);       // bind the two simplebooleanproperties so we know when the new game button was pushed
         initializeNewGame.addListener(new ChangeListener<Boolean>() {
-            @Override
+            
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean aBoolean2) {
                 game.world.gameEngine.engineTimer.cancel();     // these two lines stop the gameEngine
                 game.world.gameEngine.engineTimer.purge();      // otherwise we would have too many threads running in the background

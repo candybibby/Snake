@@ -18,7 +18,8 @@ public class Display
     /**
      * Local variables for the game area
      */
-    private int height, width;
+    private int height;
+    private int width;
 
     /**
      * Constructor with 1 parameter.
@@ -68,6 +69,27 @@ public class Display
             System.out.print(c);
         System.out.println();
     }
+
+	/**
+	 * @return the sync
+	 */
+	public Synchronizer getSync() {
+		return this.sync;
+	}
+
+	/**
+	 * @return the height
+	 */
+	public int getHeight() {
+		return this.height;
+	}
+
+	/**
+	 * @return the width
+	 */
+	public int getWidth() {
+		return this.width;
+	}
 
 
 }
