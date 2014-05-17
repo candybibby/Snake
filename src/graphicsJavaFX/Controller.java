@@ -265,7 +265,7 @@ public class Controller extends AnchorPane {
         Shape shape = null;
         switch (matrix[x][y]) {
             case 'S':
-                shape = new Circle(gridSquareHeight / 2, Color.DARKBLUE);
+                shape = new Circle(gridSquareHeight, Color.DARKBLUE);
                 break;
             case 'o':
                 shape = new Circle(gridSquareHeight / 2, Color.DARKSEAGREEN);

@@ -7,8 +7,7 @@ package package1;
  *	@author Italian People
  */
 
-public class Direction extends Command 
-{
+public class Direction extends Command {
 	/**
 	 * Assigns a direction to a corresponding value
 	 */
