@@ -58,6 +58,7 @@ public class MainGraphics extends Application {
                 if (!Synchronizer.isGameOver()) { // if game not over
                     drawScreen();                   // draw the game screen
                     controller.updateScore(Synchronizer.getScores()[0]);
+                    controller.setHighScore(Synchronizer.getHighScore());
                 } else {                // else
                     drawGameOver();             // draw the game over text
                 }
