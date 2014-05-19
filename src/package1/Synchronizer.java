@@ -1,5 +1,7 @@
 package package1;
+
 import java.io.*;
+import java.util.*;
 
 /**
  * Created by Tariq
@@ -346,8 +348,10 @@ public class Synchronizer {
     //
     public  static void updateHighScore() {
     	for (int i = 0; i < scores.length; i++){
-    		if (scores[i] > highScore)
-    			highScore = scores[i];
+    		if (scores[i] > highScore) {
+                highScore = scores[i];
+                
+            }
     	}
     }
     
@@ -355,17 +359,24 @@ public class Synchronizer {
     public  static void saveHighScore(String fileName ) throws IOException{
 		PrintWriter pw = new PrintWriter(new FileWriter (fileName, true));
 		updateHighScore();
-		pw.printf("%d", highScore);
+		pw.println(highScore);
+        
 		pw.close();
 	}
     
     public  static void initializeHighScore(String fileName) throws IOException {
     	try {
-    		
     		FileReader fr = new FileReader (fileName);
-    		int res = fr.read();
-    		highScore = Character.getNumericValue((res));
-    		fr.close();
+            	BufferedReader bfr = new BufferedReader(fr);
+            	ArrayList<String> lines = new ArrayList<String>();
+            	do{
+        	   lines.add(bfr.readLine());
+            	}while(lines.get(lines.size() - 1) != null);
+        	 lines.remove(lines.size() - 1);
+    		highScore = Integer.parseInt(lines.get(lines.size() - 1));
+            
+    		bfr.close();
+            	fr.close();
     	}
     	catch (IOException e){
     		highScore = 0;
@@ -391,6 +402,12 @@ public class Synchronizer {
     		highS = 0;
     	highScore = highS;
     }
+    
+    public static int getHighScore(){
+        return highScore;
+    }
+    
+    
     
 }
 
