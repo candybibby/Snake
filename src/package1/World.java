@@ -3,8 +3,8 @@ import java.io.*;
 
 /**
  * World class
- * <p/>
- * UK People
+ * UK people
+ * 
  */
 public class World {
 
