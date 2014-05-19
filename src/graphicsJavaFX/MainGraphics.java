@@ -30,7 +30,7 @@ public class MainGraphics extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         setup();
-        primaryStage.setTitle("MainPane");      // sets the title of the window
+        primaryStage.setTitle("SNAKE");      // sets the title of the window
         primaryStage.setScene(new Scene(controller));   // sets the controller instance as the scene in the window
         primaryStage.show();        // displays the window
 
@@ -95,6 +95,8 @@ public class MainGraphics extends Application {
 
         Synchronizer.setup();
         controller = new Controller();      // make a new instance of controller
+        controller.menuPane.toFront();      //
+        controller.menuPane.setOpacity(1);
         initializeNewGame.bind(controller.initializeNewGame);       // bind the two simplebooleanproperties so we know when the new game button was pushed
         initializeNewGame.addListener(new ChangeListener<Boolean>() {
             @Override
@@ -111,6 +113,7 @@ public class MainGraphics extends Application {
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean aBoolean2) {
                 controller.sendMenuBack();
                 controller.setMenuOpacity(0);
+                controller.setTheme(1);
                 mainProgram();
                 graphicsTimer();
             }

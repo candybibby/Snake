@@ -1,0 +1,19 @@
+.custom-text {
+    -fx-font: 14px "Times New Roman";
+-fx-text-fill: #000000;
+-fx-font-weight: bold;
+}
+
+.whiteBackgroundStyle{
+    -fx-background-color: #85E085;
+}
+
+.blackBackgroundStyle{
+    -fx-background-color: #000000;
+}
+
+.customButton{
+    -fx-background-color: #85E085;
+    -fx-border-radius: 20;
+
+}

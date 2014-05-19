@@ -9,8 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
@@ -72,6 +71,7 @@ public class Controller extends AnchorPane {
 
     private int height;
     private int width;
+    private int theme = 0;      // 1 is for light theme, 0 is for dark theme
 
 
     private double gridSquareHeight;
@@ -110,7 +110,8 @@ public class Controller extends AnchorPane {
 
     public void setupNewGameButton() {
         //initializeNewGame.set(false);
-
+        DropShadow dropShadow = new DropShadow();
+        newGameButton.setEffect(dropShadow);
         newGameButton.setOnAction(new EventHandler<ActionEvent>() { // when button is pressed
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -131,6 +132,11 @@ public class Controller extends AnchorPane {
             gameGrid.getRowConstraints().add(new RowConstraints((gridSquareHeight)));
         }
 
+        if (theme == 1) {
+            gameGrid.getStyleClass().add("whiteBackgroundStyle");
+        } else {
+            gameGrid.getStyleClass().add("blackBackgroundStyle");
+        }
 
         gameAreaContainer.getChildren().add(gameGrid);
     }
@@ -146,12 +152,9 @@ public class Controller extends AnchorPane {
                 if (array[j][i] == '\0') {
 
                 } else {
-
-
                     Shape shape = chooseColor(array, j, i);
-                    GridPane.setConstraints(shape,j,i);
+                    GridPane.setConstraints(shape, j, i);
                     gameGrid.getChildren().add(shape);
-
 
 
                 }
@@ -263,18 +266,43 @@ public class Controller extends AnchorPane {
 
     private Shape chooseColor(char[][] matrix, int x, int y) {
         Shape shape = null;
+        Color color = null;
         switch (matrix[x][y]) {
             case 'S':
-                shape = new Circle(gridSquareHeight, Color.DARKBLUE);
+                if (theme == 1) {
+                    color = Color.ORANGE;
+
+                } else {
+                    color = Color.LIGHTBLUE;
+                }
+                shape = new Circle(gridSquareHeight / 2, color);
                 break;
             case 'o':
-                shape = new Circle(gridSquareHeight / 2, Color.DARKSEAGREEN);
+                if (theme == 1) {
+                    color = Color.ORANGE;
+
+                } else {
+                    color = Color.HOTPINK;
+                }
+                shape = new Circle(gridSquareHeight / 2, color);
                 break;
             case 'X':
-                shape = new Rectangle(gridSquareWidth - 1, gridSquareHeight - 1, Color.GREY);
+                if (theme == 1) {
+                    color = Color.GREY;
+                } else {
+                    color = Color.ORANGE;
+                }
+                shape = new Rectangle(gridSquareWidth - 1, gridSquareHeight - 1, color);
                 break;
             case 'm':
-                shape = new Circle(gridSquareHeight / 2, Color.DARKRED);
+                if (theme == 1) {
+                    color = Color.PURPLE
+                    ;
+
+                } else {
+                    color = Color.YELLOW;
+                }
+                shape = new Circle(gridSquareHeight / 2, color);
                 break;
         }
         return shape;
@@ -301,6 +329,12 @@ public class Controller extends AnchorPane {
     public void hideGameOver() {
         textGameOver.toBack();
         gameAreaContainer.setOpacity(1);
+    }
+
+    public void setTheme(int theme) {
+        this.theme = theme;
+
+
     }
 
 }
