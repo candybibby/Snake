@@ -30,8 +30,8 @@ public class Snake {
         snake.add(body); //adds the snake body
         snake.add(body); //adds the snake body
 
-        int midX = (int) (Synchronizer.getGameAreaWidth()) / 2;
-        int midY = (int) (Synchronizer.getGameAreaHeight()) / 2;
+        int midX = (int) (Synchronizer.getGameAreaWidth()) / 2; //places the snake in the centre of the game
+        int midY = (int) (Synchronizer.getGameAreaHeight()) / 2; //divided by 2 because height divided by 2 = centre
         abscissa.add(midX);
         ordinate.add(midY);
         abscissa.add(midX - 1);
