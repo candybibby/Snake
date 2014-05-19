@@ -8,8 +8,8 @@ public class Snake {
     private ArrayList<Integer> abscissa;//List of abscissas (x) position of each piece.
     private ArrayList<Integer> ordinate;//List of ordinate (y) position of each piece.
 
-    private final char head = Symbol.HEAD;
-    private final char body = Symbol.BODY;
+    private final char head = Symbol.HEAD; //represents the head of the snake
+    private final char body = Symbol.BODY; //represents the body of the snake
 
 
     /**
@@ -22,13 +22,13 @@ public class Snake {
 
     public Snake() {
         
-        snake = new ArrayList<Character>();
-        abscissa = new ArrayList<Integer>();
+        snake = new ArrayList<Character>(); //creates an arrayList of character entry 
+        abscissa = new ArrayList<Integer>(); //the coordinates for the placing of the arrayList 
         ordinate = new ArrayList<Integer>();
 
-        snake.add(head);
-        snake.add(body);
-        snake.add(body);
+        snake.add(head); //adds the snake head
+        snake.add(body); //adds the snake body
+        snake.add(body); //adds the snake body
 
         int midX = (int) (Synchronizer.getGameAreaWidth()) / 2;
         int midY = (int) (Synchronizer.getGameAreaHeight()) / 2;
