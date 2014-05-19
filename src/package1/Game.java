@@ -31,8 +31,8 @@ public class Game
     public void runNewGame(int lvl)
     {
         Synchronizer.resetGame();                             //starts a fresh game
-        world = new World();                 // make an instance of world and pass it the synchronizer
-        world.createNewGame(lvl);                             //calls the createNewGame method and sets level param
+        world = new World(lvl);                 // make an instance of world and pass it the synchronizer
+        world.createNewGame();                             //calls the createNewGame method and sets level param
     }
 
 
