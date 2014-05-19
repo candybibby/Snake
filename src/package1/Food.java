@@ -72,7 +72,7 @@ public class Food {
      */
     public Food(char elem) {
         this( 0, 0, elem);
-        synchronizer.writeThisCell(abscissa, ordinate, 'X');
+        Synchronizer.writeThisCell(abscissa, ordinate, 'X');
         int x,y;
         do {
             x = (int) (Math.random() * Synchronizer.getGameAreaWidth());
