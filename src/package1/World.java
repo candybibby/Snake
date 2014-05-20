@@ -3,8 +3,8 @@ import java.io.*;
 
 /**
  * World class
- * <p/>
- * UK People
+ * UK people
+ * 
  */
 public class World {
 
@@ -37,16 +37,16 @@ public class World {
      * Initialize all the attributes by default
      * and create a new World
      */
-    public World()
+    public World(int lvl)
     {
 
         this.snake = new Snake();
         this.food = new Food [Synchronizer.FOOD_NUMBER];
+        this.obstacle = new Obstacle(lvl);
         for (int i=0; i< Synchronizer.FOOD_NUMBER; i++) 
             food[i] = new Food();
         Synchronizer.setFood(this.food);
-        this.obstacle = new Obstacle();
-        this.gameEngine = new GameEngine(this.snake, 5, this.food);
+        this.gameEngine = new GameEngine(this.snake, Synchronizer.getSquaresPerSecond(), this.food);
     }
 
     //METHODS
@@ -58,10 +58,9 @@ public class World {
      *
      * @param lvl is the level chosen for the game
      */
-    public void createNewGame(int lvl){
+    public void createNewGame(){
     	try{
     		Synchronizer.initializeHighScore("highScore.txt");
-    		this.obstacle = new Obstacle(lvl);    //create new obstacle placed in the area
     		this.gameEngine.startYourEngines();
     	}
     	catch(IOException e){}

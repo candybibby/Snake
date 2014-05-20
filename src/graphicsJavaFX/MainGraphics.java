@@ -30,7 +30,7 @@ public class MainGraphics extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         setup();
-        primaryStage.setTitle("MainPane");      // sets the title of the window
+        primaryStage.setTitle("SNAKE");      // sets the title of the window
         primaryStage.setScene(new Scene(controller));   // sets the controller instance as the scene in the window
         primaryStage.show();        // displays the window
 
@@ -58,6 +58,7 @@ public class MainGraphics extends Application {
                 if (!Synchronizer.isGameOver()) { // if game not over
                     drawScreen();                   // draw the game screen
                     controller.updateScore(Synchronizer.getScores()[0]);
+                    controller.setHighScore(Synchronizer.getHighScore());
                 } else {                // else
                     drawGameOver();             // draw the game over text
                 }
@@ -82,7 +83,7 @@ public class MainGraphics extends Application {
         controller.buildGrid();
         game = new Game();
 
-        game.runNewGame(controller.getGameDifficulty());             // run the game with the given difficulty
+        game.runNewGame(Synchronizer.getDifficulty());             // run the game with the given difficulty
         controller.setHighScore(Synchronizer.highScore);
     }
 
@@ -95,6 +96,8 @@ public class MainGraphics extends Application {
 
         Synchronizer.setup();
         controller = new Controller();      // make a new instance of controller
+        controller.menuPane.toFront();      //
+        controller.menuPane.setOpacity(1);
         initializeNewGame.bind(controller.initializeNewGame);       // bind the two simplebooleanproperties so we know when the new game button was pushed
         initializeNewGame.addListener(new ChangeListener<Boolean>() {
             @Override
@@ -110,7 +113,10 @@ public class MainGraphics extends Application {
             @Override
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean aBoolean2) {
                 controller.sendMenuBack();
+                //controller.gameAreaContainer.toFront();
+                controller.startGame();
                 controller.setMenuOpacity(0);
+                controller.setTheme(0);
                 mainProgram();
                 graphicsTimer();
             }

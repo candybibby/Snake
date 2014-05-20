@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
 <?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
 <fx:root fx:id="bottomPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 <children>
 <StackPane>
-<children><VBox fx:id="gameAreaMainVBox" layoutX="136.0" layoutY="69.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<children><VBox layoutX="136.0" layoutY="69.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 <children><HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
 <children>
 <HBox alignment="CENTER_LEFT">
@@ -83,7 +83,7 @@
                         <Font name="System Bold Italic" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="expertButton" layoutX="130.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Expert" textFill="#3f9406">
+                  <Button fx:id="hardButton" layoutX="130.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Expert" textFill="#3f9406">
                      <font>
                         <Font name="System Bold Italic" size="14.0" />
                      </font>
@@ -130,7 +130,7 @@
                         </LinearGradient>
                      </textFill>
                   </Label>
-                  <Button fx:id="backButtonRules" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
+                  <Button fx:id="backButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
                   <Text fx:id="rules1" layoutX="27.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You control the Snake and you have to avoid its own body or the walls obstacles if you want to survive ! You have to collect food to grow in length and to increase your score." wrappingWidth="337.79296875">
                      <font>
                         <Font name="MV Boli" size="15.0" />
@@ -159,12 +159,12 @@
                   </Text>
                   <ImageView fx:id="player1Image" fitHeight="60.0" fitWidth="85.0" layoutX="84.0" layoutY="326.0">
                      <image>
-                        <Image url="@ArrowKey.jpg" />
+                        <Image url="@../Documents/Erasmus%20Project/Arrow%20Key.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="player2Image" fitHeight="60.0" fitWidth="85.0" layoutX="234.0" layoutY="326.0">
                      <image>
-                        <Image url="@wasd.png" />
+                        <Image url="@../Documents/Erasmus%20Project/wasd.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="97.0" layoutY="281.0" prefHeight="35.0" prefWidth="60.0" text="Player 1" textFill="#86b89b">
@@ -205,7 +205,7 @@
                         </LinearGradient>
                      </textFill>
                   </Label>
-                  <Button fx:id="backButtonmulti" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
+                  <Button fx:id="backButton" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
                   <Label layoutX="69.0" layoutY="120.0" text="Choose the number of player !" textFill="#3f9406">
                      <font>
                         <Font name="MV Boli" size="18.0" />
@@ -216,10 +216,10 @@
             <AnchorPane fx:id="CreditsPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" layoutX="6.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
-                  <Button fx:id="backButtonCredits" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
+                  <Button fx:id="backButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
                   <ImageView fx:id="bisssImage" fitHeight="97.0" fitWidth="202.0" layoutX="99.0" layoutY="14.0">
                      <image>
-                        <Image url="@Logo.jpg" />
+                        <Image url="@../Documents/Erasmus%20Project/Logo.jpg" />
                      </image>
                   </ImageView>
                   <Label layoutX="220.0" layoutY="118.0" text="Camille LOGEART" textFill="#4bcc56">
@@ -244,12 +244,12 @@
                   </Label>
                   <ImageView fx:id="frenchImage" fitHeight="40.0" fitWidth="75.0" layoutX="63.0" layoutY="123.0">
                      <image>
-                        <Image url="@FrenchFlag.png" />
+                        <Image url="@../Documents/Erasmus%20Project/FrenchFlag.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="italianImage" fitHeight="40.0" fitWidth="75.0" layoutX="63.0" layoutY="173.0">
                      <image>
-                        <Image url="@NetherlandFlag.png" />
+                        <Image url="@../Documents/Erasmus%20Project/NetherlandFlag.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="220.0" layoutY="218.0" text="Matteo MARRAS" textFill="#4bcc56">
@@ -264,7 +264,7 @@
                   </Label>
                   <ImageView fx:id="dutchImage" fitHeight="40.0" fitWidth="75.0" layoutX="63.0" layoutY="223.0">
                      <image>
-                        <Image url="@ItalianFlag.png" />
+                        <Image url="@../Documents/Erasmus%20Project/ItalianFlag.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="220.0" layoutY="268.0" text="Ryan GALLACHER" textFill="#4bcc56">
@@ -284,7 +284,7 @@
                   </Label>
                   <ImageView fx:id="scotImage" fitHeight="48.0" fitWidth="75.0" layoutX="62.0" layoutY="273.0">
                      <image>
-                        <Image url="@ScotlandFlag.png" />
+                        <Image url="@../Documents/Erasmus%20Project/ScotlandFlag.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="102.0" layoutY="361.0" prefHeight="17.0" prefWidth="236.0" text="Erasmus Project 2014 (Portugal)" textFill="#4bcc56">
@@ -310,7 +310,7 @@
                         </LinearGradient>
                      </textFill>
                   </Label>
-                  <Button fx:id="backButtonOptions" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
+                  <Button fx:id="backButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
                   <Label layoutX="170.0" layoutY="134.0" prefHeight="35.0" prefWidth="60.0" text="Length" textAlignment="CENTER" textFill="#3de854">
                      <font>
                         <Font name="System Bold" size="18.0" />
@@ -321,8 +321,8 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Slider fx:id="lengthSlider" blockIncrement="1.0" layoutX="130.0" layoutY="190.0" majorTickUnit="3.0" max="3.0" minorTickCount="1" showTickMarks="true" snapToTicks="true" />
-                  <Slider fx:id="speedSlider" blockIncrement="2.0" layoutX="130.0" layoutY="310.0" majorTickUnit="2.0" max="10.0" min="2.0" minorTickCount="0" showTickMarks="true" snapToTicks="true" value="6.0" />
+                  <Slider fx:id="lengthSlider" blockIncrement="1.0" layoutX="130.0" layoutY="190.0" majorTickUnit="3.0" max="3.0" minorTickCount="1" showTickMarks="true" />
+                  <Slider fx:id="speedSlider" layoutX="130.0" layoutY="310.0" showTickMarks="true" />
                </children>
             </AnchorPane>
 </children>

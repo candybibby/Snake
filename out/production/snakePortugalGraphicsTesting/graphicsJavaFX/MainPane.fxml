@@ -3,14 +3,16 @@
 <?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
 <fx:root fx:id="bottomPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 <children>
 <StackPane>
-<children><VBox layoutX="136.0" layoutY="69.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<children><VBox fx:id="gameAreaMainVBox" layoutX="136.0" layoutY="69.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 <children><HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
 <children>
 <HBox alignment="CENTER_LEFT">
@@ -40,19 +42,289 @@
 </HBox>
 </children></HBox><AnchorPane fx:id="gameAreaContainer" prefHeight="359.0" prefWidth="400.0" />
 </children></VBox><AnchorPane fx:id="menuPane" prefHeight="200.0" prefWidth="200.0">
-<children><Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" stroke="BLACK" strokeType="INSIDE" width="400.0" /><Button fx:id="startGameButton" layoutX="174.1875" layoutY="148.5" mnemonicParsing="false" text="Start Game" /><MenuButton layoutX="43.87109375" layoutY="148.5" mnemonicParsing="false" text="Level">
-  <items>
-    <MenuItem fx:id="levelSelectEasy" mnemonicParsing="false" text="Easy" />
-    <MenuItem fx:id="levelSelectMedium" mnemonicParsing="false" text="Medium" />
-<MenuItem fx:id="levelSelectHard" mnemonicParsing="false" text="Hard" />
-<MenuItem fx:id="levelSelectExpert" mnemonicParsing="false" text="Expert" />
-  </items>
-</MenuButton>
+<children><Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" stroke="BLACK" strokeType="INSIDE" width="400.0" /><Button fx:id="startGameButton" layoutX="130.0" layoutY="125.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="New Game" textFill="#3f9406" AnchorPane.topAnchor="125.0">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="creditsButton" layoutX="130.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Credits" textFill="#3f9406">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="rulesButton" layoutX="130.0" layoutY="195.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Rules" textFill="#3f9406">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionsButton" layoutX="130.0" layoutY="265.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Options" textFill="#3f9406">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="107.0" text="Snake">
+                     <font>
+                        <Font name="MV Boli" size="64.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.6523809523809524" endY="0.8047619047619048" startX="0.6380952380952382" startY="0.45714285714285713">
+                           <stops>
+                              <Stop color="#0cd029" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
 </children></AnchorPane>
+            <AnchorPane fx:id="newGamePane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+                  <Button fx:id="easyButton" layoutX="130.0" layoutY="125.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Easy" textFill="#3f9406" AnchorPane.topAnchor="125.0">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="expertButton" layoutX="130.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Expert" textFill="#3f9406">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="mediumButton" layoutX="130.0" layoutY="195.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Medium" textFill="#3f9406">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="hardButton" layoutX="130.0" layoutY="265.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Hard" textFill="#3f9406">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="106.0" layoutY="25.0" text="Difficulty">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.6523809523809524" endY="0.8047619047619048" startX="0.6380952380952382" startY="0.45714285714285713">
+                           <stops>
+                              <Stop color="#0cd029" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button fx:id="backButton" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="RulesPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+                  <Label layoutX="139.0" layoutY="25.0" text="Rules">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.6523809523809524" endY="0.8047619047619048" startX="0.6380952380952382" startY="0.45714285714285713">
+                           <stops>
+                              <Stop color="#0cd029" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button fx:id="backButtonRules" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
+                  <Text fx:id="rules1" layoutX="27.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You control the Snake and you have to avoid its own body or the walls obstacles if you want to survive ! You have to collect food to grow in length and to increase your score." wrappingWidth="337.79296875">
+                     <font>
+                        <Font name="MV Boli" size="15.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="0.8857142857142858" startX="0.18095238095238098">
+                           <stops>
+                              <Stop color="#96e0bb" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Text fx:id="rules2" layoutX="27.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="But be careful ! Some foods are poisonous and have different affects on our poor Snake." wrappingWidth="337.79296875">
+                     <font>
+                        <Font name="MV Boli" size="15.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="0.8857142857142858" startX="0.18095238095238098">
+                           <stops>
+                              <Stop color="#96e0bb" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <ImageView fx:id="player1Image" fitHeight="60.0" fitWidth="85.0" layoutX="84.0" layoutY="326.0">
+                     <image>
+                        <Image url="@ArrowKey.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="player2Image" fitHeight="60.0" fitWidth="85.0" layoutX="234.0" layoutY="326.0">
+                     <image>
+                        <Image url="@wasd.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="97.0" layoutY="281.0" prefHeight="35.0" prefWidth="60.0" text="Player 1" textFill="#86b89b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="247.0" layoutY="281.0" prefHeight="35.0" prefWidth="60.0" text="Player 2" textFill="#86b89b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="multiplayerPane" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+                  <Button fx:id="player1Button" layoutX="120.0" layoutY="186.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="1 Player" textFill="#3f9406" AnchorPane.topAnchor="186.0">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="player2Button" layoutX="120.0" layoutY="279.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="2 Players" textFill="#3f9406">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="131.0" layoutY="24.0" text="Player">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.6523809523809524" endY="0.8047619047619048" startX="0.6380952380952382" startY="0.45714285714285713">
+                           <stops>
+                              <Stop color="#0cd029" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button fx:id="backButtonmulti" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
+                  <Label layoutX="69.0" layoutY="120.0" text="Choose the number of player !" textFill="#3f9406">
+                     <font>
+                        <Font name="MV Boli" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="CreditsPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" layoutX="6.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+                  <Button fx:id="backButtonCredits" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
+                  <ImageView fx:id="bisssImage" fitHeight="97.0" fitWidth="202.0" layoutX="99.0" layoutY="14.0">
+                     <image>
+                        <Image url="@Logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="220.0" layoutY="118.0" text="Camille LOGEART" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="220.0" layoutY="138.0" text="Candy PERES" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="220.0" layoutY="168.0" text="Tariq AL-SADOON" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="220.0" layoutY="188.0" text="Birk HAGELOH" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="frenchImage" fitHeight="40.0" fitWidth="75.0" layoutX="63.0" layoutY="123.0">
+                     <image>
+                        <Image url="@FrenchFlag.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="italianImage" fitHeight="40.0" fitWidth="75.0" layoutX="63.0" layoutY="173.0">
+                     <image>
+                        <Image url="@NetherlandFlag.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="220.0" layoutY="218.0" text="Matteo MARRAS" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="220.0" layoutY="238.0" text="Federico PICETTI" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="dutchImage" fitHeight="40.0" fitWidth="75.0" layoutX="63.0" layoutY="223.0">
+                     <image>
+                        <Image url="@ItalianFlag.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="220.0" layoutY="268.0" text="Ryan GALLACHER" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="220.0" layoutY="288.0" text="Cheri Skivington" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="220.0" layoutY="308.0" text="Kimberly MCGUIRE" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="scotImage" fitHeight="48.0" fitWidth="75.0" layoutX="62.0" layoutY="273.0">
+                     <image>
+                        <Image url="@ScotlandFlag.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="102.0" layoutY="361.0" prefHeight="17.0" prefWidth="236.0" text="Erasmus Project 2014 (Portugal)" textFill="#4bcc56">
+                     <font>
+                        <Font name="MV Boli" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="optionPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+                  <Label layoutX="119.0" layoutY="25.0" text="Options">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.6523809523809524" endY="0.8047619047619048" startX="0.6380952380952382" startY="0.45714285714285713">
+                           <stops>
+                              <Stop color="#0cd029" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button fx:id="backButtonOptions" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
+                  <Label layoutX="170.0" layoutY="134.0" prefHeight="35.0" prefWidth="60.0" text="Length" textAlignment="CENTER" textFill="#3de854">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="170.0" layoutY="252.0" prefHeight="35.0" prefWidth="60.0" text="Speed" textAlignment="CENTER" textFill="#3de854">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="lengthSlider" blockIncrement="1.0" layoutX="130.0" layoutY="190.0" majorTickUnit="3.0" max="3.0" minorTickCount="1" showTickMarks="true" snapToTicks="true" />
+                  <Slider fx:id="speedSlider" blockIncrement="2.0" layoutX="130.0" layoutY="310.0" majorTickUnit="2.0" max="10.0" min="2.0" minorTickCount="0" showTickMarks="true" snapToTicks="true" value="6.0" />
+               </children>
+            </AnchorPane>
 </children>
-</StackPane><TextArea fx:id="textGameOver" editable="false" layoutX="141.0" layoutY="177.0" prefHeight="33.0" prefWidth="118.0" text="Game Over">
-<font>
-<Font size="18.0" />
-</font>
-</TextArea>
+</StackPane>
 </children></fx:root>
