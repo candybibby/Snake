@@ -1,7 +1,7 @@
 package package1;
-
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by Tariq
@@ -31,7 +31,7 @@ public class Synchronizer {
     /**
      * The last key the player pressed
      */
-    private static Command[] lastButtonPressed = { new Direction(Direction.RIGHT)};
+    private static Command[] lastButtonPressed = { new Direction(Direction.RIGHT), new Direction(Direction.LEFT)};
 
     /**
      * If the game is over
@@ -42,7 +42,7 @@ public class Synchronizer {
     /**
      * If the snake is alive
      */
-    private static boolean snakeAlive;
+    private static boolean [] snakeAlive;
 
     /**
      * If the player want or not restart the game
@@ -61,20 +61,18 @@ public class Synchronizer {
     
     public static int highScore = 0;
 
+    private static int difficulty;
+
     /**
      * maximum number of players *
      */
     public final static int MAX_PLAYER_NUMBER = 2;
-    public static int numberOfPlayers = 1;
-
-    private static int difficulty = 0;
-
-    public static int FOOD_NUMBER = 3;
-    public static boolean TRON = false;
+    private static int numberOfPlayer = 1;
+    public static int foodNumber = 3;
+    public static boolean tron = false;
+    private static int squaresPerSecond = 6;
 
     public final static int LENGTH = 20;
-
-    private static int squaresPerSecond = 6;
 
 
     // CONSTRUCTOR
@@ -92,7 +90,7 @@ public class Synchronizer {
         snakeAlive = true;
         scores = new int[MAX_PLAYER_NUMBER];
         scores[0] = 0;
-        foodPresent = new boolean[FOOD_NUMBER];
+        foodPresent = new boolean[foodNumber];
     }*/
 
     /**
@@ -119,10 +117,11 @@ public class Synchronizer {
         gameOver = false;
         stopGameLoop = false;
         gameLoopRunning = false;
-        snakeAlive = true;
-        scores = new int[MAX_PLAYER_NUMBER];
-        scores[0] = 0;
-        foodPresent = new boolean[FOOD_NUMBER];
+        snakeAlive = new boolean[numberOfPlayer];
+        Arrays.fill(snakeAlive, true);
+        scores = new int[numberOfPlayer];
+        Arrays.fill(scores, 0);
+        foodPresent = new boolean[foodNumber];
     }
 
     
@@ -164,8 +163,8 @@ public class Synchronizer {
      * @return lastButtonPressed
      * the last button pressed by the player
      */
-    public static Command[] getLastButtonPressed() {
-        return lastButtonPressed;
+    public static Command getLastButtonPressed(int snakeId) {
+        return lastButtonPressed[snakeId];
     }
 
 
@@ -173,10 +172,10 @@ public class Synchronizer {
      * Method setLastButtonPressed
      * which changes the last button pressed by the player by another one
      *
-     * @param mlastButtonPressed
+     * @param c
      */
-    public static void setLastButtonPressed(Command[] mlastButtonPressed) {
-        lastButtonPressed = mlastButtonPressed;
+    public static void setLastButtonPressed(Command c, int snakeId) {
+        lastButtonPressed[snakeId] = c;
     }
 
 
@@ -240,19 +239,18 @@ public class Synchronizer {
      */
     public  static void theGameIsOver() {
         gameOver = true;
-        snakeAlive = false;
     }
 
 
     /**
      * @return
      */
-    public  static boolean getSnakeStillAlive() {
-        return snakeAlive;
+    public  static boolean getSnakeStillAlive(int snakeId) {
+        return snakeAlive[snakeId];
     }
 
-    public  static void setSnakeStillAlive(boolean alive) {
-        snakeAlive = alive;
+    public  static void setSnakeStillAlive(boolean alive, int snakeId) {
+        snakeAlive[snakeId] = alive;
     }
 
 
@@ -303,8 +301,8 @@ public class Synchronizer {
      * @return scores
      * returns the array containing the scores
      */
-    public  static int[] getScores() {
-        return scores;
+    public  static int getScores(int index) {
+        return scores[index];
     }
 
 
@@ -313,12 +311,12 @@ public class Synchronizer {
      * changes the scores array
      * use this to upgrade the score situation
      */
-    public  static void setScores(int[] scores) {
-        scores = scores;
+    public  static void setScores(int score, int index) {
+        scores[index] = score;
     }
 
-    public  static void increaseScore(int snakeNumber){
-        scores[snakeNumber-1]++;
+    public  static void increaseScore(int snakeId){
+        scores[snakeId]++;
     }
 
     public  static boolean isGameLoopRunning() {
@@ -344,49 +342,47 @@ public class Synchronizer {
         gameOver = false;
         stopGameLoop = false;
         gameLoopRunning = false;
-        snakeAlive = true;
-        scores = new int[2];
-        scores[0] = 0;
-        foodPresent = new boolean[FOOD_NUMBER];
+        Arrays.fill(snakeAlive, true);
+        Arrays.fill(scores, 0);
+        foodPresent = new boolean[foodNumber];
         lastButtonPressed[0].setValue(Direction.RIGHT);
+        lastButtonPressed[1].setValue(Direction.LEFT);
     }
     
     //
     public  static void updateHighScore() {
     	for (int i = 0; i < scores.length; i++){
-    		if (scores[i] > highScore) {
-                highScore = scores[i];
-                
-            }
+    		if (scores[i] > highScore)
+    			highScore = scores[i];
     	}
     }
-    
-    
-    public  static void saveHighScore(String fileName ) throws IOException{
-		PrintWriter pw = new PrintWriter(new FileWriter (fileName, true));
-		updateHighScore();
-		pw.println(highScore);
-        
-		pw.close();
-	}
-    
-    public  static void initializeHighScore(String fileName) throws IOException {
-    	try {
-    		FileReader fr = new FileReader (fileName);
-            	BufferedReader bfr = new BufferedReader(fr);
-            	ArrayList<String> lines = new ArrayList<String>();
-            	do{
-        	   lines.add(bfr.readLine());
-            	}while(lines.get(lines.size() - 1) != null);
-        	 lines.remove(lines.size() - 1);
-    		highScore = Integer.parseInt(lines.get(lines.size() - 1));
-            
-    		bfr.close();
-            	fr.close();
-    	}
-    	catch (IOException e){
-    		highScore = 0;
-    	}
+
+
+    public static void saveHighScore(String fileName ) throws IOException{
+        PrintWriter pw = new PrintWriter(new FileWriter (fileName, true));
+        updateHighScore();
+        pw.println(highScore);
+
+        pw.close();
+    }
+
+    public static void initializeHighScore(String fileName) throws IOException {
+        try {
+            FileReader fr = new FileReader (fileName);
+            BufferedReader bfr = new BufferedReader(fr);
+            ArrayList<String> lines = new ArrayList<String>();
+            do{
+                lines.add(bfr.readLine());
+            }while(lines.get(lines.size() - 1) != null);
+            lines.remove(lines.size() - 1);
+            highScore = Integer.parseInt(lines.get(lines.size() - 1));
+
+            bfr.close();
+            fr.close();
+        }
+        catch (IOException e){
+            highScore = 0;
+        }
     }
     
     
@@ -408,19 +404,20 @@ public class Synchronizer {
     		highS = 0;
     	highScore = highS;
     }
-    
-    public static int getHighScore(){
+
+    public static int getHighScore() {
         return highScore;
     }
 
-
-    public static int getNumberOfPlayers() {
-        return numberOfPlayers;
+    public static int getNumberOfPlayer() {
+        return numberOfPlayer;
     }
 
-    public static void setNumberOfPlayers(int numberOfPlayers) {
-        Synchronizer.numberOfPlayers = numberOfPlayers;
+    public static void setNumberOfPlayer(int numberOfPlayer) {
+        Synchronizer.numberOfPlayer = numberOfPlayer;
     }
+
+
 
     public static int getDifficulty() {
         return difficulty;
@@ -436,6 +433,11 @@ public class Synchronizer {
 
     public static void setSquaresPerSecond(int squaresPerSecond) {
         Synchronizer.squaresPerSecond = squaresPerSecond;
+    }
+
+    public static void setTwoPlayerGame(){
+        scores = new int[numberOfPlayer];
+        snakeAlive = new boolean[numberOfPlayer];
     }
 }
 

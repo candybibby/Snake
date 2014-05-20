@@ -8,8 +8,7 @@ public class Snake {
     private ArrayList<Integer> abscissa;//List of abscissas (x) position of each piece.
     private ArrayList<Integer> ordinate;//List of ordinate (y) position of each piece.
 
-    private final char head = Symbol.HEAD; //represents the head of the snake
-    private final char body = Symbol.BODY; //represents the body of the snake
+    private int id;
 
 
     /**
@@ -17,28 +16,37 @@ public class Snake {
      * It creates an instance of Snake, with an head and 2 pieces for the body.
      * It will be placed in the middle of the World, right-oriented.
      *
-     * @param 
+     * @param bornX X position of born
+     * @param bornY Y position of born
+     * @param id snake's id
      */
 
-    public Snake() {
-        
+    public Snake(int bornX, int bornY, int id) {
+        this.id = id;
         snake = new ArrayList<Character>(); //creates an arrayList of character entry 
         abscissa = new ArrayList<Integer>(); //the coordinates for the placing of the arrayList 
         ordinate = new ArrayList<Integer>();
 
-        snake.add(head); //adds the snake head
-        snake.add(body); //adds the snake body
-        snake.add(body); //adds the snake body
-
-        int midX = (int) (Synchronizer.getGameAreaWidth()) / 2; //places the snake in the centre of the game
-        int midY = (int) (Synchronizer.getGameAreaHeight()) / 2; //divided by 2 because height divided by 2 = centre
-        abscissa.add(midX);
-        ordinate.add(midY);
-        abscissa.add(midX - 1);
-        ordinate.add(midY);
-        abscissa.add(midX - 1 - 1);
-        ordinate.add(midY);
+        snake.add(Symbol.HEAD[id]); //adds the snake head
+        snake.add(Symbol.BODY[id]); //adds the snake body
+        snake.add(Symbol.BODY[id]); //adds the snake body
+        ordinate.add(bornY);
+        ordinate.add(bornY);
+        ordinate.add(bornY);
+        abscissa.add(bornX);
+        if (id==0) {
+            abscissa.add(bornX - 1);
+            abscissa.add(bornX - 1 - 1);
+        }
+        else {
+            abscissa.add(bornX + 1);
+            abscissa.add(bornX + 1 + 1);
+        }
         updateMatrix();
+    }
+
+    public Snake() {
+        this((int) (Synchronizer.getGameAreaWidth())/2, (int) (Synchronizer.getGameAreaHeight()) / 2,0);
     }
 
     /**
@@ -71,7 +79,7 @@ public class Snake {
      */
 
     public int move() {
-        Command d = Synchronizer.getLastButtonPressed()[0];
+        Command d = Synchronizer.getLastButtonPressed(id);
         if (!(d instanceof Direction))
             return -1;
 
@@ -109,20 +117,20 @@ public class Snake {
             int lastY = ordinate.get(ordinate.size() - 1);
             abscissa.remove(abscissa.size() - 1);
             ordinate.remove(ordinate.size() - 1);
-            if (!Synchronizer.TRON)
+            if (!Synchronizer.tron)
             	updateMatrix(lastX, lastY);
             else
             	updateMatrix();
         } else if (Synchronizer.isFood(nextX, nextY)) {
             ordinate.add(0, nextY);
             abscissa.add(0, nextX);
-            snake.add(1, Symbol.BODY);
+            snake.add(1, Symbol.BODY[id]);
             updateMatrix();
             Food [] food = Synchronizer.getFood();
             for (int i=0; i<food.length; i++)
                 if ((food[i].getX() == nextX) && (food[i].getY() == nextY)) 
                     food[i].setFoodPresent(false);
-            Synchronizer.increaseScore(1);
+            Synchronizer.increaseScore(id);
         } else {
             ordinate.add(0, nextY);
             abscissa.add(0, nextX);
@@ -130,10 +138,11 @@ public class Snake {
             int lastY = ordinate.get(ordinate.size() - 1);
             abscissa.remove(abscissa.size() - 1);
             ordinate.remove(ordinate.size() - 1);
-            if (!Synchronizer.TRON)
+            if (!Synchronizer.tron)
             	updateMatrix(lastX, lastY);
             else
             	updateMatrix();
+            Synchronizer.setSnakeStillAlive(false, id);
             Synchronizer.theGameIsOver();
             try {
 				Synchronizer.saveHighScore("highScore.txt");
@@ -170,12 +179,6 @@ public class Snake {
 		return this.ordinate;
 	}
 
-	/**
-	 * @return the sync
-	 */
-	/*public Synchronizer getSynchronizer() {
-		return Synchronizer;
-	}*/
 
 }
 

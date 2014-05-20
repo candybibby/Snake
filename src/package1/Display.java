@@ -40,7 +40,7 @@ public class Display
     public void printGame()
     {
         char[][] gameWorld = Synchronizer.getGameWorld();
-        System.out.println("\nScore: " + Synchronizer.getScores()[0] + "\n");     //prints the players score
+        //System.out.println("\nScore: " + Synchronizer.getScores()[0] + "\n");     //prints the players score
 
         for (int i = 0; i < height; i++)                                  //refreshes matrix
         {

@@ -18,7 +18,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -54,6 +54,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -63,10 +64,164 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainGraphics.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Synchronizer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="441" column="1" selection-start="9714" selection-end="9714" vertical-scroll-proportion="0.7307692" vertical-offset="4576" max-vertical-offset="5040">
+              <folding>
+                <element signature="docComment;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;field#gameAreaWidth#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;field#gameAreaHeight#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;field#gameWorld#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;field#lastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;field#gameOver#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;field#snakeAlive#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;field#stopGameLoop#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;field#scores#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;field#MAX_PLAYER_NUMBER#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
+                <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#isFood#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#initializeHighScore#0;class#Synchronizer#0" expanded="false" />
+                <element signature="method#setHighScore#0;class#Synchronizer#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainGraphics.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/MainGraphics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="32" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860">
+              <folding>
+                <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
+                <element signature="e#1552#1607#0" expanded="false" />
+                <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#setup#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainGraphics.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="2340">
+            <state line="95" column="24" selection-start="3402" selection-end="3402" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1360">
+              <folding>
+                <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
+                <element signature="e#1549#1604#0" expanded="false" />
+                <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameEngine.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="0" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="1860">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="237" column="48" selection-start="5579" selection-end="5579" vertical-scroll-proportion="-10.961538" vertical-offset="2655" max-vertical-offset="4000">
+              <folding>
+                <element signature="method#Controller#0;class#Controller#0" expanded="false" />
+                <element signature="e#2966#3052#0" expanded="false" />
+                <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupOptionsPane#0;class#Controller#0" expanded="false" />
+                <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
+                <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
+                <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupKeyListener#0;class#Controller#0" expanded="false" />
+                <element signature="method#giveHeightAndWidth#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupGameArea#0;class#Controller#0" expanded="false" />
+                <element signature="method#sendMenuBack#0;class#Controller#0" expanded="false" />
+                <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
+                <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
+                <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
+                <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+                <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+                <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+                <element signature="method#startGame#0;class#Controller#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="274" column="4" selection-start="8560" selection-end="9432" vertical-scroll-proportion="-8.961538" vertical-offset="1467" max-vertical-offset="2080">
+              <folding>
+                <element signature="method#Controller#0;class#Controller#0" expanded="false" />
+                <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupNewGameButton#0;class#Controller#0" expanded="false" />
+                <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
+                <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
+                <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupKeyListener#0;class#Controller#0" expanded="false" />
+                <element signature="method#giveHeightAndWidth#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupGameArea#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupMenuItemsAndStartButton#0;class#Controller#0" expanded="false" />
+                <element signature="method#sendMenuBack#0;class#Controller#0" expanded="false" />
+                <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
+                <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
+                <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
+                <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+                <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+                <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Snake.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="0" selection-start="4278" selection-end="4278" vertical-scroll-proportion="0.0" vertical-offset="2002" max-vertical-offset="3660">
               <folding />
             </state>
           </provider>
@@ -78,6 +233,15 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" />
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
+        <option value="$PROJECT_DIR$/src/package1/Synchronizer.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -111,6 +275,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -142,6 +307,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="package1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -161,9 +330,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snakePortugal2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snakePortugal2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -250,6 +432,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -275,19 +470,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -380,33 +562,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -432,8 +614,167 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="2340">
+        <state line="19" column="13" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="2340">
+          <folding>
+            <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
+            <element signature="e#1549#1604#0" expanded="false" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="274" column="4" selection-start="8560" selection-end="9432" vertical-scroll-proportion="-8.961538" vertical-offset="1467" max-vertical-offset="2080">
+          <folding>
+            <element signature="method#Controller#0;class#Controller#0" expanded="false" />
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupNewGameButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
+            <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupKeyListener#0;class#Controller#0" expanded="false" />
+            <element signature="method#giveHeightAndWidth#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameArea#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupMenuItemsAndStartButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#sendMenuBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
+            <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+            <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/MainGraphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="32" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860">
+          <folding>
+            <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
+            <element signature="e#1552#1607#0" expanded="false" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#setup#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="1860">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="0" selection-start="4278" selection-end="4278" vertical-scroll-proportion="0.0" vertical-offset="2002" max-vertical-offset="3660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="24" selection-start="3402" selection-end="3402" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1360">
+          <folding>
+            <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
+            <element signature="e#1549#1604#0" expanded="false" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="237" column="48" selection-start="5579" selection-end="5579" vertical-scroll-proportion="-10.961538" vertical-offset="2655" max-vertical-offset="4000">
+          <folding>
+            <element signature="method#Controller#0;class#Controller#0" expanded="false" />
+            <element signature="e#2966#3052#0" expanded="false" />
+            <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupOptionsPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
+            <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupKeyListener#0;class#Controller#0" expanded="false" />
+            <element signature="method#giveHeightAndWidth#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameArea#0;class#Controller#0" expanded="false" />
+            <element signature="method#sendMenuBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
+            <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+            <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGame#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="441" column="1" selection-start="9714" selection-end="9714" vertical-scroll-proportion="0.7307692" vertical-offset="4576" max-vertical-offset="5040">
+          <folding>
+            <element signature="docComment;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#gameAreaWidth#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#gameAreaHeight#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#gameWorld#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#lastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#gameOver#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#snakeAlive#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#stopGameLoop#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#scores#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#MAX_PLAYER_NUMBER#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#isFood#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#initializeHighScore#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#setHighScore#0;class#Synchronizer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -118,9 +118,7 @@ public class Controller extends AnchorPane {
 
     SimpleBooleanProperty initializeNewGame = new SimpleBooleanProperty(false); // this is used to pass information between the controller and the mainGraphics class
     SimpleBooleanProperty startNewGame = new SimpleBooleanProperty(false);
-    Direction[] directions = {
-            new Direction(Direction.RIGHT)
-    };
+
 
     private int height;
     private int width;
@@ -236,7 +234,8 @@ public class Controller extends AnchorPane {
             public void handle(ActionEvent actionEvent) {
                 multiplayerPane.toBack();
                 newGamePane.toFront();
-                Synchronizer.setNumberOfPlayers(2);
+                Synchronizer.setNumberOfPlayer(2);
+                Synchronizer.setTwoPlayerGame();
             }
         });
 
@@ -372,28 +371,41 @@ public class Controller extends AnchorPane {
         bottomPane.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent keyEvent) {
-                int p = 0; //Current number of players
                 KeyCode keyCode = keyEvent.getCode();
                 switch (keyCode) {
                     case UP:
-                        if (directions[p].getValue() != Direction.DOWN)  //If you are going down you can't turn up, or you will die.
-                            directions[p].setDirection(Direction.UP);
+                        if (Synchronizer.getLastButtonPressed(0).getValue() != Direction.DOWN)
+                            Synchronizer.setLastButtonPressed(new Direction(Direction.UP), 0);
                         break;
                     case DOWN:
-                        if (directions[p].getValue() != Direction.UP)
-                            directions[p].setDirection(Direction.DOWN);
+                        if (Synchronizer.getLastButtonPressed(0).getValue() != Direction.UP)
+                            Synchronizer.setLastButtonPressed(new Direction(Direction.DOWN), 0);
                         break;
                     case LEFT:
-                        if (directions[p].getValue() != Direction.RIGHT)
-                            directions[p].setDirection(Direction.LEFT);
+                        if (Synchronizer.getLastButtonPressed(0).getValue() != Direction.RIGHT)
+                            Synchronizer.setLastButtonPressed(new Direction(Direction.LEFT), 0);
                         break;
                     case RIGHT:
-                        if (directions[p].getValue() != Direction.LEFT)
-                            directions[p].setDirection(Direction.RIGHT);
+                        if (Synchronizer.getLastButtonPressed(0).getValue() != Direction.LEFT)
+                            Synchronizer.setLastButtonPressed(new Direction(Direction.RIGHT), 0);
+                        break;
+                    case W:
+                        if (Synchronizer.getNumberOfPlayer()==2 && Synchronizer.getLastButtonPressed(1).getValue() != Direction.DOWN)
+                            Synchronizer.setLastButtonPressed(new Direction(Direction.UP), 1);
+                        break;
+                    case S:
+                        if (Synchronizer.getNumberOfPlayer()==2 && Synchronizer.getLastButtonPressed(1).getValue() != Direction.UP)
+                            Synchronizer.setLastButtonPressed(new Direction(Direction.DOWN), 1);
+                        break;
+                    case A:
+                        if (Synchronizer.getNumberOfPlayer()==2 && Synchronizer.getLastButtonPressed(1).getValue() != Direction.RIGHT)
+                            Synchronizer.setLastButtonPressed(new Direction(Direction.LEFT), 1);
+                        break;
+                    case D:
+                        if (Synchronizer.getNumberOfPlayer()==2 && Synchronizer.getLastButtonPressed(1).getValue() != Direction.LEFT)
+                            Synchronizer.setLastButtonPressed(new Direction(Direction.RIGHT), 1);
                         break;
                 }
-
-                Synchronizer.setLastButtonPressed(directions);
             }
         });
     }
@@ -420,43 +432,24 @@ public class Controller extends AnchorPane {
 
     private Shape chooseColor(char[][] matrix, int x, int y) {
         Shape shape = null;
-        Color color = null;
         switch (matrix[x][y]) {
             case 'S':
-                if (theme == 1) {
-                    color = Color.ORANGE;
-
-                } else {
-                    color = Color.GREEN;
-                }
-                shape = new Circle(gridSquareHeight / 2, color);
+                shape = new Circle(gridSquareHeight*0.6, Color.BLUE);
                 break;
             case 'o':
-                if (theme == 1) {
-                    color = Color.ORANGE;
-
-                } else {
-                    color = Color.LIGHTYELLOW;
-                }
-                shape = new Circle(gridSquareHeight / 2, color);
+                shape = new Circle(gridSquareHeight*0.6, Color.GREEN);
+                break;
+            case 'T':
+                shape = new Circle(gridSquareHeight*0.6, Color.BLUE);
+                break;
+            case 'e':
+                shape = new Circle(gridSquareHeight*0.6, Color.ORANGE);
                 break;
             case 'X':
-                if (theme == 1) {
-                    color = Color.GREY;
-                } else {
-                    color = Color.LIGHTBLUE;
-                }
-                shape = new Rectangle(gridSquareWidth - 1, gridSquareHeight - 1, color);
+                shape = new Rectangle(gridSquareWidth - 1, gridSquareHeight - 1, Color.GREY);
                 break;
             case 'm':
-                if (theme == 1) {
-                    color = Color.PURPLE
-                    ;
-
-                } else {
-                    color = Color.PURPLE;
-                }
-                shape = new Circle(gridSquareHeight / 2, color);
+                shape = new Circle(gridSquareHeight / 2, Color.RED);
                 break;
         }
         return shape;

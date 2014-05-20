@@ -57,7 +57,7 @@ public class Control implements KeyListener {
                     arrow[p].setDirection(Direction.RIGHT);
                 break;
         }
-        Synchronizer.setLastButtonPressed(arrow);
+        //Synchronizer.setLastButtonPressed(arrow);
     }
 
     public void keyReleased(KeyEvent e) {

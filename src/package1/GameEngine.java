@@ -18,7 +18,7 @@ public class GameEngine {
 
     // variables from the outside
 
-    private Snake snake;
+    private Snake [] snake;
     private int frameRate;
 
     private Food [] food;
@@ -35,7 +35,7 @@ public class GameEngine {
 
      * @param frameRate
          */
-    public GameEngine(Snake snake, int frameRate, Food [] food) {
+    public GameEngine(Snake [] snake, int frameRate, Food [] food) {
         this.snake = snake;
         this.frameRate = frameRate;
         this.food = food;
@@ -75,24 +75,13 @@ public class GameEngine {
      */
     public void update() {
 
-        for (int i = 0; i< Synchronizer.FOOD_NUMBER; i++)
+        for (int i = 0; i< Synchronizer.foodNumber; i++)
             food[i].placeFood();
-        //Control.updateDirection();
-        snake.move();
+        for (int i = 0; i<Synchronizer.getNumberOfPlayer(); i++)
+            snake[i].move();
         if (Synchronizer.isGameOver()){
             Synchronizer.setStopGameLoop(true);
         }
-
-		/*for (Snake snake : snakes) {       // this loop goes over every snake in the snakes array
-
-			// put code for updating and movin snake here
-			// which could look like this
-			// snake.move()
-
-
-		}*/
-
-
     }
 
 
