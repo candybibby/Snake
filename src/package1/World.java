@@ -46,7 +46,7 @@ public class World {
         for (int i=0; i< Synchronizer.FOOD_NUMBER; i++) 
             food[i] = new Food();
         Synchronizer.setFood(this.food);
-        this.gameEngine = new GameEngine(this.snake, 5, this.food);
+        this.gameEngine = new GameEngine(this.snake, Synchronizer.getSquaresPerSecond(), this.food);
     }
 
     //METHODS

@@ -83,7 +83,7 @@ public class MainGraphics extends Application {
         controller.buildGrid();
         game = new Game();
 
-        game.runNewGame(controller.getGameDifficulty());             // run the game with the given difficulty
+        game.runNewGame(Synchronizer.getDifficulty());             // run the game with the given difficulty
         controller.setHighScore(Synchronizer.highScore);
     }
 
@@ -113,8 +113,10 @@ public class MainGraphics extends Application {
             @Override
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean aBoolean2) {
                 controller.sendMenuBack();
+                //controller.gameAreaContainer.toFront();
+                controller.startGame();
                 controller.setMenuOpacity(0);
-                controller.setTheme(1);
+                controller.setTheme(0);
                 mainProgram();
                 graphicsTimer();
             }

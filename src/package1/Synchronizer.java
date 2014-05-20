@@ -65,10 +65,16 @@ public class Synchronizer {
      * maximum number of players *
      */
     public final static int MAX_PLAYER_NUMBER = 2;
+    public static int numberOfPlayers = 1;
+
+    private static int difficulty = 0;
+
     public static int FOOD_NUMBER = 3;
     public static boolean TRON = false;
 
     public final static int LENGTH = 20;
+
+    private static int squaresPerSecond = 6;
 
 
     // CONSTRUCTOR
@@ -406,8 +412,30 @@ public class Synchronizer {
     public static int getHighScore(){
         return highScore;
     }
-    
-    
-    
+
+
+    public static int getNumberOfPlayers() {
+        return numberOfPlayers;
+    }
+
+    public static void setNumberOfPlayers(int numberOfPlayers) {
+        Synchronizer.numberOfPlayers = numberOfPlayers;
+    }
+
+    public static int getDifficulty() {
+        return difficulty;
+    }
+
+    public static void setDifficulty(int difficulty) {
+        Synchronizer.difficulty = difficulty;
+    }
+
+    public static int getSquaresPerSecond() {
+        return squaresPerSecond;
+    }
+
+    public static void setSquaresPerSecond(int squaresPerSecond) {
+        Synchronizer.squaresPerSecond = squaresPerSecond;
+    }
 }
 
