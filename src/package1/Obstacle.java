@@ -76,7 +76,12 @@ public class Obstacle {
 				break;
 
 		}
-        clearStartLane((Synchronizer.getGameAreaWidth() / 2), (Synchronizer.getGameAreaHeight() / 2), new Direction(Direction.RIGHT));
+        if (Synchronizer.getNumberOfPlayer() == 2) {
+            clearStartLane((Synchronizer.getGameAreaWidth() / 4), (Synchronizer.getGameAreaHeight() / 4), Direction.RIGHT);
+            clearStartLane((Synchronizer.getGameAreaWidth() / 4*3), (Synchronizer.getGameAreaHeight() / 4*3), Direction.LEFT);
+        }
+        else
+            clearStartLane((Synchronizer.getGameAreaWidth() / 2), (Synchronizer.getGameAreaHeight() / 2), Direction.RIGHT);
 	}
 
 
@@ -296,10 +301,14 @@ public class Obstacle {
      * @param startY points snake's borning position
      * @param dir points snake's borning direction
      */
-    public void clearStartLane (int startX, int startY, Direction dir) {
-        switch (dir.getValue()) {
+    public void clearStartLane (int startX, int startY, int dir) {
+        switch (dir) {
             case Direction.RIGHT:
                 for (int i = startX; i<Synchronizer.gameAreaWidth - 1; i++)
+                    Synchronizer.writeThisCell(i, startY, Symbol.EMPTY);
+                break;
+            case Direction.LEFT:
+                for (int i = startX; i>0; i--)
                     Synchronizer.writeThisCell(i, startY, Symbol.EMPTY);
                 break;
         }
