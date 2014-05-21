@@ -16,6 +16,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 import package1.*;
+import sounds.SoundMaker;
 
 public class MainGraphics extends Application {
 
@@ -26,6 +27,10 @@ public class MainGraphics extends Application {
 
     SimpleBooleanProperty initializeNewGame = new SimpleBooleanProperty(false); // this is used to pass information between the controller and the mainGraphics class
     SimpleBooleanProperty startNewGame = new SimpleBooleanProperty(false);
+
+    SimpleBooleanProperty scoreChanged = new SimpleBooleanProperty(false);
+
+    public SoundMaker musicPlayer;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -47,7 +52,7 @@ public class MainGraphics extends Application {
     }
 
     public void drawGameOver() {
-        controller.displayGameOver();
+        //controller.displayGameOver();
     }
 
     public void graphicsTimer() { // setup a timer for the graphics, runs every 1000/framerate milliseconds
@@ -59,6 +64,7 @@ public class MainGraphics extends Application {
                     drawScreen();                   // draw the game screen
                     controller.updateScore(Synchronizer.getScores(0));
                     controller.setHighScore(Synchronizer.getHighScore());
+
                 } else {                // else
                     drawScreen();
                     drawGameOver();             // draw the game over text
@@ -94,11 +100,27 @@ public class MainGraphics extends Application {
     }
 
     public void setup() {       // setup everything for the graphics part
-
+        musicPlayer = new SoundMaker();
+        musicPlayer.setupMusic();
         Synchronizer.setup();
         controller = new Controller();      // make a new instance of controller
         controller.menuPane.toFront();      //
         controller.menuPane.setOpacity(1);
+        musicPlayer.loopSound(0);
+
+        scoreChanged.bind(GameEngine.scoreChanged);
+        scoreChanged.addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean aBoolean2) {
+                musicMonitor();
+                SoundMaker.eatFood();
+
+            }
+        });
+
+
+
+
         initializeNewGame.bind(controller.initializeNewGame);       // bind the two simplebooleanproperties so we know when the new game button was pushed
         initializeNewGame.addListener(new ChangeListener<Boolean>() {
             @Override
@@ -109,6 +131,8 @@ public class MainGraphics extends Application {
             }
         });
 
+
+
         startNewGame.bind(controller.startNewGame);
         startNewGame.addListener(new ChangeListener<Boolean>() {
             @Override
@@ -118,6 +142,8 @@ public class MainGraphics extends Application {
                 controller.startGame();
                 controller.setMenuOpacity(0);
                 controller.setTheme(0);
+                musicPlayer.stopMusic();
+                musicPlayer.loopSound(1);
                 mainProgram();
                 graphicsTimer();
             }
@@ -132,5 +158,28 @@ public class MainGraphics extends Application {
         game.runNewGame(controller.getGameDifficulty());
     }
 
+    public void musicMonitor() {
+        int tempScore = Synchronizer.getScores(0);
+        int increment = 1;
+
+
+        if (tempScore > 4 * increment && tempScore < 10 * increment && musicPlayer.numberOfSong != 2) {
+            musicPlayer.stopMusic();
+            musicPlayer.loopSound(2);
+        }
+        if (tempScore > 9 * increment && tempScore < 15 * increment && musicPlayer.numberOfSong != 3) {
+            musicPlayer.stopMusic();
+            musicPlayer.loopSound(3);
+        }
+        if (tempScore > 14 * increment && tempScore < 20 * increment && musicPlayer.numberOfSong != 4) {
+            musicPlayer.stopMusic();
+            musicPlayer.loopSound(4);
+        }
+
+
+    }
 
 }
+
+
+

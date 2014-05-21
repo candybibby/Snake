@@ -1,5 +1,8 @@
 package package1;
 
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -25,6 +28,9 @@ public class GameEngine {
 
     // in-class variables
     public Timer engineTimer;
+    private int oldScore;
+
+    public static SimpleBooleanProperty scoreChanged = new SimpleBooleanProperty(false);
 
     /**
      * Constructor with 5 parameters
@@ -82,6 +88,17 @@ public class GameEngine {
         if (Synchronizer.isGameOver()){
             Synchronizer.setStopGameLoop(true);
         }
+
+        checkScore();
+    }
+
+    public void checkScore (){
+
+        if(Synchronizer.getScores(0) != oldScore){
+            scoreChanged.setValue(!scoreChanged.getValue());
+            oldScore = Synchronizer.getScores(0);
+        }
+
     }
 
 

@@ -439,5 +439,7 @@ public class Synchronizer {
         scores = new int[numberOfPlayer];
         snakeAlive = new boolean[numberOfPlayer];
     }
+
+
 }
 
