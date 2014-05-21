@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" line="165" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" line="170" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="598b7e06-4b3a-47d6-9e1f-b028dd63bae8" name="Default" comment="" />
@@ -75,7 +75,7 @@
       <file leaf-file-name="Synchronizer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="183" selection-end="185" vertical-scroll-proportion="-5.0" vertical-offset="30" max-vertical-offset="5080">
+            <state line="453" column="32" selection-start="10178" selection-end="10184" vertical-scroll-proportion="-6.269231" vertical-offset="5737" max-vertical-offset="6140">
               <folding>
                 <element signature="docComment;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;field#gameAreaWidth#0;class#Synchronizer#0" expanded="false" />
@@ -90,32 +90,39 @@
                 <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
+                <element signature="e#3119#3120#0" expanded="true" />
+                <element signature="e#3149#3150#0" expanded="true" />
                 <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
                 <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
                 <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
+                <element signature="e#4898#4899#0" expanded="true" />
+                <element signature="e#4929#4930#0" expanded="true" />
                 <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
                 <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
+                <element signature="e#5708#5709#0" expanded="true" />
+                <element signature="e#5743#5744#0" expanded="true" />
                 <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
                 <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#isFood#0;class#Synchronizer#0" expanded="false" />
+                <element signature="e#6777#6778#0" expanded="true" />
+                <element signature="e#6826#6827#0" expanded="true" />
                 <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
                 <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
                 <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
                 <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
                 <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#initializeHighScore#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#setHighScore#0;class#Synchronizer#0" expanded="false" />
+                <element signature="e#8782#8783#0" expanded="true" />
+                <element signature="e#8814#8815#0" expanded="true" />
+                <element signature="e#9547#9548#0" expanded="true" />
+                <element signature="e#9611#9612#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,12 +131,13 @@
       <file leaf-file-name="MainGraphics.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="10" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.33173078" vertical-offset="362" max-vertical-offset="1900">
+            <state line="128" column="0" selection-start="4559" selection-end="4559" vertical-scroll-proportion="0.48076922" vertical-offset="1400" max-vertical-offset="2380">
               <folding>
                 <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
                 <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
                 <element signature="e#1687#1742#0" expanded="false" />
-                <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+                <element signature="e#2168#3070#0" expanded="true" />
+                <element signature="e#3059#3060#0" expanded="true" />
                 <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
                 <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
                 <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
@@ -161,7 +169,7 @@
       <file leaf-file-name="GameEngine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="49" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.0" vertical-offset="1464" max-vertical-offset="2140">
+            <state line="101" column="49" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.0" vertical-offset="1544" max-vertical-offset="2220">
               <folding />
             </state>
           </provider>
@@ -234,13 +242,13 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/package1/Synchronizer.java" />
         <option value="$PROJECT_DIR$/src/sounds/Sound.java" />
         <option value="$PROJECT_DIR$/src/sounds/soundTester.java" />
         <option value="$PROJECT_DIR$/src/sounds/MakeSound.java" />
         <option value="$PROJECT_DIR$/src/sounds/SoundMaker.java" />
         <option value="$PROJECT_DIR$/src/package1/GameEngine.java" />
         <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
+        <option value="$PROJECT_DIR$/src/package1/Synchronizer.java" />
         <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" />
       </list>
     </option>
@@ -610,8 +618,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -632,7 +640,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -677,32 +685,39 @@
             <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#3119#3120#0" expanded="true" />
+            <element signature="e#3149#3150#0" expanded="true" />
             <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#4898#4899#0" expanded="true" />
+            <element signature="e#4929#4930#0" expanded="true" />
             <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#5708#5709#0" expanded="true" />
+            <element signature="e#5743#5744#0" expanded="true" />
             <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#isFood#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#6777#6778#0" expanded="true" />
+            <element signature="e#6826#6827#0" expanded="true" />
             <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#initializeHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setHighScore#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#8782#8783#0" expanded="true" />
+            <element signature="e#8814#8815#0" expanded="true" />
+            <element signature="e#9547#9548#0" expanded="true" />
+            <element signature="e#9611#9612#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -721,7 +736,8 @@
             <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
             <element signature="e#1687#1742#0" expanded="false" />
-            <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+            <element signature="e#2168#3070#0" expanded="true" />
+            <element signature="e#3059#3060#0" expanded="true" />
             <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
@@ -799,32 +815,39 @@
             <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#3119#3120#0" expanded="true" />
+            <element signature="e#3149#3150#0" expanded="true" />
             <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#4898#4899#0" expanded="true" />
+            <element signature="e#4929#4930#0" expanded="true" />
             <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
             <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#5708#5709#0" expanded="true" />
+            <element signature="e#5743#5744#0" expanded="true" />
             <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#isFood#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#6777#6778#0" expanded="true" />
+            <element signature="e#6826#6827#0" expanded="true" />
             <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
             <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#initializeHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setHighScore#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#8782#8783#0" expanded="true" />
+            <element signature="e#8814#8815#0" expanded="true" />
+            <element signature="e#9547#9548#0" expanded="true" />
+            <element signature="e#9611#9612#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -843,7 +866,8 @@
             <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
             <element signature="e#1687#1742#0" expanded="false" />
-            <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+            <element signature="e#2168#3070#0" expanded="true" />
+            <element signature="e#3059#3060#0" expanded="true" />
             <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
@@ -911,7 +935,8 @@
             <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
             <element signature="e#1687#1742#0" expanded="false" />
-            <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+            <element signature="e#2168#3070#0" expanded="true" />
+            <element signature="e#3059#3060#0" expanded="true" />
             <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
@@ -965,53 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="183" selection-end="185" vertical-scroll-proportion="-5.0" vertical-offset="30" max-vertical-offset="5080">
-          <folding>
-            <element signature="docComment;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#lastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#snakeAlive#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#stopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#scores#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#MAX_PLAYER_NUMBER#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#isFood#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#initializeHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setHighScore#0;class#Synchronizer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="19" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="1360">
@@ -1030,7 +1008,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="49" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.0" vertical-offset="1464" max-vertical-offset="2140">
+        <state line="101" column="49" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.0" vertical-offset="1544" max-vertical-offset="2220">
           <folding />
         </state>
       </provider>
@@ -1070,14 +1048,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="453" column="32" selection-start="10178" selection-end="10184" vertical-scroll-proportion="-6.269231" vertical-offset="5737" max-vertical-offset="6140">
+          <folding>
+            <element signature="docComment;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#gameAreaWidth#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#gameAreaHeight#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#gameWorld#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#lastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#gameOver#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#snakeAlive#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#stopGameLoop#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#scores#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;field#MAX_PLAYER_NUMBER#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#3119#3120#0" expanded="true" />
+            <element signature="e#3149#3150#0" expanded="true" />
+            <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#4898#4899#0" expanded="true" />
+            <element signature="e#4929#4930#0" expanded="true" />
+            <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
+            <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#5708#5709#0" expanded="true" />
+            <element signature="e#5743#5744#0" expanded="true" />
+            <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#6777#6778#0" expanded="true" />
+            <element signature="e#6826#6827#0" expanded="true" />
+            <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
+            <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
+            <element signature="e#8782#8783#0" expanded="true" />
+            <element signature="e#8814#8815#0" expanded="true" />
+            <element signature="e#9547#9548#0" expanded="true" />
+            <element signature="e#9611#9612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="10" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.33173078" vertical-offset="362" max-vertical-offset="1900">
+        <state line="128" column="0" selection-start="4559" selection-end="4559" vertical-scroll-proportion="0.48076922" vertical-offset="1400" max-vertical-offset="2380">
           <folding>
             <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
             <element signature="e#1687#1742#0" expanded="false" />
-            <element signature="method#graphicsTimer#0;class#MainGraphics#0" expanded="false" />
+            <element signature="e#2168#3070#0" expanded="true" />
+            <element signature="e#3059#3060#0" expanded="true" />
             <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#main#0;class#MainGraphics#0" expanded="false" />

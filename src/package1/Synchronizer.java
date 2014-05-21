@@ -439,10 +439,7 @@ public class Synchronizer {
         scores = new int[numberOfPlayer];
         snakeAlive = new boolean[numberOfPlayer];
     }
-<<<<<<< HEAD
 
-
-=======
     public static boolean isFull(){
         char [][] world = Synchronizer.getGameWorld();
         for (int i = 0; i<Synchronizer.getGameAreaHeight(); i++)
@@ -457,6 +454,6 @@ public class Synchronizer {
     public static boolean someoneWon() {
         return youWon;
     }
->>>>>>> 6641101b25345dcac9376c3822d2ea67d9e7aa1b
+
 }
 

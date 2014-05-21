@@ -64,17 +64,16 @@ public class MainGraphics extends Application {
                     drawScreen();                   // draw the game screen
                     controller.updateScore(Synchronizer.getScores(0));
                     controller.setHighScore(Synchronizer.getHighScore());
-<<<<<<< HEAD
 
-                } else {                // else
-=======
-                } else if (Synchronizer.someoneWon() && Synchronizer.isGameOver()) {
+
+                }                 // else
+
+                else if (Synchronizer.someoneWon() && Synchronizer.isGameOver()) {
                     drawScreen();
                     System.out.println("you won!");
                     //drawWinner();     //We need a Winner Window with fireworks!
-                }
-                else {                // else
->>>>>>> 6641101b25345dcac9376c3822d2ea67d9e7aa1b
+                } else {                // else
+
                     drawScreen();
                     drawGameOver();             // draw the game over text
                 }
@@ -128,8 +127,6 @@ public class MainGraphics extends Application {
         });
 
 
-
-
         initializeNewGame.bind(controller.initializeNewGame);       // bind the two simplebooleanproperties so we know when the new game button was pushed
         initializeNewGame.addListener(new ChangeListener<Boolean>() {
             @Override
@@ -139,7 +136,6 @@ public class MainGraphics extends Application {
                 resetAll();                              // then make new game
             }
         });
-
 
 
         startNewGame.bind(controller.startNewGame);
