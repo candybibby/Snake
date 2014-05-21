@@ -59,6 +59,8 @@ public class GameEngine {
                     } else {
                         Synchronizer.setGameLoopRunning(false);
                         System.out.println("Game Over!");
+                        if(Synchronizer.someoneWon())
+                            System.out.println("Winner!");
                         engineTimer.cancel();
                         engineTimer.purge();
 
@@ -75,11 +77,12 @@ public class GameEngine {
      */
     public void update() {
 
-        for (int i = 0; i< Synchronizer.foodNumber; i++)
+        for (int i = 0; i < Synchronizer.foodNumber; i++)
             food[i].placeFood();
-        for (int i = 0; i<Synchronizer.getNumberOfPlayer(); i++)
+        for (int i = 0; i < Synchronizer.getNumberOfPlayer(); i++)
             snake[i].move();
-        if (Synchronizer.isGameOver()){
+
+        if (Synchronizer.isGameOver() || Synchronizer.isFull()){
             Synchronizer.setStopGameLoop(true);
         }
     }
