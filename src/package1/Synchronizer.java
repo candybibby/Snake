@@ -48,7 +48,7 @@ public class Synchronizer {
      * If the player want or not restart the game
      */
     private static boolean stopGameLoop;
-
+    private static boolean youWon = false;
     private static boolean gameLoopRunning;
 
     private static Food [] food;
@@ -68,7 +68,7 @@ public class Synchronizer {
      */
     public final static int MAX_PLAYER_NUMBER = 2;
     private static int numberOfPlayer = 1;
-    public static int foodNumber = 3;
+    public static int foodNumber = 300;
     public static boolean tron = false;
     private static int squaresPerSecond = 6;
 
@@ -438,6 +438,20 @@ public class Synchronizer {
     public static void setTwoPlayerGame(){
         scores = new int[numberOfPlayer];
         snakeAlive = new boolean[numberOfPlayer];
+    }
+    public static boolean isFull(){
+        char [][] world = Synchronizer.getGameWorld();
+        for (int i = 0; i<Synchronizer.getGameAreaHeight(); i++)
+            for (int j = 0;j<Synchronizer.getGameAreaWidth(); j++)
+                if (world[i][j] == Symbol.EMPTY) return false;
+        youWon = true;
+        System.out.println("aa");
+        gameOver = true;
+        return true;
+    }
+
+    public static boolean someoneWon() {
+        return youWon;
     }
 }
 
