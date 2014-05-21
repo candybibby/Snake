@@ -72,31 +72,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Synchronizer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="409" column="5" selection-start="9004" selection-end="9004" vertical-scroll-proportion="-3.0769231" vertical-offset="7500" max-vertical-offset="8460">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SoundMaker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="34" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="2700">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Controller.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="360" column="0" selection-start="9105" selection-end="9105" vertical-scroll-proportion="-11.923077" vertical-offset="3190" max-vertical-offset="4780">
+            <state line="34" column="34" selection-start="902" selection-end="902" vertical-scroll-proportion="0.4854369" vertical-offset="0" max-vertical-offset="5540">
               <folding>
                 <element signature="method#Controller#0;class#Controller#0" expanded="false" />
-                <element signature="method#initialize#0;class#Controller#0" expanded="false" />
                 <element signature="e#3407#3493#0" expanded="false" />
                 <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
                 <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
@@ -118,10 +99,6 @@
                 <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
                 <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
                 <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
-                <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
-                <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
-                <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
-                <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -130,7 +107,7 @@
       <file leaf-file-name="GameEngine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="7" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.0" vertical-offset="785" max-vertical-offset="2200">
+            <state line="80" column="7" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.0" vertical-offset="1600" max-vertical-offset="2340">
               <folding />
             </state>
           </provider>
@@ -139,16 +116,7 @@
       <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="54" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="2620">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FXMLLoader.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0/jre/lib/ext/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="597" column="0" selection-start="30857" selection-end="30857" vertical-scroll-proportion="0.0" vertical-offset="11624" max-vertical-offset="12040">
+            <state line="52" column="54" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="2740">
               <folding />
             </state>
           </provider>
@@ -157,16 +125,25 @@
       <file leaf-file-name="MainPane.fxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="351" column="26" selection-start="20125" selection-end="20125" vertical-scroll-proportion="-7.8461537" vertical-offset="6816" max-vertical-offset="8260">
+            <state line="23" column="33" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="8260">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainPane – Kopio.fxml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainPane – Kopio.fxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="395" column="109" selection-start="22286" selection-end="22286" vertical-scroll-proportion="18.934177" vertical-offset="421" max-vertical-offset="8320">
+            <state line="12" column="10" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="8320">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainPane2.fxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/mainPane2.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="10" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="1280">
               <folding />
             </state>
           </provider>
@@ -175,27 +152,8 @@
       <file leaf-file-name="Snake.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="0" selection-start="4278" selection-end="4278" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3800">
+            <state line="147" column="60" selection-start="4916" selection-end="4916" vertical-scroll-proportion="0.0" vertical-offset="2940" max-vertical-offset="3840">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainGraphics.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="25" selection-start="3044" selection-end="3044" vertical-scroll-proportion="-3.8846154" vertical-offset="759" max-vertical-offset="2520">
-              <folding>
-                <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
-                <element signature="e#1687#1742#0" expanded="false" />
-                <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#musicMonitor#0;class#MainGraphics#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -217,10 +175,11 @@
         <option value="$PROJECT_DIR$/src/package1/Synchronizer.java" />
         <option value="$PROJECT_DIR$/src/sounds/SoundMaker.java" />
         <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainPane.fxml" />
-        <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml" />
         <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" />
-        <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
         <option value="$PROJECT_DIR$/src/package1/World.java" />
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml" />
+        <option value="$PROJECT_DIR$/src/package1/Snake.java" />
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
       </list>
     </option>
   </component>
@@ -256,8 +215,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,9 +282,29 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphicsJavaFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snakePortugal2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snakePortugal2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,6 +325,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Tariq\Programming\snakePortugal2\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Tariq\Programming\snakePortugal2\src\graphicsJavaFX" />
     </key>
   </component>
   <component name="RunManager" selected="Application.MainGraphics">
@@ -439,6 +419,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -464,19 +457,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -562,6 +542,23 @@
     </option>
     <option name="fileTypes" value="class;svn-base;svn-work;Extra;gif;png;jpg;jpeg;bmp;tga;tiff;ear;war;zip;jar;iml;iws;ipr;bz2;gz;" />
   </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="598b7e06-4b3a-47d6-9e1f-b028dd63bae8" name="Default" comment="" />
@@ -571,33 +568,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30746704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23564954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41374046" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -621,6 +618,78 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="10" selection-start="3846" selection-end="3846" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5720">
+          <folding>
+            <element signature="method#Controller#0;class#Controller#0" expanded="false" />
+            <element signature="e#3407#3493#0" expanded="false" />
+            <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupMultiplayerPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
+            <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupKeyListener#0;class#Controller#0" expanded="false" />
+            <element signature="method#giveHeightAndWidth#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameArea#0;class#Controller#0" expanded="false" />
+            <element signature="method#sendMenuBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
+            <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
+            <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+            <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGame#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="7" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.0" vertical-offset="1600" max-vertical-offset="2340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="54" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="2740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="33" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="8260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="8320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/mainPane2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="10" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="1280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="60" selection-start="4916" selection-end="4916" vertical-scroll-proportion="0.0" vertical-offset="2940" max-vertical-offset="3840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="453" column="32" selection-start="10178" selection-end="10184" vertical-scroll-proportion="0.0" vertical-offset="9060" max-vertical-offset="9300">
@@ -647,9 +716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="2860">
-          <folding />
-        </state>
+        <state line="20" column="19" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="2860" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
@@ -669,7 +736,6 @@
         <state line="486" column="7" selection-start="14180" selection-end="14180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10320">
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
-            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="e#3407#3493#0" expanded="false" />
             <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
             <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
@@ -691,10 +757,6 @@
             <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
             <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
             <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,7 +816,6 @@
         <state line="237" column="48" selection-start="5579" selection-end="5579" vertical-scroll-proportion="0.0" vertical-offset="4740" max-vertical-offset="9960">
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
-            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="e#3407#3493#0" expanded="false" />
             <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
             <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
@@ -776,10 +837,6 @@
             <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
             <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
             <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -837,7 +894,6 @@
         <state line="237" column="48" selection-start="5579" selection-end="5579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9960">
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
-            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="e#3407#3493#0" expanded="false" />
             <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
             <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
@@ -859,10 +915,6 @@
             <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
             <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
             <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,27 +958,9 @@
         <state line="52" column="32" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="0" selection-start="4278" selection-end="4278" vertical-scroll-proportion="0.0" vertical-offset="2002" max-vertical-offset="3660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sounds/Sound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="834" selection-end="834" vertical-scroll-proportion="0.7762238" vertical-offset="447" max-vertical-offset="920">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sounds/soundTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="48" selection-start="219" selection-end="219" vertical-scroll-proportion="0.51282054" vertical-offset="20" max-vertical-offset="460">
-          <folding />
-        </state>
+        <state line="12" column="48" selection-start="219" selection-end="219" vertical-scroll-proportion="0.51282054" vertical-offset="20" max-vertical-offset="460" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/apple.png">
@@ -934,55 +968,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://H:/Snake00/src/graphicsJavaFX/MainGraphics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="51" selection-start="2786" selection-end="3250" vertical-scroll-proportion="0.0" vertical-offset="1069" max-vertical-offset="2720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://H:/Snake00/src/graphicsJavaFX/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="22" selection-start="2114" selection-end="2272" vertical-scroll-proportion="-9.346154" vertical-offset="2217" max-vertical-offset="4720">
-          <folding>
-            <element signature="method#Controller#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupMultiplayerPane#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupOptionsPane#0;class#Controller#0" expanded="false" />
-            <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
-            <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
-            <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupKeyListener#0;class#Controller#0" expanded="false" />
-            <element signature="method#giveHeightAndWidth#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameArea#0;class#Controller#0" expanded="false" />
-            <element signature="method#sendMenuBack#0;class#Controller#0" expanded="false" />
-            <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
-            <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
-            <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
-            <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
-            <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
-            <element signature="method#startGame#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="34" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="2700">
-          <folding />
-        </state>
+        <state line="43" column="34" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="2700" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0/jre/lib/ext/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="597" column="0" selection-start="30857" selection-end="30857" vertical-scroll-proportion="0.0" vertical-offset="11624" max-vertical-offset="12040">
-          <folding />
-        </state>
+        <state line="597" column="0" selection-start="30857" selection-end="30857" vertical-scroll-proportion="0.0" vertical-offset="11624" max-vertical-offset="12040" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
@@ -1009,19 +1002,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="7" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.0" vertical-offset="785" max-vertical-offset="2200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="54" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="2620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="8320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/mainPane2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="10" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="351" column="26" selection-start="20125" selection-end="20125" vertical-scroll-proportion="-7.8461537" vertical-offset="6816" max-vertical-offset="8260">
+        <state line="23" column="33" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="8260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="60" selection-start="4916" selection-end="4916" vertical-scroll-proportion="0.0" vertical-offset="2838" max-vertical-offset="3700">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="360" column="0" selection-start="9105" selection-end="9105" vertical-scroll-proportion="-11.923077" vertical-offset="3190" max-vertical-offset="4780">
+        <state line="34" column="34" selection-start="902" selection-end="902" vertical-scroll-proportion="0.4854369" vertical-offset="0" max-vertical-offset="5540">
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
-            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="e#3407#3493#0" expanded="false" />
             <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
             <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
@@ -1043,32 +1070,7 @@
             <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
             <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
             <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
-            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="7" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.0" vertical-offset="785" max-vertical-offset="2200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/package1/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="54" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="2620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="395" column="109" selection-start="22286" selection-end="22286" vertical-scroll-proportion="18.934177" vertical-offset="421" max-vertical-offset="8320">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,6 +1085,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

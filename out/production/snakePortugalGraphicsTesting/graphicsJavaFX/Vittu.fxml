@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="bottomPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" stylesheets="@../../../multiplayerSnakeTesting – Kopio/src/graphicsJavaFX/snake.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children><TextArea fx:id="textGameOver" editable="false" layoutX="141.0" layoutY="177.0" opacity="0.0" prefHeight="33.0" prefWidth="118.0" text="Game Over">
+<font>
+<Font size="18.0" />
+</font>
+</TextArea>
+<StackPane>
+<children><VBox fx:id="mainVerticalBox" layoutX="136.0" layoutY="69.0" opacity="0.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<children><HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #33CC33;">
+<children>
+<HBox alignment="CENTER_LEFT" style="-fx-background-color: #33CC33;">
+<children><Button fx:id="newGameButton" minHeight="-Infinity" mnemonicParsing="false" prefHeight="24.0" style="-fx-background-color: #85E085;" styleClass="custom-text,customButton" text="New Game">
+<HBox.margin>
+<Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+</HBox.margin></Button><Label styleClass="custom-text" text="Score" textFill="#070707">
+<padding>
+<Insets left="5.0" right="5.0" />
+</padding></Label>
+<Label fx:id="scoreLabel" layoutX="101.0" layoutY="22.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="52.0" styleClass="custom-text" text="0">
+<padding>
+<Insets left="5.0" right="5.0" />
+</padding>
+</Label>
+<Label layoutX="40.0" styleClass="custom-text" text="High Score">
+<padding>
+<Insets left="5.0" right="5.0" />
+</padding>
+</Label>
+<Label fx:id="highScoreLabel" styleClass="custom-text" text="0">
+<padding>
+<Insets left="5.0" right="5.0" />
+</padding>
+</Label>
+</children>
+</HBox>
+</children></HBox><AnchorPane fx:id="gameAreaContainer" prefHeight="359.0" prefWidth="400.0" style="-fx-background-color: #85E085;" />
+</children></VBox><AnchorPane id="Menu" fx:id="menuPane" prefHeight="200.0" prefWidth="200.0">
+<children><Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" stroke="BLACK" strokeType="INSIDE" width="400.0" /><Button fx:id="startGameButton" layoutX="174.1875" layoutY="148.5" mnemonicParsing="false" text="Start Game" /><MenuButton layoutX="43.87109375" layoutY="148.5" mnemonicParsing="false" text="Level">
+  <items>
+    <MenuItem fx:id="levelSelectEasy" mnemonicParsing="false" text="Easy" />
+    <MenuItem fx:id="levelSelectMedium" mnemonicParsing="false" text="Medium" />
+<MenuItem fx:id="levelSelectHard" mnemonicParsing="false" text="Hard" />
+<MenuItem fx:id="levelSelectExpert" mnemonicParsing="false" text="Expert" />
+  </items>
+</MenuButton><ToggleButton fx:id="client" layoutX="44.0" layoutY="87.0" mnemonicParsing="false" text="Client" />
+<ToggleButton fx:id="server" layoutX="103.0" layoutY="87.0" mnemonicParsing="false" text="Server">
+<toggleGroup>
+<ToggleGroup />
+</toggleGroup>
+</ToggleButton><TextField fx:id="ipTextField" layoutX="174.43359375" layoutY="87.0" /><TextField fx:id="portTextField" layoutX="341.0" layoutY="87.0" prefHeight="25.0" prefWidth="59.0" />
+</children></AnchorPane>
+</children>
+</StackPane>
+</children></fx:root>

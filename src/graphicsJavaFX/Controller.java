@@ -191,8 +191,8 @@ public class Controller extends AnchorPane {
         setupKeyListener();
         setupGameArea();
         setupOptionsPane();
-        setupGameOver();
-        setupGameOverMulti();
+        //setupGameOver();
+        //setupGameOverMulti();
 
 
     }
@@ -557,7 +557,7 @@ public class Controller extends AnchorPane {
         scorePlayerOverLabel.setText(String.valueOf(score));
     }
 
-    public void setupGameOver(){
+    /*public void setupGameOver(){
         restartGameButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -566,7 +566,7 @@ public class Controller extends AnchorPane {
 
             }
         });
-    }
+    }*/
 
     public void updateScorePlay1(int score){
         scoreLabel1.setText(String.valueOf(score));
@@ -578,7 +578,7 @@ public class Controller extends AnchorPane {
         scorePlay2OverLabel.setText(String.valueOf(score));
     }
 
-    public void setupGameOverMulti(){
+   /* public void setupGameOverMulti(){
         restartGameMultiButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -587,6 +587,6 @@ public class Controller extends AnchorPane {
                 menuPane.setOpacity(3.);
             }
         });
-    }
+    }*/
 
 }

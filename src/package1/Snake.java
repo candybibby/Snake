@@ -147,7 +147,9 @@ public class Snake {
             try {
 				Synchronizer.saveHighScore("highScore.txt");
 			}
-			catch(IOException e){}
+			catch(IOException e){
+                e.printStackTrace();
+            }
         }
         return 0;
     }
