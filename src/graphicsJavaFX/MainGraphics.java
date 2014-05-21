@@ -62,38 +62,33 @@ public class MainGraphics extends Application {
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000 / frameRate), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                if (Synchronizer.getNumberOfPlayer() == 1){
-                if (!Synchronizer.isGameOver()) { // if game not over
-                    drawScreen();                   // draw the game screen
-                    controller.updateEndScorePlay1(Synchronizer.getScores(0));
-                    controller.setHighScore(Synchronizer.getHighScore());
-
-
-                }    else {                // else
-
-                    drawScreen();
-                    drawGameOver();
-                    controller.updateEndScorePlay1(Synchronizer.getScores(0));
-                }             // else
-
-                } else {
-                    if (!Synchronizer.someoneWon() && !Synchronizer.isGameOver()) { // if game not over
-                        drawScreen();                   // draw the game screen
-                        controller.updateScorePlay1(Synchronizer.getScores(0));
-                        controller.updateScorePlay2(Synchronizer.getScores(1));
-                    } else {                // else
+                 if (Synchronizer.getNumberOfPlayer() == 1){
+                    if (!Synchronizer.isGameOver()) { // if game not over
+                      drawScreen();                   // draw the game screen
+                     controller.updateEndScorePlay1(Synchronizer.getScores(0));
+                     controller.setHighScore(Synchronizer.getHighScore());
+                    }else if(Synchronizer.someoneWon() && Synchronizer.isGameOver()) {                // else
+                        drawScreen();
+                        //drawYouWon();
+                    } else{
                         drawScreen();
                         drawGameOver();             // draw the game over text
                     }
 
+                } else {
+                    if (!Synchronizer.isGameOver()) { // if game not over
+                        drawScreen();                   // draw the game screen
+                        controller.updateScorePlay1(Synchronizer.getScores(0));
+                        controller.updateScorePlay2(Synchronizer.getScores(1));
+                        controller.setHighScore(Synchronizer.getHighScore());
+                    }else if(Synchronizer.someoneWon() && Synchronizer.isGameOver()) {                // else
+                        drawScreen();
+                        //drawYouWon();
+                    } else{
+                        drawScreen();
+                        drawGameOver();             // draw the game over text
+                    }
                 }
-
-
-
-
-
-
-            }
         }));
         timeline.setCycleCount(Timeline.INDEFINITE); // makes the timer run forever
         timeline.play();                            // starts the timer
