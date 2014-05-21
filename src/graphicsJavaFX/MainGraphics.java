@@ -59,7 +59,12 @@ public class MainGraphics extends Application {
                     drawScreen();                   // draw the game screen
                     controller.updateScore(Synchronizer.getScores(0));
                     controller.setHighScore(Synchronizer.getHighScore());
-                } else {                // else
+                } else if (Synchronizer.someoneWon() && Synchronizer.isGameOver()) {
+                    drawScreen();
+                    System.out.println("you won!");
+                    //drawWinner();     //We need a Winner Window with fireworks!
+                }
+                else {                // else
                     drawScreen();
                     drawGameOver();             // draw the game over text
                 }
