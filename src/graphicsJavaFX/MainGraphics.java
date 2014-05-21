@@ -52,31 +52,46 @@ public class MainGraphics extends Application {
     }
 
     public void drawGameOver() {
-        //controller.displayGameOver();
+        if (Synchronizer.getNumberOfPlayer()==1)
+            controller.displayGameOver();
+        else
+            controller.displayMultiGameOver();
     }
 
     public void graphicsTimer() { // setup a timer for the graphics, runs every 1000/framerate milliseconds
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000 / frameRate), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-
+                if (Synchronizer.getNumberOfPlayer() == 1){
                 if (!Synchronizer.isGameOver()) { // if game not over
                     drawScreen();                   // draw the game screen
-                    controller.updateScore(Synchronizer.getScores(0));
+                    controller.updateEndScorePlay1(Synchronizer.getScores(0));
                     controller.setHighScore(Synchronizer.getHighScore());
 
 
-                }                 // else
-
-                else if (Synchronizer.someoneWon() && Synchronizer.isGameOver()) {
-                    drawScreen();
-                    System.out.println("you won!");
-                    //drawWinner();     //We need a Winner Window with fireworks!
-                } else {                // else
+                }    else {                // else
 
                     drawScreen();
-                    drawGameOver();             // draw the game over text
+                    drawGameOver();
+                    controller.updateEndScorePlay1(Synchronizer.getScores(0));
+                }             // else
+
+                } else {
+                    if (!Synchronizer.someoneWon() && !Synchronizer.isGameOver()) { // if game not over
+                        drawScreen();                   // draw the game screen
+                        controller.updateScorePlay1(Synchronizer.getScores(0));
+                        controller.updateScorePlay2(Synchronizer.getScores(1));
+                    } else {                // else
+                        drawScreen();
+                        drawGameOver();             // draw the game over text
+                    }
+
                 }
+
+
+
+
+
 
             }
         }));

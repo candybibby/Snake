@@ -78,7 +78,7 @@ public class SoundMaker {
 
 
 public void stopMusic(){
-    musicThread.interrupt();
+    //musicThread.interrupt();
     thisSongPlaying = false;
     AudioPlayer.player.stop(audioStream);
 

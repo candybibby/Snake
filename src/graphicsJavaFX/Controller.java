@@ -29,6 +29,18 @@ public class Controller extends AnchorPane {
             AnchorPane bottomPane;
 
     @FXML
+    AnchorPane gameOverMultiPane;
+
+    @FXML
+    Button restartGameMultiButton;
+
+    @FXML
+    Button restartGameButton;
+
+    @FXML
+    AnchorPane gameOverPane;
+
+    @FXML
     AnchorPane newGamePane;
 
     @FXML
@@ -114,6 +126,24 @@ public class Controller extends AnchorPane {
     @FXML
     VBox gameAreaMainVBox;
 
+    @FXML
+    Label scorePlay1OverLabel;
+
+    @FXML
+    Label scorePlay2OverLabel;
+
+    @FXML
+    Label scoreLabel1;
+
+    @FXML
+    Label scoreLabel2;
+
+    @FXML
+    VBox multiPlayerVbox;
+
+    @FXML
+            Label scorePlayerOverLabel;
+
     SimpleBooleanProperty initializeNewGame = new SimpleBooleanProperty(false); // this is used to pass information between the controller and the mainGraphics class
     SimpleBooleanProperty startNewGame = new SimpleBooleanProperty(false);
 
@@ -161,6 +191,8 @@ public class Controller extends AnchorPane {
         setupKeyListener();
         setupGameArea();
         setupOptionsPane();
+        setupGameOver();
+        setupGameOverMulti();
 
 
     }
@@ -505,6 +537,56 @@ public class Controller extends AnchorPane {
         newGamePane.toBack();
         gameAreaMainVBox.toFront();
 
+    }
+
+    public void displayGameOver() {
+        gameAreaMainVBox.toBack();
+        gameOverPane.toFront();
+
+
+    }
+
+    public void displayMultiGameOver(){
+        gameAreaMainVBox.toBack();
+        gameOverMultiPane.toFront();
+
+    }
+
+    public void updateEndScorePlay1(int score){
+        scoreLabel.setText(String.valueOf(score));
+        scorePlayerOverLabel.setText(String.valueOf(score));
+    }
+
+    public void setupGameOver(){
+        restartGameButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                //gameOverPane.toBack();
+                newGamePane.toFront();
+
+            }
+        });
+    }
+
+    public void updateScorePlay1(int score){
+        scoreLabel1.setText(String.valueOf(score));
+        scorePlay1OverLabel.setText(String.valueOf(score));
+    }
+
+    public void updateScorePlay2(int score){
+        scoreLabel2.setText(String.valueOf(score));
+        scorePlay2OverLabel.setText(String.valueOf(score));
+    }
+
+    public void setupGameOverMulti(){
+        restartGameMultiButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                gameOverMultiPane.toBack();
+                menuPane.toFront();
+                menuPane.setOpacity(3.);
+            }
+        });
     }
 
 }

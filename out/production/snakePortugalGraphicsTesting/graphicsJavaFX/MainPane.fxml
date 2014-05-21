@@ -22,21 +22,33 @@
 </HBox.margin></Button><Label text="Score">
 <padding>
 <Insets left="5.0" right="5.0" />
-</padding></Label>
+</padding>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
 <Label fx:id="scoreLabel" layoutX="101.0" layoutY="22.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="52.0" text="0">
 <padding>
 <Insets left="5.0" right="5.0" />
 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
 </Label>
 <Label layoutX="40.0" text="High Score">
 <padding>
 <Insets left="5.0" right="5.0" />
 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
 </Label>
 <Label fx:id="highScoreLabel" text="0">
 <padding>
 <Insets left="5.0" right="5.0" />
 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
 </Label>
 </children>
 </HBox>
@@ -159,12 +171,12 @@
                   </Text>
                   <ImageView fx:id="player1Image" fitHeight="60.0" fitWidth="85.0" layoutX="84.0" layoutY="326.0">
                      <image>
-                        <Image url="@ArrowKey.jpg" />
+                        <Image url="/graphicsJavaFX/ArrowKey.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="player2Image" fitHeight="60.0" fitWidth="85.0" layoutX="234.0" layoutY="326.0">
                      <image>
-                        <Image url="@wasd.png" />
+                        <Image url="/graphicsJavaFX/wasd.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="97.0" layoutY="281.0" prefHeight="35.0" prefWidth="60.0" text="Player 1" textFill="#86b89b">
@@ -219,7 +231,7 @@
                   <Button fx:id="backButtonCredits" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#3f9406" />
                   <ImageView fx:id="bisssImage" fitHeight="97.0" fitWidth="202.0" layoutX="99.0" layoutY="14.0">
                      <image>
-                        <Image url="@Logo.jpg" />
+                        <Image url="/graphicsJavaFX/Logo.jpg" />
                      </image>
                   </ImageView>
                   <Label layoutX="220.0" layoutY="118.0" text="Camille LOGEART" textFill="#4bcc56">
@@ -244,12 +256,12 @@
                   </Label>
                   <ImageView fx:id="frenchImage" fitHeight="40.0" fitWidth="75.0" layoutX="63.0" layoutY="123.0">
                      <image>
-                        <Image url="@FrenchFlag.png" />
+                        <Image url="/graphicsJavaFX/FrenchFlag.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="italianImage" fitHeight="40.0" fitWidth="75.0" layoutX="63.0" layoutY="173.0">
                      <image>
-                        <Image url="@NetherlandFlag.png" />
+                        <Image url="/graphicsJavaFX/NetherlandFlag.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="220.0" layoutY="218.0" text="Matteo MARRAS" textFill="#4bcc56">
@@ -264,7 +276,7 @@
                   </Label>
                   <ImageView fx:id="dutchImage" fitHeight="40.0" fitWidth="75.0" layoutX="63.0" layoutY="223.0">
                      <image>
-                        <Image url="@ItalianFlag.png" />
+                        <Image url="/graphicsJavaFX/ItalianFlag.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="220.0" layoutY="268.0" text="Ryan GALLACHER" textFill="#4bcc56">
@@ -284,7 +296,7 @@
                   </Label>
                   <ImageView fx:id="scotImage" fitHeight="48.0" fitWidth="75.0" layoutX="62.0" layoutY="273.0">
                      <image>
-                        <Image url="@ScotlandFlag.png" />
+                        <Image url="/graphicsJavaFX/ScotlandFlag.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="102.0" layoutY="361.0" prefHeight="17.0" prefWidth="236.0" text="Erasmus Project 2014 (Portugal)" textFill="#4bcc56">
@@ -322,7 +334,72 @@
                      </font>
                   </Label>
                   <Slider fx:id="lengthSlider" blockIncrement="1.0" layoutX="130.0" layoutY="190.0" majorTickUnit="3.0" max="3.0" minorTickCount="1" showTickMarks="true" snapToTicks="true" />
-                  <Slider fx:id="speedSlider" blockIncrement="2.0" layoutX="130.0" layoutY="310.0" majorTickUnit="2.0" max="10.0" min="2.0" minorTickCount="0" showTickMarks="true" snapToTicks="true" value="6.0" />
+                  <Slider fx:id="speedSlider" blockIncrement="2.0" layoutX="130.0" layoutY="310.0" majorTickUnit="2.0" max="10.0" min="2.0" minorTickCount="0" showTickMarks="true" value="6.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="gameOverPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" layoutX="3.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+                  <Label layoutX="70.0" layoutY="57.0" text="GAME OVER" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="238.0" text="Score" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="159.0" layoutY="182.0" text="Player 1" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scorePlayerOverLabel" layoutX="195.0" layoutY="238.0" text="0" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="gameOverMultiPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="400.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+                  <Label layoutX="70.0" layoutY="57.0" text="GAME OVER" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="232.0" text="Score" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="114.0" layoutY="173.0" text="Player 1" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="243.0" layoutY="173.0" text="Player 2" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scorePlay1OverLabel" layoutX="144.0" layoutY="232.0" text="0" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scorePlay2OverLabel" layoutX="279.0" layoutY="232.0" text="0" textFill="RED">
+                     <font>
+                        <Font name="Courier New" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="317.0" text="Don't be sad, try again :)" textFill="RED">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
 </children>

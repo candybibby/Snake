@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" line="170" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" line="185" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="598b7e06-4b3a-47d6-9e1f-b028dd63bae8" name="Default" comment="" />
@@ -75,75 +75,8 @@
       <file leaf-file-name="Synchronizer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="453" column="32" selection-start="10178" selection-end="10184" vertical-scroll-proportion="-6.269231" vertical-offset="5737" max-vertical-offset="6140">
-              <folding>
-                <element signature="docComment;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;field#gameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;field#gameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;field#gameWorld#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;field#lastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;field#gameOver#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;field#snakeAlive#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;field#stopGameLoop#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;field#scores#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;field#MAX_PLAYER_NUMBER#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
-                <element signature="e#3119#3120#0" expanded="true" />
-                <element signature="e#3149#3150#0" expanded="true" />
-                <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
-                <element signature="e#4898#4899#0" expanded="true" />
-                <element signature="e#4929#4930#0" expanded="true" />
-                <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-                <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-                <element signature="e#5708#5709#0" expanded="true" />
-                <element signature="e#5743#5744#0" expanded="true" />
-                <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-                <element signature="e#6777#6778#0" expanded="true" />
-                <element signature="e#6826#6827#0" expanded="true" />
-                <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
-                <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
-                <element signature="e#8782#8783#0" expanded="true" />
-                <element signature="e#8814#8815#0" expanded="true" />
-                <element signature="e#9547#9548#0" expanded="true" />
-                <element signature="e#9611#9612#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainGraphics.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="63" selection-start="5230" selection-end="5230" vertical-scroll-proportion="0.72115386" vertical-offset="1400" max-vertical-offset="2380">
-              <folding>
-                <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
-                <element signature="e#1687#1742#0" expanded="false" />
-                <element signature="e#2168#3070#0" expanded="true" />
-                <element signature="e#3059#3060#0" expanded="true" />
-                <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
-                <element signature="method#musicMonitor#0;class#MainGraphics#0" expanded="false" />
-              </folding>
+            <state line="409" column="5" selection-start="9004" selection-end="9004" vertical-scroll-proportion="-3.0769231" vertical-offset="7500" max-vertical-offset="8460">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,52 +84,24 @@
       <file leaf-file-name="SoundMaker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="19" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="1360">
-              <folding>
-                <element signature="docComment;class#SoundMaker#0" expanded="false" />
-                <element signature="method#SoundMaker#0;class#SoundMaker#0" expanded="false" />
-                <element signature="method#loopSound#0;class#SoundMaker#0" expanded="false" />
-                <element signature="method#stopMusic#0;class#SoundMaker#0" expanded="false" />
-                <element signature="method#setupMusic#0;class#SoundMaker#0" expanded="false" />
-                <element signature="method#setupsoundFX#0;class#SoundMaker#0" expanded="false" />
-                <element signature="method#clickButton#0;class#SoundMaker#0" expanded="false" />
-                <element signature="method#backButton#0;class#SoundMaker#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameEngine.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="49" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.0" vertical-offset="1544" max-vertical-offset="2220">
+            <state line="43" column="34" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="2700">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apple.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/apple.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="486" column="7" selection-start="14180" selection-end="14180" vertical-scroll-proportion="-7.3076925" vertical-offset="4790" max-vertical-offset="5580">
+            <state line="360" column="0" selection-start="9105" selection-end="9105" vertical-scroll-proportion="-11.923077" vertical-offset="3190" max-vertical-offset="4780">
               <folding>
                 <element signature="method#Controller#0;class#Controller#0" expanded="false" />
                 <element signature="method#initialize#0;class#Controller#0" expanded="false" />
-                <element signature="e#2995#3081#0" expanded="false" />
+                <element signature="e#3407#3493#0" expanded="false" />
                 <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
-                <element signature="e#5222#5449#0" expanded="true" />
-                <element signature="e#5438#5439#0" expanded="true" />
-                <element signature="e#6201#6424#0" expanded="true" />
-                <element signature="e#6413#6414#0" expanded="true" />
-                <element signature="e#7721#7943#0" expanded="true" />
-                <element signature="e#7932#7933#0" expanded="true" />
+                <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupMultiplayerPane#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
                 <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
                 <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
                 <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
@@ -207,9 +112,44 @@
                 <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
                 <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
                 <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
-                <element signature="e#14424#14425#0" expanded="true" />
-                <element signature="e#14460#14461#0" expanded="true" />
+                <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+                <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+                <element signature="method#startGame#0;class#Controller#0" expanded="false" />
+                <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+                <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
+                <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
+                <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
+                <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
+                <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameEngine.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="7" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.0" vertical-offset="785" max-vertical-offset="2200">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/package1/World.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="54" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="2620">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FXMLLoader.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0/jre/lib/ext/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="597" column="0" selection-start="30857" selection-end="30857" vertical-scroll-proportion="0.0" vertical-offset="11624" max-vertical-offset="12040">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -217,7 +157,16 @@
       <file leaf-file-name="MainPane.fxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="43" selection-start="1623" selection-end="1629" vertical-scroll-proportion="-25.384615" vertical-offset="180" max-vertical-offset="6720">
+            <state line="351" column="26" selection-start="20125" selection-end="20125" vertical-scroll-proportion="-7.8461537" vertical-offset="6816" max-vertical-offset="8260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainPane – Kopio.fxml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="395" column="109" selection-start="22286" selection-end="22286" vertical-scroll-proportion="18.934177" vertical-offset="421" max-vertical-offset="8320">
               <folding />
             </state>
           </provider>
@@ -226,8 +175,27 @@
       <file leaf-file-name="Snake.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="0" selection-start="4278" selection-end="4278" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3660">
+            <state line="132" column="0" selection-start="4278" selection-end="4278" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3800">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainGraphics.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="25" selection-start="3044" selection-end="3044" vertical-scroll-proportion="-3.8846154" vertical-offset="759" max-vertical-offset="2520">
+              <folding>
+                <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
+                <element signature="e#1687#1742#0" expanded="false" />
+                <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
+                <element signature="method#musicMonitor#0;class#MainGraphics#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,11 +213,14 @@
         <option value="$PROJECT_DIR$/src/sounds/Sound.java" />
         <option value="$PROJECT_DIR$/src/sounds/soundTester.java" />
         <option value="$PROJECT_DIR$/src/sounds/MakeSound.java" />
-        <option value="$PROJECT_DIR$/src/sounds/SoundMaker.java" />
         <option value="$PROJECT_DIR$/src/package1/GameEngine.java" />
-        <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
         <option value="$PROJECT_DIR$/src/package1/Synchronizer.java" />
+        <option value="$PROJECT_DIR$/src/sounds/SoundMaker.java" />
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainPane.fxml" />
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml" />
         <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" />
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
+        <option value="$PROJECT_DIR$/src/package1/World.java" />
       </list>
     </option>
   </component>
@@ -338,24 +309,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="package1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snakePortugal2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snakePortugal2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphicsJavaFX" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -486,19 +439,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -524,6 +464,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -618,7 +571,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -639,12 +592,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30746704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -670,63 +623,106 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="441" column="1" selection-start="9714" selection-end="9714" vertical-scroll-proportion="0.0" vertical-offset="4880" max-vertical-offset="5040">
+        <state line="453" column="32" selection-start="10178" selection-end="10184" vertical-scroll-proportion="0.0" vertical-offset="9060" max-vertical-offset="9300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="63" selection-start="5230" selection-end="5230" vertical-scroll-proportion="0.0" vertical-offset="2560" max-vertical-offset="2560">
           <folding>
-            <element signature="docComment;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#lastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#snakeAlive#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#stopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#scores#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#MAX_PLAYER_NUMBER#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#3119#3120#0" expanded="true" />
-            <element signature="e#3149#3150#0" expanded="true" />
-            <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="true" />
-            <element signature="e#4929#4930#0" expanded="true" />
-            <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#5708#5709#0" expanded="true" />
-            <element signature="e#5743#5744#0" expanded="true" />
-            <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#6777#6778#0" expanded="true" />
-            <element signature="e#6826#6827#0" expanded="true" />
-            <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#8782#8783#0" expanded="true" />
-            <element signature="e#8814#8815#0" expanded="true" />
-            <element signature="e#9547#9548#0" expanded="true" />
-            <element signature="e#9611#9612#0" expanded="true" />
+            <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
+            <element signature="e#1687#1742#0" expanded="false" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#musicMonitor#0;class#MainGraphics#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="19" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="2860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="49" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.0" vertical-offset="2020" max-vertical-offset="2340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/apple.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="486" column="7" selection-start="14180" selection-end="14180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10320">
+          <folding>
+            <element signature="method#Controller#0;class#Controller#0" expanded="false" />
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="e#3407#3493#0" expanded="false" />
+            <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupMultiplayerPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
+            <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupKeyListener#0;class#Controller#0" expanded="false" />
+            <element signature="method#giveHeightAndWidth#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameArea#0;class#Controller#0" expanded="false" />
+            <element signature="method#sendMenuBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
+            <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
+            <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+            <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGame#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="43" selection-start="1623" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="6720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="0" selection-start="4278" selection-end="4278" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="441" column="1" selection-start="9714" selection-end="9714" vertical-scroll-proportion="0.0" vertical-offset="4880" max-vertical-offset="5040">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="32" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="2740">
-          <folding />
-        </state>
+        <state line="52" column="32" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="2740" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
@@ -736,8 +732,7 @@
             <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
             <element signature="e#1687#1742#0" expanded="false" />
-            <element signature="e#2168#3070#0" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
@@ -760,14 +755,11 @@
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
-            <element signature="e#2995#3081#0" expanded="false" />
+            <element signature="e#3407#3493#0" expanded="false" />
             <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
-            <element signature="e#5222#5449#0" expanded="true" />
-            <element signature="e#5438#5439#0" expanded="true" />
-            <element signature="e#6201#6424#0" expanded="true" />
-            <element signature="e#6413#6414#0" expanded="true" />
-            <element signature="e#7721#7943#0" expanded="true" />
-            <element signature="e#7932#7933#0" expanded="true" />
+            <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupMultiplayerPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
             <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
             <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
             <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
@@ -778,17 +770,23 @@
             <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
             <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
             <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
-            <element signature="e#14424#14425#0" expanded="true" />
-            <element signature="e#14460#14461#0" expanded="true" />
+            <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+            <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGame#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="4" selection-start="8560" selection-end="9432" vertical-scroll-proportion="0.0" vertical-offset="5480" max-vertical-offset="6580">
-          <folding />
-        </state>
+        <state line="274" column="4" selection-start="8560" selection-end="9432" vertical-scroll-proportion="0.0" vertical-offset="5480" max-vertical-offset="6580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
@@ -801,62 +799,13 @@
     <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="441" column="1" selection-start="9714" selection-end="9714" vertical-scroll-proportion="0.0" vertical-offset="5040" max-vertical-offset="5040">
-          <folding>
-            <element signature="docComment;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#lastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#snakeAlive#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#stopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#scores#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#MAX_PLAYER_NUMBER#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#3119#3120#0" expanded="true" />
-            <element signature="e#3149#3150#0" expanded="true" />
-            <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="true" />
-            <element signature="e#4929#4930#0" expanded="true" />
-            <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#5708#5709#0" expanded="true" />
-            <element signature="e#5743#5744#0" expanded="true" />
-            <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#6777#6778#0" expanded="true" />
-            <element signature="e#6826#6827#0" expanded="true" />
-            <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#8782#8783#0" expanded="true" />
-            <element signature="e#8814#8815#0" expanded="true" />
-            <element signature="e#9547#9548#0" expanded="true" />
-            <element signature="e#9611#9612#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="32" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="2740">
-          <folding />
-        </state>
+        <state line="52" column="32" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="2740" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
@@ -866,8 +815,7 @@
             <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
             <element signature="e#1687#1742#0" expanded="false" />
-            <element signature="e#2168#3070#0" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
@@ -890,14 +838,11 @@
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
-            <element signature="e#2995#3081#0" expanded="false" />
+            <element signature="e#3407#3493#0" expanded="false" />
             <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
-            <element signature="e#5222#5449#0" expanded="true" />
-            <element signature="e#5438#5439#0" expanded="true" />
-            <element signature="e#6201#6424#0" expanded="true" />
-            <element signature="e#6413#6414#0" expanded="true" />
-            <element signature="e#7721#7943#0" expanded="true" />
-            <element signature="e#7932#7933#0" expanded="true" />
+            <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupMultiplayerPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
             <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
             <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
             <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
@@ -908,17 +853,23 @@
             <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
             <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
             <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
-            <element signature="e#14424#14425#0" expanded="true" />
-            <element signature="e#14460#14461#0" expanded="true" />
+            <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+            <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGame#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="4" selection-start="8560" selection-end="9432" vertical-scroll-proportion="0.0" vertical-offset="5480" max-vertical-offset="6580">
-          <folding />
-        </state>
+        <state line="274" column="4" selection-start="8560" selection-end="9432" vertical-scroll-proportion="0.0" vertical-offset="5480" max-vertical-offset="6580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
@@ -935,8 +886,7 @@
             <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
             <element signature="e#1687#1742#0" expanded="false" />
-            <element signature="e#2168#3070#0" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
             <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
@@ -948,16 +898,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="4" selection-start="8560" selection-end="9432" vertical-scroll-proportion="0.0" vertical-offset="5480" max-vertical-offset="6580">
-          <folding />
-        </state>
+        <state line="274" column="4" selection-start="8560" selection-end="9432" vertical-scroll-proportion="0.0" vertical-offset="5480" max-vertical-offset="6580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Viope/Snake mp/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="32" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860">
-          <folding />
-        </state>
+        <state line="52" column="32" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package1/Snake.java">
@@ -971,7 +917,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="834" selection-end="834" vertical-scroll-proportion="0.7762238" vertical-offset="447" max-vertical-offset="920">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -983,55 +929,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="43" selection-start="1623" selection-end="1629" vertical-scroll-proportion="-25.384615" vertical-offset="180" max-vertical-offset="6720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="1360">
-          <folding>
-            <element signature="docComment;class#SoundMaker#0" expanded="false" />
-            <element signature="method#SoundMaker#0;class#SoundMaker#0" expanded="false" />
-            <element signature="method#loopSound#0;class#SoundMaker#0" expanded="false" />
-            <element signature="method#stopMusic#0;class#SoundMaker#0" expanded="false" />
-            <element signature="method#setupMusic#0;class#SoundMaker#0" expanded="false" />
-            <element signature="method#setupsoundFX#0;class#SoundMaker#0" expanded="false" />
-            <element signature="method#clickButton#0;class#SoundMaker#0" expanded="false" />
-            <element signature="method#backButton#0;class#SoundMaker#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="49" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.0" vertical-offset="1544" max-vertical-offset="2220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/apple.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://H:/Snake00/src/graphicsJavaFX/MainGraphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="51" selection-start="2786" selection-end="3250" vertical-scroll-proportion="0.0" vertical-offset="1069" max-vertical-offset="2720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/Snake00/src/graphicsJavaFX/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="22" selection-start="2114" selection-end="2272" vertical-scroll-proportion="-9.346154" vertical-offset="2217" max-vertical-offset="4720">
+          <folding>
+            <element signature="method#Controller#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupMultiplayerPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupOptionsPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
+            <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupKeyListener#0;class#Controller#0" expanded="false" />
+            <element signature="method#giveHeightAndWidth#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameArea#0;class#Controller#0" expanded="false" />
+            <element signature="method#sendMenuBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
+            <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
+            <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGame#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="34" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="2700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0/jre/lib/ext/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="597" column="0" selection-start="30857" selection-end="30857" vertical-scroll-proportion="0.0" vertical-offset="11624" max-vertical-offset="12040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="409" column="5" selection-start="9004" selection-end="9004" vertical-scroll-proportion="-3.0769231" vertical-offset="7500" max-vertical-offset="8460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="25" selection-start="3044" selection-end="3044" vertical-scroll-proportion="-3.8846154" vertical-offset="759" max-vertical-offset="2520">
+          <folding>
+            <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
+            <element signature="e#1687#1742#0" expanded="false" />
+            <element signature="method#drawGameOver#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
+            <element signature="method#musicMonitor#0;class#MainGraphics#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="351" column="26" selection-start="20125" selection-end="20125" vertical-scroll-proportion="-7.8461537" vertical-offset="6816" max-vertical-offset="8260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="486" column="7" selection-start="14180" selection-end="14180" vertical-scroll-proportion="-7.3076925" vertical-offset="4790" max-vertical-offset="5580">
+        <state line="360" column="0" selection-start="9105" selection-end="9105" vertical-scroll-proportion="-11.923077" vertical-offset="3190" max-vertical-offset="4780">
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
-            <element signature="e#2995#3081#0" expanded="false" />
+            <element signature="e#3407#3493#0" expanded="false" />
             <element signature="method#setupMainMenu#0;class#Controller#0" expanded="false" />
-            <element signature="e#5222#5449#0" expanded="true" />
-            <element signature="e#5438#5439#0" expanded="true" />
-            <element signature="e#6201#6424#0" expanded="true" />
-            <element signature="e#6413#6414#0" expanded="true" />
-            <element signature="e#7721#7943#0" expanded="true" />
-            <element signature="e#7932#7933#0" expanded="true" />
+            <element signature="method#setupRulesAndCreditPanes#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupMultiplayerPane#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupDifficultyPane#0;class#Controller#0" expanded="false" />
             <element signature="method#buildGrid#0;class#Controller#0" expanded="false" />
             <element signature="method#drawNewScreen#0;class#Controller#0" expanded="false" />
             <element signature="method#clearScreen#0;class#Controller#0" expanded="false" />
@@ -1042,81 +1037,38 @@
             <element signature="method#chooseColor#0;class#Controller#0" expanded="false" />
             <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
             <element signature="method#setHighScore#0;class#Controller#0" expanded="false" />
-            <element signature="e#14424#14425#0" expanded="true" />
-            <element signature="e#14460#14461#0" expanded="true" />
+            <element signature="method#setMenuOpacity#0;class#Controller#0" expanded="false" />
+            <element signature="method#hideGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGame#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#displayMultiGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateEndScorePlay1#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOver#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScorePlay1#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateScorePlay2#0;class#Controller#0" expanded="false" />
+            <element signature="method#setupGameOverMulti#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/package1/Synchronizer.java">
+    <entry file="file://$PROJECT_DIR$/src/package1/GameEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="453" column="32" selection-start="10178" selection-end="10184" vertical-scroll-proportion="-6.269231" vertical-offset="5737" max-vertical-offset="6140">
-          <folding>
-            <element signature="docComment;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#lastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#gameOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#snakeAlive#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#stopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#scores#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;field#MAX_PLAYER_NUMBER#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setup#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameWorld#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#3119#3120#0" expanded="true" />
-            <element signature="e#3149#3150#0" expanded="true" />
-            <element signature="docComment;method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#writeThisCell#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#getLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setLastButtonPressed#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameAreaWidth#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setGameAreaHeight#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#isGameOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="true" />
-            <element signature="e#4929#4930#0" expanded="true" />
-            <element signature="docComment;method#theGameIsOver#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#getSnakeStillAlive#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#isStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="docComment;method#setStopGameLoop#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#5708#5709#0" expanded="true" />
-            <element signature="e#5743#5744#0" expanded="true" />
-            <element signature="docComment;method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#isEmpty#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#6777#6778#0" expanded="true" />
-            <element signature="e#6826#6827#0" expanded="true" />
-            <element signature="method#isFoodPresent#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#setFoodPresent#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#resetGame#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#updateHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="method#saveHighScore#0;class#Synchronizer#0" expanded="false" />
-            <element signature="e#8782#8783#0" expanded="true" />
-            <element signature="e#8814#8815#0" expanded="true" />
-            <element signature="e#9547#9548#0" expanded="true" />
-            <element signature="e#9611#9612#0" expanded="true" />
-          </folding>
+        <state line="80" column="7" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.0" vertical-offset="785" max-vertical-offset="2200">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
+    <entry file="file://$PROJECT_DIR$/src/package1/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="63" selection-start="5230" selection-end="5230" vertical-scroll-proportion="0.72115386" vertical-offset="1400" max-vertical-offset="2380">
-          <folding>
-            <element signature="method#start#0;class#MainGraphics#0" expanded="false" />
-            <element signature="method#drawScreen#0;class#MainGraphics#0" expanded="false" />
-            <element signature="e#1687#1742#0" expanded="false" />
-            <element signature="e#2168#3070#0" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="method#mainProgram#0;class#MainGraphics#0" expanded="false" />
-            <element signature="method#newGame#0;class#MainGraphics#0" expanded="false" />
-            <element signature="method#main#0;class#MainGraphics#0" expanded="false" />
-            <element signature="method#resetAll#0;class#MainGraphics#0" expanded="false" />
-            <element signature="method#musicMonitor#0;class#MainGraphics#0" expanded="false" />
-          </folding>
+        <state line="52" column="54" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="2620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="395" column="109" selection-start="22286" selection-end="22286" vertical-scroll-proportion="18.934177" vertical-offset="421" max-vertical-offset="8320">
+          <folding />
         </state>
       </provider>
     </entry>
