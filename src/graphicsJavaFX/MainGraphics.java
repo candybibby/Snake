@@ -12,9 +12,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-
 import package1.*;
 import sounds.SoundMaker;
 
@@ -52,29 +49,31 @@ public class MainGraphics extends Application {
     }
 
     public void drawGameOver() {
-        if (Synchronizer.getNumberOfPlayer()==1)
+        if (Synchronizer.getNumberOfPlayer() == 1)
             controller.displayGameOver();
         else
             controller.displayMultiGameOver();
     }
 
-    public void graphicsTimer() { // setup a timer for the graphics, runs every 1000/framerate milliseconds
+    public void graphicsAndSoundTimer() { // setup a timer for the graphics, runs every 1000/framerate milliseconds
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000 / frameRate), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                if (Synchronizer.getNumberOfPlayer() == 1){
-                if (!Synchronizer.isGameOver()) { // if game not over
-                    drawScreen();                   // draw the game screen
-                    controller.updateEndScorePlay1(Synchronizer.getScores(0));
-                    controller.setHighScore(Synchronizer.getHighScore());
+                musicPlayer.checkForSongEnd();
+                if (Synchronizer.getNumberOfPlayer() == 1) {
+                    if (!Synchronizer.isGameOver()) { // if game not over
+                        drawScreen();                   // draw the game screen
+                        controller.updateEndScorePlay1(Synchronizer.getScores(0));
+                        controller.setHighScore(Synchronizer.getHighScore());
 
 
-                }    else {                // else
-
-                    drawScreen();
-                    drawGameOver();
-                    controller.updateEndScorePlay1(Synchronizer.getScores(0));
-                }             // else
+                    } else {                // else
+                        musicPlayer.stopMusic();
+                        musicPlayer.playEndGameSound();
+                        drawScreen();
+                        drawGameOver();
+                        controller.updateEndScorePlay1(Synchronizer.getScores(0));
+                    }             // else
 
                 } else {
                     if (!Synchronizer.someoneWon() && !Synchronizer.isGameOver()) { // if game not over
@@ -82,15 +81,13 @@ public class MainGraphics extends Application {
                         controller.updateScorePlay1(Synchronizer.getScores(0));
                         controller.updateScorePlay2(Synchronizer.getScores(1));
                     } else {                // else
+                        musicPlayer.stopMusic();
+                        musicPlayer.playEndGameSound();
                         drawScreen();
                         drawGameOver();             // draw the game over text
                     }
 
                 }
-
-
-
-
 
 
             }
@@ -129,7 +126,7 @@ public class MainGraphics extends Application {
         controller = new Controller();      // make a new instance of controller
         controller.menuPane.toFront();      //
         controller.menuPane.setOpacity(1);
-        musicPlayer.loopSound(0);
+        musicPlayer.loopSound2(0);
 
         scoreChanged.bind(GameEngine.scoreChanged);
         scoreChanged.addListener(new ChangeListener<Boolean>() {
@@ -163,9 +160,9 @@ public class MainGraphics extends Application {
                 controller.setMenuOpacity(0);
                 controller.setTheme(0);
                 musicPlayer.stopMusic();
-                musicPlayer.loopSound(1);
+                musicPlayer.loopSound2(1);
                 mainProgram();
-                graphicsTimer();
+                graphicsAndSoundTimer();
             }
         });
 
@@ -182,18 +179,20 @@ public class MainGraphics extends Application {
         int tempScore = Synchronizer.getScores(0);
         int increment = 1;
 
+        if (!Synchronizer.isGameOver()) {
 
-        if (tempScore > 4 * increment && tempScore < 10 * increment && musicPlayer.numberOfSong != 2) {
-            musicPlayer.stopMusic();
-            musicPlayer.loopSound(2);
-        }
-        if (tempScore > 9 * increment && tempScore < 15 * increment && musicPlayer.numberOfSong != 3) {
-            musicPlayer.stopMusic();
-            musicPlayer.loopSound(3);
-        }
-        if (tempScore > 14 * increment && tempScore < 20 * increment && musicPlayer.numberOfSong != 4) {
-            musicPlayer.stopMusic();
-            musicPlayer.loopSound(4);
+            if (tempScore > 4 * increment && tempScore < 10 * increment && musicPlayer.numberOfSong != 2) {
+                musicPlayer.stopMusic();
+                musicPlayer.loopSound2(2);
+            }
+            if (tempScore > 9 * increment && tempScore < 15 * increment && musicPlayer.numberOfSong != 3) {
+                musicPlayer.stopMusic();
+                musicPlayer.loopSound2(3);
+            }
+            if (tempScore > 14 * increment && tempScore < 20 * increment && musicPlayer.numberOfSong != 4) {
+                musicPlayer.stopMusic();
+                musicPlayer.loopSound2(4);
+            }
         }
 
 

@@ -27,9 +27,11 @@ public class SoundMaker {
     private boolean musicIsOn = true;
     private boolean thisSongPlaying = true;
     public int numberOfSong = 0;
+    private boolean endGameSoundPlayed;
 
     Thread musicThread;
     AudioStream audioStream;
+    InputStream songInputStream;
 
 
     public SoundMaker() {
@@ -37,13 +39,11 @@ public class SoundMaker {
     }
 
 
-
-
     public void loopSound(int fileNumber) {
         thisSongPlaying = true;
         numberOfSong = fileNumber;
 
-        final String  currentSong = music[numberOfSong];
+        final String currentSong = music[numberOfSong];
         musicThread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -55,13 +55,14 @@ public class SoundMaker {
                     audioStream = new AudioStream(in);
                     AudioPlayer.player.start(audioStream);
 
-                    while(thisSongPlaying){
+                    while (thisSongPlaying) {
 
                         if (audioStream.available() <= 0) {
                             in = new FileInputStream(currentSong);
                             audioStream = new AudioStream(in);
                             AudioPlayer.player.start(audioStream);
-                        }}
+                        }
+                    }
 
                 } catch (IOException e)
 
@@ -76,62 +77,118 @@ public class SoundMaker {
 
     }
 
+    public void loopSound2(int fileNumber) {
 
-public void stopMusic(){
-    //musicThread.interrupt();
-    thisSongPlaying = false;
-    AudioPlayer.player.stop(audioStream);
+        thisSongPlaying = true;
+        numberOfSong = fileNumber;
 
-}
-
-
-
-
-    public void setupMusic(){
-        music = new String[]{loop0, loop1, loop2, loop3, loop4};
-    }
-
-    public void setupsoundFX(){
-
-    }
-
-    public void clickButton(){
-
-        new Thread(new Runnable() {
+        final String currentSong = music[numberOfSong];
+        /*musicThread = new Thread(new Runnable() {
             @Override
-            public void run() {
-                try{
-                    InputStream in = new FileInputStream(buttonForward);
-                    AudioStream effect= new AudioStream(in);
-                    AudioPlayer.player.start(effect);}
-                catch (IOException e){
+            public void run() {*/
+
+                try {
+
+
+                    songInputStream = new FileInputStream(currentSong);
+                    audioStream = new AudioStream(songInputStream);
+                    AudioPlayer.player.start(audioStream);
+
+                } catch (IOException e)
+
+                {
                     e.printStackTrace();
                 }
             }
-        }).start();
+        /*});
+
+        musicThread.start();*/
+
+
+
+
+    public void checkForSongEnd(){
+
+
+
+            try {
+                if (audioStream.available() <= 0) {
+
+                    loopSound2(numberOfSong);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+    }
+
+    public void stopMusic() {
+        //musicThread.interrupt();
+        thisSongPlaying = false;
+        AudioPlayer.player.stop(audioStream);
+
+    }
+
+
+    public void setupMusic() {
+        music = new String[]{loop0, loop1, loop2, loop3, loop4};
+    }
+
+    public void setupsoundFX() {
+
+    }
+
+    public void clickButton() {
+
+        /*new Thread(new Runnable() {
+            @Override
+            public void run() {*/
+                try {
+                    InputStream in = new FileInputStream(buttonForward);
+                    AudioStream effect = new AudioStream(in);
+                    AudioPlayer.player.start(effect);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+           /* }
+        }).start();*/
 
 
     }
 
-    public void backButton(){
+    public void backButton() {
 
-        try{
+        try {
             InputStream in = new FileInputStream(buttonBack);
-            AudioStream effect= new AudioStream(in);
-            AudioPlayer.player.start(effect);}
-        catch (IOException e){
+            AudioStream effect = new AudioStream(in);
+            AudioPlayer.player.start(effect);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public static void eatFood(){
+    public static void eatFood() {
 
-        try{
+        try {
             InputStream in = new FileInputStream(eatFood);
-            AudioStream effect= new AudioStream(in);
-            AudioPlayer.player.start(effect);}
-        catch (IOException e){
+            AudioStream effect = new AudioStream(in);
+            AudioPlayer.player.start(effect);
+        } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void playEndGameSound() {
+
+        if (!endGameSoundPlayed) {
+        endGameSoundPlayed = true;
+        try {
+            songInputStream = new FileInputStream(gameOver);
+            AudioStream effect = new AudioStream(songInputStream);
+            AudioPlayer.player.start(effect);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         }
     }
 }
