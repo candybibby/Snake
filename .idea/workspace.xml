@@ -101,19 +101,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoundMaker.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SoundMaker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="9" selection-start="4806" selection-end="4806" vertical-scroll-proportion="0.61445785" vertical-offset="3465" max-vertical-offset="3900">
+            <state line="191" column="9" selection-start="4806" selection-end="4806" vertical-scroll-proportion="0.0" vertical-offset="3465" max-vertical-offset="3900">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainGraphics.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainGraphics.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="55" selection-start="2892" selection-end="2892" vertical-scroll-proportion="-11.807693" vertical-offset="1113" max-vertical-offset="4200">
+            <state line="67" column="0" selection-start="2734" selection-end="2734" vertical-scroll-proportion="0.6037234" vertical-offset="1113" max-vertical-offset="4200">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2197#3806#0" expanded="true" />
@@ -548,7 +548,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1074,9 +1074,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="9" selection-start="4806" selection-end="4806" vertical-scroll-proportion="0.0" vertical-offset="3465" max-vertical-offset="3900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="55" selection-start="2892" selection-end="2892" vertical-scroll-proportion="-11.807693" vertical-offset="1113" max-vertical-offset="4200">
+        <state line="67" column="0" selection-start="2734" selection-end="2734" vertical-scroll-proportion="0.6037234" vertical-offset="1113" max-vertical-offset="4200">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2197#3806#0" expanded="true" />
@@ -1088,13 +1095,6 @@
             <element signature="e#6096#6679#0" expanded="true" />
             <element signature="e#6668#6669#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="9" selection-start="4806" selection-end="4806" vertical-scroll-proportion="0.61445785" vertical-offset="3465" max-vertical-offset="3900">
-          <folding />
         </state>
       </provider>
     </entry>
