@@ -59,12 +59,26 @@ public class MainGraphics extends Application {
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000 / frameRate), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+
+
                 musicPlayer.checkForSongEnd();
                 if (Synchronizer.getNumberOfPlayer() == 1) {
                     if (!Synchronizer.isGameOver()) { // if game not over
                         drawScreen();                   // draw the game screen
                         controller.updateEndScorePlay1(Synchronizer.getScores(0));
                         controller.setHighScore(Synchronizer.getHighScore());
+                    } else {
+                        musicPlayer.stopMusic();
+                        musicPlayer.playEndGameSound();
+
+                        drawScreen();
+                        drawGameOver();             // draw the game over text
+                    }
+
+
+                } else {
+                    if (!Synchronizer.isGameOver()) { // if game not over
+                        drawScreen();                   // draw the game screen
 
 
                     } else {                // else
@@ -72,24 +86,10 @@ public class MainGraphics extends Application {
                         musicPlayer.playEndGameSound();
                         drawScreen();
                         drawGameOver();
-                        controller.updateEndScorePlay1(Synchronizer.getScores(0));
-                    }             // else
 
-                } else {
-                    if (!Synchronizer.someoneWon() && !Synchronizer.isGameOver()) { // if game not over
-                        drawScreen();                   // draw the game screen
-                        controller.updateScorePlay1(Synchronizer.getScores(0));
-                        controller.updateScorePlay2(Synchronizer.getScores(1));
-                    } else {                // else
-                        musicPlayer.stopMusic();
-                        musicPlayer.playEndGameSound();
-                        drawScreen();
-                        drawGameOver();             // draw the game over text
+                        controller.setHighScore(Synchronizer.getHighScore());
                     }
-
                 }
-
-
             }
         }));
         timeline.setCycleCount(Timeline.INDEFINITE); // makes the timer run forever

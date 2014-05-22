@@ -72,7 +72,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="253" column="5" selection-start="5614" selection-end="5614" vertical-scroll-proportion="0.0" vertical-offset="4901" max-vertical-offset="5540">
+            <state line="3" column="28" selection-start="103" selection-end="105" vertical-scroll-proportion="-2.3076923" vertical-offset="0" max-vertical-offset="5920">
               <folding>
                 <element signature="method#Controller#0;class#Controller#0" expanded="false" />
                 <element signature="e#3407#3493#0" expanded="false" />
@@ -101,29 +101,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoundMaker.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SoundMaker.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="9" selection-start="4806" selection-end="4806" vertical-scroll-proportion="0.0" vertical-offset="3465" max-vertical-offset="3900">
+            <state line="109" column="26" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.22891566" vertical-offset="1985" max-vertical-offset="3900">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainGraphics.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainGraphics.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="2734" selection-end="2734" vertical-scroll-proportion="0.6037234" vertical-offset="1113" max-vertical-offset="4200">
+            <state line="70" column="48" selection-start="2813" selection-end="2813" vertical-scroll-proportion="-10.5" vertical-offset="1127" max-vertical-offset="4200">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2197#3806#0" expanded="true" />
-                <element signature="e#3795#3796#0" expanded="true" />
-                <element signature="e#5021#5292#0" expanded="true" />
-                <element signature="e#5281#5282#0" expanded="true" />
-                <element signature="e#5490#6006#0" expanded="true" />
-                <element signature="e#5995#5996#0" expanded="true" />
-                <element signature="e#6096#6679#0" expanded="true" />
-                <element signature="e#6668#6669#0" expanded="true" />
+                <element signature="e#2197#3570#0" expanded="true" />
+                <element signature="e#3559#3560#0" expanded="true" />
+                <element signature="e#4785#5056#0" expanded="true" />
+                <element signature="e#5045#5046#0" expanded="true" />
+                <element signature="e#5254#5770#0" expanded="true" />
+                <element signature="e#5759#5760#0" expanded="true" />
+                <element signature="e#5860#6443#0" expanded="true" />
+                <element signature="e#6432#6433#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,8 +176,8 @@
         <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainPane – Kopio.fxml" />
         <option value="$PROJECT_DIR$/src/package1/Snake.java" />
         <option value="$PROJECT_DIR$/src/graphicsJavaFX/Controller.java" />
-        <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" />
         <option value="$PROJECT_DIR$/src/sounds/SoundMaker.java" />
+        <option value="$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java" />
       </list>
     </option>
   </component>
@@ -557,7 +557,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -724,14 +724,14 @@
         <state line="135" column="63" selection-start="5230" selection-end="5230" vertical-scroll-proportion="0.0" vertical-offset="2560" max-vertical-offset="2560">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2197#3806#0" expanded="true" />
-            <element signature="e#3795#3796#0" expanded="true" />
-            <element signature="e#5021#5292#0" expanded="true" />
-            <element signature="e#5281#5282#0" expanded="true" />
-            <element signature="e#5490#6006#0" expanded="true" />
-            <element signature="e#5995#5996#0" expanded="true" />
-            <element signature="e#6096#6679#0" expanded="true" />
-            <element signature="e#6668#6669#0" expanded="true" />
+            <element signature="e#2197#3570#0" expanded="true" />
+            <element signature="e#3559#3560#0" expanded="true" />
+            <element signature="e#4785#5056#0" expanded="true" />
+            <element signature="e#5045#5046#0" expanded="true" />
+            <element signature="e#5254#5770#0" expanded="true" />
+            <element signature="e#5759#5760#0" expanded="true" />
+            <element signature="e#5860#6443#0" expanded="true" />
+            <element signature="e#6432#6433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -814,14 +814,14 @@
         <state line="95" column="24" selection-start="3402" selection-end="3402" vertical-scroll-proportion="0.0" vertical-offset="1900" max-vertical-offset="2840">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2197#3806#0" expanded="true" />
-            <element signature="e#3795#3796#0" expanded="true" />
-            <element signature="e#5021#5292#0" expanded="true" />
-            <element signature="e#5281#5282#0" expanded="true" />
-            <element signature="e#5490#6006#0" expanded="true" />
-            <element signature="e#5995#5996#0" expanded="true" />
-            <element signature="e#6096#6679#0" expanded="true" />
-            <element signature="e#6668#6669#0" expanded="true" />
+            <element signature="e#2197#3570#0" expanded="true" />
+            <element signature="e#3559#3560#0" expanded="true" />
+            <element signature="e#4785#5056#0" expanded="true" />
+            <element signature="e#5045#5046#0" expanded="true" />
+            <element signature="e#5254#5770#0" expanded="true" />
+            <element signature="e#5759#5760#0" expanded="true" />
+            <element signature="e#5860#6443#0" expanded="true" />
+            <element signature="e#6432#6433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -892,14 +892,14 @@
         <state line="95" column="24" selection-start="3402" selection-end="3402" vertical-scroll-proportion="0.0" vertical-offset="1900" max-vertical-offset="2840">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2197#3806#0" expanded="true" />
-            <element signature="e#3795#3796#0" expanded="true" />
-            <element signature="e#5021#5292#0" expanded="true" />
-            <element signature="e#5281#5282#0" expanded="true" />
-            <element signature="e#5490#6006#0" expanded="true" />
-            <element signature="e#5995#5996#0" expanded="true" />
-            <element signature="e#6096#6679#0" expanded="true" />
-            <element signature="e#6668#6669#0" expanded="true" />
+            <element signature="e#2197#3570#0" expanded="true" />
+            <element signature="e#3559#3560#0" expanded="true" />
+            <element signature="e#4785#5056#0" expanded="true" />
+            <element signature="e#5045#5046#0" expanded="true" />
+            <element signature="e#5254#5770#0" expanded="true" />
+            <element signature="e#5759#5760#0" expanded="true" />
+            <element signature="e#5860#6443#0" expanded="true" />
+            <element signature="e#6432#6433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -958,14 +958,14 @@
         <state line="19" column="13" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="2340">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2197#3806#0" expanded="true" />
-            <element signature="e#3795#3796#0" expanded="true" />
-            <element signature="e#5021#5292#0" expanded="true" />
-            <element signature="e#5281#5282#0" expanded="true" />
-            <element signature="e#5490#6006#0" expanded="true" />
-            <element signature="e#5995#5996#0" expanded="true" />
-            <element signature="e#6096#6679#0" expanded="true" />
-            <element signature="e#6668#6669#0" expanded="true" />
+            <element signature="e#2197#3570#0" expanded="true" />
+            <element signature="e#3559#3560#0" expanded="true" />
+            <element signature="e#4785#5056#0" expanded="true" />
+            <element signature="e#5045#5046#0" expanded="true" />
+            <element signature="e#5254#5770#0" expanded="true" />
+            <element signature="e#5759#5760#0" expanded="true" />
+            <element signature="e#5860#6443#0" expanded="true" />
+            <element signature="e#6432#6433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1046,7 +1046,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="253" column="5" selection-start="5614" selection-end="5614" vertical-scroll-proportion="0.0" vertical-offset="4901" max-vertical-offset="5540">
+        <state line="3" column="28" selection-start="103" selection-end="105" vertical-scroll-proportion="-2.3076923" vertical-offset="0" max-vertical-offset="5920">
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
             <element signature="e#3407#3493#0" expanded="false" />
@@ -1074,27 +1074,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="9" selection-start="4806" selection-end="4806" vertical-scroll-proportion="0.0" vertical-offset="3465" max-vertical-offset="3900">
-          <folding />
+        <state line="70" column="48" selection-start="2813" selection-end="2813" vertical-scroll-proportion="-10.5" vertical-offset="1127" max-vertical-offset="4200">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2197#3570#0" expanded="true" />
+            <element signature="e#3559#3560#0" expanded="true" />
+            <element signature="e#4785#5056#0" expanded="true" />
+            <element signature="e#5045#5046#0" expanded="true" />
+            <element signature="e#5254#5770#0" expanded="true" />
+            <element signature="e#5759#5760#0" expanded="true" />
+            <element signature="e#5860#6443#0" expanded="true" />
+            <element signature="e#6432#6433#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicsJavaFX/MainGraphics.java">
+    <entry file="file://$PROJECT_DIR$/src/sounds/SoundMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2734" selection-end="2734" vertical-scroll-proportion="0.6037234" vertical-offset="1113" max-vertical-offset="4200">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2197#3806#0" expanded="true" />
-            <element signature="e#3795#3796#0" expanded="true" />
-            <element signature="e#5021#5292#0" expanded="true" />
-            <element signature="e#5281#5282#0" expanded="true" />
-            <element signature="e#5490#6006#0" expanded="true" />
-            <element signature="e#5995#5996#0" expanded="true" />
-            <element signature="e#6096#6679#0" expanded="true" />
-            <element signature="e#6668#6669#0" expanded="true" />
-          </folding>
+        <state line="109" column="26" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.22891566" vertical-offset="1985" max-vertical-offset="3900">
+          <folding />
         </state>
       </provider>
     </entry>
