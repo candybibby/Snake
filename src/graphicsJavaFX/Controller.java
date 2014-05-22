@@ -463,7 +463,7 @@ public class Controller extends AnchorPane {
 
         this.height = height;
         this.width = width;
-        this.gridSquareWidth = (gameAreaContainer.getWidth() / width);
+        this.gridSquareWidth = (gameAreaContainer.getWidth() / width-1);
         this.gridSquareHeight = (gameAreaContainer.getHeight() / (height));
     }
 
